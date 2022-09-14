@@ -28,12 +28,12 @@
             'website_helena/static/src/scss/primary_variables.scss',
         ],
         # 'web._assets_frontend_helpers': [
-        #     ('prepend', 'theme_helena/static/src/scss/bootstrap_overridden.scss'),
+        #     ('prepend', 'website_helena/static/src/scss/bootstrap_overridden.scss'),
         # ],
         #'web.assets_frontend': [
             # SCSS
-            #'theme_helena/static/src/scss/helpers.scss',
-            #'theme_helena/static/src/scss/theme.scss',
+            #'website_helena/static/src/scss/helpers.scss',
+            #'website_helena/static/src/scss/theme.scss',
         #],
     },
 }
