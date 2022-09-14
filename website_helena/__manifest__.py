@@ -8,7 +8,7 @@
     'license': 'OEEL-1',
     'data': [
         # Options
-        # 'data/presets.xml',
+        'data/presets.xml',
         # Menu
         # 'data/menu.xml',
         # Images
@@ -22,6 +22,12 @@
         # Frontend
         #'views/website_templates.xml',
         # Backend
+
+        # Header
+        #'views/header.xml',
+
+        # Footer
+        #'views/footer.xml',
     ],
     'assets': {
         'web._assets_primary_variables': [

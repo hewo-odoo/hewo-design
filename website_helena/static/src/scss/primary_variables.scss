@@ -24,14 +24,14 @@ $o-website-values-palettes: (
         'btn-border-radius-lg':             10rem,
 
         // Header
-        'header-template':                  'Default',
-        'hamburger-position':               'center',
+        'header-template':                  'vertical',
+        'hamburger-position':               'right',
         'logo-height':                      3rem,
         'fixed-logo-height':                3rem,
         'header-font-size':                 .9375rem,
 
         // Footer
-        'footer-template':                  'Default',
+        'footer-template':                  'centered',
     ),
 );
 
