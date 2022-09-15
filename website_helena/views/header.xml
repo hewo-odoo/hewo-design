@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+<!-- HEADER - METHOD #01 - Add Custom Header -->
+<!-- ======================================= -->
 
+<!-- Theme Header - Option -->
+<template id="template_header_opt" inherit_id="website.snippet_options" name="Helena Header Template - Option">
+    <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+        <we-button title="helena"
+            data-customize-website-views="website_helena.template_header_layout"
+            data-customize-website-variable="'helena'"
+            data-img="/website_helena/static/src/img/wbuilder/template_header_opt.svg"/>
+    </xpath>
+</template>
+
+<!-- Theme Header - Layout -->
+<record id="template_header_layout" model="ir.ui.view">
+    <field name="name">Helena Header</field>
+    <field name="type">qweb</field>
+    <field name="key">website_helena.template_header_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//header//nav" position="replace">
+            <t t-call="website.navbar">
+                <t t-set="_navbar_classes" t-value="'py-4'"/>
+                <div id="top_menu_container" class="container justify-content-end">
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-value="'mt-n1 mr-4'"/>
+                    </t>
+                    <t>Success!</t>
+                    <!-- Navbar Toggler -->
+                    <t t-call="website.navbar_toggler">
+                        <t t-set="_toggler_class" t-value="'ml-auto'"/>
+                    </t>
+                    <!-- Navbar Collapse -->
+                    <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
+                        <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-value="'flex-grow-1'"/>
+                            <!-- Menu -->
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-value="'nav-item'"/>
+                                    <t t-set="link_class" t-value="'nav-link'"/>
+                                </t>
+                            </t>
+                            <!-- Sign In -->
+                            <t t-call="portal.placeholder_user_sign_in">
+                                <t t-set="_item_class" t-value="'nav-item'"/>
+                                <t t-set="_link_class" t-value="'nav-link font-weight-bold'"/>
+                            </t>
+                            <!-- User Dropdown -->
+                            <t t-call="portal.user_dropdown">
+                                <t t-set="_user_name" t-value="true"/>
+                                <t t-set="_item_class" t-value="'nav-item dropdown'"/>
+                                <t t-set="_link_class" t-value="'nav-link font-weight-bold'"/>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </field>
+</record>
 
 </odoo>

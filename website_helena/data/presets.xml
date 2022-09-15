@@ -6,19 +6,21 @@
     <field name="active" eval="False"/>
 </record>
 
-<!-- Activiate Boxed Header -->
-<record id="website.template_header_boxed" model="ir.ui.view">
-    <field name="active" eval="True"/>
+<!-- Change Menu Items Alignment -->
+<record id="website.template_header_default_align_center" model="ir.ui.view">
+     <field name="active" eval="False"/>
 </record>
+
+<!-- Activiate Boxed Header -->
+<!-- <record id="website.template_header_boxed" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record> -->
 
 <!-- Disable Default Footer -->
 <record id="website.footer_custom" model="ir.ui.view">
     <field name="active" eval="False"/>
 </record>
 
-<!-- Activiate Centered Footer -->
-<record id="website.template_footer_centered" model="ir.ui.view">
-    <field name="active" eval="True"/>
-</record>
+
 
 </odoo>

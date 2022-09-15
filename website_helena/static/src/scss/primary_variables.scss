@@ -24,14 +24,14 @@ $o-website-values-palettes: (
         'btn-border-radius-lg':             10rem,
 
         // Header
-        'header-template':                  'vertical',
+        'header-template':                  'helena',
         'hamburger-position':               'right',
         'logo-height':                      3rem,
         'fixed-logo-height':                3rem,
         'header-font-size':                 .9375rem,
 
         // Footer
-        'footer-template':                  'centered',
+        'footer-template':                  'Default',
     ),
 );
 
@@ -89,9 +89,10 @@ $o-color-palettes: map-merge($o-color-palettes,
             //extra colors
             'o-color-6':                    #2f3e46,
             'o-color-7':                    #000000,
+            'o-color-8':                    #FFFFFF,
 
             //specific palettes
-            'o-cc1-bg':                     'o-color-4',
+            'o-cc1-bg':                     'o-color-8',
             'o-cc1-text':                   'o-color-6',
             'o-cc1-headings':               'o-color-1',
             'o-cc1-link':                   'o-color-5',

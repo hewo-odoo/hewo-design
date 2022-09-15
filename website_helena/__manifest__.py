@@ -24,7 +24,7 @@
         # Backend
 
         # Header
-        #'views/header.xml',
+        'views/header.xml',
 
         # Footer
         #'views/footer.xml',
