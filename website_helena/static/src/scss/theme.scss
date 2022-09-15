@@ -1,0 +1,12 @@
+header .o_header_centered_logo {
+    order: -1;
+    width: 50%;
+    margin-top: 1rem;
+}
+@media (min-width: 992px){
+    header .o_header_centered_logo {
+    order: inherit;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+} 
