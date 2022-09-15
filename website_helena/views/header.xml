@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+<!-- HEADER - METHOD #01 - Add Custom Header -->
+<!-- ======================================= -->
+
+<!-- Theme Header - Option -->
+<template id="template_header_opt" inherit_id="website.snippet_options" name="Helena Header Template - Option">
+    <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+        <we-button title="helena"
+            data-customize-website-views="website_coconuts.template_header_layout"
+            data-customize-website-variable="'Coconuts'"
+            data-img="/website_helena/static/src/img/wbuilder/template_header_opt.svg"/>
+    </xpath>
+</template>
+
+<!-- Theme Header - Layout -->
+<record id="template_header_layout" model="ir.ui.view">
+    <field name="name">helena Header</field>
+    <field name="type">qweb</field>
+    <field name="key">website_helena.template_header_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//header//nav" position="replace">
+
+        </xpath>
+    </field>
+</record>
 
 </odoo>
