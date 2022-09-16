@@ -12,11 +12,10 @@
         # Menu
         # 'data/menu.xml',
         # Images
-        #'data/images.xml',
+        'data/images.xml',
         # Pages
-        # 'data/pages/about_us.xml',
-        # 'data/pages/contact.xml',
-        # 'data/pages/home.xml',
+        'data/pages/contactus.xml',
+        'data/pages/home.xml',
         # Snippets
         
         # Frontend

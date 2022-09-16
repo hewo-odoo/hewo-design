@@ -121,12 +121,7 @@
                                         </t>
                                     </t>
 
-                                    <!-- User Dropdown -->
-                                    <t t-call="portal.user_dropdown">
-                                        <t t-set="_user_name" t-value="True"/>
-                                        <t t-set="_item_class" t-valuef="nav-item dropdown ml-lg-3"/>
-                                        <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
-                                    </t>
+                                    
                                 </t>
                                 <!-- Call To Action -->
                                 <t t-call="website.placeholder_header_call_to_action">
