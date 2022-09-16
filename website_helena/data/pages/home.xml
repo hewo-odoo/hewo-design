@@ -43,14 +43,20 @@
                         <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 pt16 pb16 o_colored_level" style="">
-                            <img src="/web/image/2208-f3812f13/s_image_text.svg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="968" data-original-src="/website/static/src/img/snippets_demo/s_image_text.jpg" data-mimetype="image/svg+xml" style="" data-original-title="" title="" aria-describedby="tooltip127521" data-shape="web_editor/float/flt_square_1" data-file-name="s_image_text.svg" data-shape-colors="#35979C;#685563;;;" data-original-mimetype="image/jpeg">
+                                <img src="/web_editor/image_shape/website_helena.img_s_helena_parallax/website_helena/float_square/float_square_1.svg" 
+                                    class="img img-fluid mx-auto"
+                                    data-file-name="float_square_1.svg"
+                                    data-original-mimetype="image/jpeg"
+                                    data-shape="website_helena/float_square/float_square_1"
+                                    data-shape-colors="o-color-1;o-color-1;o-color-1;o-color-1;o-color-1"
+                                    alt=""/>
                             </div>
                             <div class="col-lg-6 pt16 pb16 o_colored_level">
                             <h2 class="o_default_snippet_text">Section Subtitle</h2>
                             <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
                             <p class="o_default_snippet_text">Start with the customer – find out what they want and give it to them.</p>
                             <p data-original-title="" title="" aria-describedby="tooltip585801">
-                                <br>
+                                <br></br>
                             </p>
                             <p data-original-title="" title="" aria-describedby="tooltip585801">
                                 <a href="#" class="mb-2 btn btn-secondary" data-original-title="" title="">Discover more</a>

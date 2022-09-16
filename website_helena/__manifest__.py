@@ -13,11 +13,12 @@
         # 'data/menu.xml',
         # Images
         'data/images.xml',
+        'data/shapes.xml',
         # Pages
         'data/pages/contactus.xml',
         'data/pages/home.xml',
         # Snippets
-        
+        'views/snippets/options.xml',
         # Frontend
         #'views/website_templates.xml',
         # Backend

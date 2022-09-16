@@ -92,15 +92,18 @@ $o-color-palettes: map-merge($o-color-palettes,
             'o-color-8':                    #FFFFFF,
 
             //specific palettes
+            //general plaettes cc1
             'o-cc1-bg':                     'o-color-8',
             'o-cc1-text':                   'o-color-6',
             'o-cc1-headings':               'o-color-1',
+            'o-cc1-h3':                     'o-color-5',
             'o-cc1-link':                   'o-color-5',
             'o-cc1-btn-priamry':            'o-color-1',
             'o-cc1-btn-primary-border':     'o-color-1',
             'o-cc1-btn-secondary':          'o-color-5',
             'o-cc1-btn-secondary-border':   'o-color-5',
 
+            //gernral cc2
             'o-cc2-bg':                     'o-color-3',
             'o-cc2-text':                   'o-color-6',
             'o-cc2-headings':               'o-color-7',
@@ -110,8 +113,16 @@ $o-color-palettes: map-merge($o-color-palettes,
             'o-cc2-btn-secondary':          'o-color-4',
             'o-cc2-btn-secondary-border':   'o-color-4',
 
-            'o-cc4-link':                    'o-color-5',
-            'o-cc5-link':                    'o-color-3',
+            //gernral cc4
+            'o-cc4-bg':                     'o-color-4',
+            'o-cc4-text':                   'o-color-2',
+            'o-cc4-headings':               'o-color-1',
+            'o-cc4-h3':                     'o-color-5',
+            'o-cc4-link':                   'o-color-5',
+            'o-cc4-btn-primary':            'o-color-1',
+            'o-cc4-btn-primary-border':     'o-color-1',
+            'o-cc4-btn-secondary':          'o-color-6',
+            'o-cc4-btn-secondary-border':   'o-color-6',
 
 
             'menu':                         1,
