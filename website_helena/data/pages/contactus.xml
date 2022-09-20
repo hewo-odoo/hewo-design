@@ -7,7 +7,7 @@
 </record>
 
 <record id="page_contact_us" model="website.page">
-    <field name="name">About us</field>
+    <field name="name">Contact us</field>
     <field name="is_published" eval="True"/>
     <field name="key">website_helena.page_contact_us</field>
     <field name="url">/contactus</field>
@@ -34,7 +34,7 @@
                                             <h1>
                                                 <span style="font-size: 62px;">Contact us.</span>
                                             </h1>
-                                            <p class="o_default_snippet_text">Contact us about anything related to our company or services.We'll do our best to get back to you as soon as possible.</p>
+                                            <p class="o_default_snippet_text">Contact us about anything related to our company or services.<br></br>We'll do our best to get back to you as soon as possible.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -45,13 +45,11 @@
 
 
                             <!--Form text box-->
-                            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                            <section class="s_text_block pt40 pb40 o_colored_level o_cc o_cc4" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
                                 <div class="s_allow_columns container">
                                 <div class="row">
                                     <div class="col-lg-8 mt-4 mt-lg-0 o_colored_level">
-                                    <p>
-                                        
-                                    </p>
+                                    <p></p>
                                     <section class="s_website_form" data-vcss="001" data-snippet="s_website_form" data-name="Form">
                                         <div class="container">
                                         <form id="contactus_form" action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-pre-fill="true">

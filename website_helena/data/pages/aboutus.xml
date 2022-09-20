@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="page_about_us" model="website.page">
+    <field name="name">About us</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_helena.page_about_us</field>
+    <field name="url">/aboutus</field>
+    <field name="type">qweb</field>
+    <field name="website_id" eval="1"/>
+    <!-- Enable "Over the content" option -->
+    <!-- <field name="header_overlay" eval="True"/> -->
+    <field name="arch" type="xml">
+        <t name="Homepage" t-name="website_helena.page_about_us">
+        <t t-call="website.layout">
+            <t t-set="pageName" t-value="'About us'"/>
+            <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 o_colored_level" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Cover" style="background-image: none;">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="s_allow_columns container">
+                <h1 style="text-align: left;">
+                    <font style="font-size: 62px; font-weight: bold;" class="o_default_snippet_text">About us</font>
+                    <br/>
+                </h1>
+                <p class="lead" style="text-align: left;">Write one or two paragraphs describing your product, services or a specific feature.<br/> To be successful your content needs to be useful to your readers.</p>
+                <p style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip136090">
+                    <a class="btn btn-primary mb-2 o_default_snippet_text" href="/contactus">Contact us</a>
+                </p>
+                </div>
+            </section>
+            <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns container">
+                <h1>
+                    <span style="font-size: 48px;">What we served......</span>
+                </h1>
+                </div>
+            </section>
+            <section class="s_features pt32 pb32 o_colored_level o_half_screen_height" data-snippet="s_features" data-name="Features" style="background-image: none;">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                    <i class="fa fa-3x fa-gear rounded bg-primary m-3"/>
+                    <h3 class="o_default_snippet_text">First Feature</h3>
+                    <p class="o_default_snippet_text">Tell what's the value for the <br/>customer for this feature.</p>
+                    </div>
+                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                    <i class="fa fa-3x fa-photo rounded bg-o-color-5 m-3"/>
+                    <h3 class="o_default_snippet_text">Second Feature</h3>
+                    <p class="o_default_snippet_text">Write what the customer would like to know, <br/>not what you want to show.</p>
+                    </div>
+                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                    <i class="fa fa-3x fa-leaf rounded bg-secondary m-3"/>
+                    <h3 class="o_default_snippet_text">Third Feature</h3>
+                    <p class="o_default_snippet_text">A small explanation of this great <br/>feature, in clear words.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="s_quotes_carousel_wrapper o_colored_level" data-vxml="001" data-vcss="001" data-snippet="s_quotes_carousel" data-name="Quotes" style="background-image: none;">
+                <div class="s_quotes_carousel s_carousel_default carousel slide o_cc o_cc2" data-interval="10000" id="myCarousel1663643511869" style="background-image: none;">
+                <ol class="carousel-indicators o_we_no_overlay">
+                    <li data-slide-to="0" class="active" data-target="#myCarousel1663643511869"/>
+                    <li data-slide-to="1" data-target="#myCarousel1663643511869"/>
+                    <li data-slide-to="2" data-target="#myCarousel1663643511869"/>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item pt80 pb80 o_colored_level oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/website.s_quotes_carousel_demo_image_0&quot;); background-position: 50% 50%;" data-name="Slide">
+                    <div class="container">
+                        <blockquote class="s_blockquote s_blockquote_classic blockquote mx-auto w-50" data-name="Blockquote">
+                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-2 s_blockquote_icon"/>
+                        <div class="s_blockquote_content o_cc1" style="background-image: none;">
+                            <p class="o_default_snippet_text">Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                            <footer class="blockquote-footer">
+                            <img src="/web/image/website.s_quotes_carousel_demo_image_3" class="s_blockquote_avatar img rounded-circle mr-2" alt="" loading="lazy" data-original-id="961" data-original-src="/website/static/src/img/snippets_demo/s_team_member_3.png" data-mimetype="image/png"/>
+                            <span class="s_blockquote_author o_default_snippet_text"><b class="o_default_snippet_text">Jane DOE</b> • CEO of MyCompany</span>
+                            </footer>
+                        </div>
+                        </blockquote>
+                    </div>
+                    </div>
+                    <div class="carousel-item pt80 pb80 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_quotes_carousel_demo_image_1&quot;); background-position: 50% 50%;" data-name="Slide">
+                    <div class="container">
+                        <blockquote class="s_blockquote s_blockquote_classic blockquote mr-auto w-50" data-name="Blockquote">
+                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-2 s_blockquote_icon"/>
+                        <div class="s_blockquote_content o_cc1" style="background-image: none;">
+                            <p class="o_default_snippet_text">Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                            <footer class="blockquote-footer">
+                            <img src="/web/image/website.s_quotes_carousel_demo_image_4" class="s_blockquote_avatar img rounded-circle mr-2" alt="" loading="lazy" data-original-id="962" data-original-src="/website/static/src/img/snippets_demo/s_team_member_2.png" data-mimetype="image/png"/>
+                            <span class="s_blockquote_author o_default_snippet_text"><b class="o_default_snippet_text">John DOE</b> • CEO of MyCompany</span>
+                            </footer>
+                        </div>
+                        </blockquote>
+                    </div>
+                    </div>
+                    <div class="carousel-item pt80 pb80 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_quotes_carousel_demo_image_2&quot;); background-position: 50% 50%;" data-name="Slide">
+                    <div class="container">
+                        <blockquote class="s_blockquote s_blockquote_classic blockquote ml-auto w-50" data-name="Blockquote">
+                        <i class="fa fa-1x fa-quote-left rounded float-left bg-o-color-2 s_blockquote_icon"/>
+                        <div class="s_blockquote_content o_cc1" style="background-image: none;">
+                            <p class="o_default_snippet_text">Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+                            <footer class="blockquote-footer">
+                            <img src="/web/image/website.s_quotes_carousel_demo_image_5" class="s_blockquote_avatar img rounded-circle mr-2" alt="" loading="lazy" data-original-id="963" data-original-src="/website/static/src/img/snippets_demo/s_team_member_4.png" data-mimetype="image/png"/>
+                            <span class="s_blockquote_author o_default_snippet_text"><b class="o_default_snippet_text">Iris DOE</b> • CEO of MyCompany</span>
+                            </footer>
+                        </div>
+                        </blockquote>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" data-target="#myCarousel1663643511869">
+                    <span class="carousel-control-prev-icon"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                </div>
+                <div class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" data-target="#myCarousel1663643511869">
+                    <span class="carousel-control-next-icon"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                </div>
+                </div>
+            </section>
+            <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns container">
+                <h1>
+                    <span style="font-size: 48px;">Our Story......</span>
+                </h1>
+                </div>
+            </section>
+            <section class="s_timeline pt24 pb48 o_colored_level o_half_screen_height" data-snippet="s_timeline" data-name="Timeline" style="background-image: none;">
+                <div class="s_timeline_line container">
+                <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+                    <div class="s_timeline_date">
+                    <span class="bg-white">
+                        <b class="o_default_snippet_text">2019</b>
+                    </span>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <h5 class="card-title o_default_snippet_text">Your title</h5>
+                        <p class="card-text o_default_snippet_text">A timeline is a graphical representation on which important events are marked.</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-1x fa-child bg-secondary rounded-circle s_timeline_icon"/>
+                    </div>
+                    <div class="s_timeline_content"/>
+                </div>
+                <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+                    <div class="s_timeline_date">
+                    <span class="bg-white">
+                        <b class="o_default_snippet_text">2018</b>
+                    </span>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <p class="card-text o_default_snippet_text">You can edit, duplicate...</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-1x fa-graduation-cap bg-secondary rounded-circle s_timeline_icon"/>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <i class="fa fa-1x fa-asterisk bg-secondary rounded-circle s_timeline_icon"/>
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <p class="card-text o_default_snippet_text">...and switch the timeline contents to fit your needs.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="s_timeline_row d-block d-md-flex flex-row-reverse" data-name="Row">
+                    <div class="s_timeline_date">
+                    <span class="bg-white">
+                        <b class="o_default_snippet_text">2015</b>
+                    </span>
+                    </div>
+                    <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card card bg-white w-100" data-name="Card" data-snippet="s_card">
+                        <div class="card-body">
+                        <p class="card-text o_default_snippet_text">Use this timeline as a part of your resume, to show your visitors what you've done in the past.</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-1x fa-bolt bg-secondary rounded-circle s_timeline_icon"/>
+                    </div>
+                    <div class="s_timeline_content"/>
+                </div>
+                </div>
+            </section>
+            <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <div class="s_allow_columns container">
+                <h1>
+                    <span style="font-size: 48px;">Our Team......</span>
+                </h1>
+                </div>
+            </section>
+            <section class="s_company_team pt48 pb48 o_colored_level" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
+                <div class="container">
+                <div class="row s_nb_column_fixed">
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_1" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="981" data-original-src="/website/static/src/img/snippets_demo/s_team_member_1.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Tony Fred, CEO</h4>
+                        <p class="o_default_snippet_text">
+                                        Founder and chief visionary, Tony is the driving force behind the company. He loves
+                                        to keep his hands full by participating in the development of the software,
+                                        marketing, and customer experience strategies.
+                                    </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_2" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="982" data-original-src="/website/static/src/img/snippets_demo/s_team_member_2.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Mich Stark, COO</h4>
+                        <p>Mich loves taking on challenges. With his multi-year experience as Commercial Director in the software industry, Mich has helped the company to get where it is today. Mich is among the best minds.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_3" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="983" data-original-src="/website/static/src/img/snippets_demo/s_team_member_3.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Aline Turner, CTO</h4>
+                        <p class="o_default_snippet_text">Aline is one of the iconic people in life who can say they love what they do. She mentors 100+ in-house developers and looks after the community of thousands of developers.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 pt24 pb24 o_colored_level">
+                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                        <div class="col-lg-4 pb16 o_not_editable">
+                        <img alt="" src="/web/image/website.s_company_team_image_4" class="img-fluid rounded-circle mx-auto" loading="lazy" data-original-id="984" data-original-src="/website/static/src/img/snippets_demo/s_team_member_4.png" data-mimetype="image/png"/>
+                        </div>
+                        <div class="col-lg-8">
+                        <h4 class="o_default_snippet_text">Iris Joe, CFO</h4>
+                        <p class="o_default_snippet_text">Iris, with her international experience, helps us easily understand the numbers and improves them. She is determined to drive success and delivers her professional acumen to bring the company to the next level.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="s_masonry_block" data-vcss="001" data-snippet="s_masonry_block" data-name="Masonry" data-masonry-template="default" style="">
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 text-center pb224 pt224 oe_img_bg o_bg_img_center o_colored_level" data-name="Block" style="background-image: url(&quot;/web/image/website.s_masonry_block_default_image_1&quot;);">
+                    <div class="o_we_bg_filter bg-black-50"/>
+                    <h2 style="text-align: center;">
+                        <span style="font-size: 62px;">
+                        <font class="text-o-color-4">Customers Feedback</font>
+                        </span>
+                        <br/>
+                    </h2>
+                    </div>
+                    <div class="col-lg-6 s_col_no_resize">
+                    <div class="row h-100">
+                        <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2 o_colored_level" data-name="Block" style="background-image: none;">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                        </div>
+                        <div class="col-lg-6 pt24 pb8 text-center o_colored_level o_cc o_cc3" data-name="Block" style="">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                        </div>
+                        <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc4 o_colored_level" data-name="Block" style="background-image: none;">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                        </div>
+                        <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2" data-name="Block">
+                        <h3>A great title</h3>
+                        <p>And a great subtitle</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            </div>
+        </t>
+        </t>
+
+
+    </field>
+</record>
+</odoo>

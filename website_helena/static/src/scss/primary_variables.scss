@@ -110,8 +110,8 @@ $o-color-palettes: map-merge($o-color-palettes,
             'o-cc2-link':                   'o-color-5',
             'o-cc2-btn-primary':            'o-color-5',
             'o-cc2-btn-primary-border':     'o-color-5',
-            'o-cc2-btn-secondary':          'o-color-4',
-            'o-cc2-btn-secondary-border':   'o-color-4',
+            'o-cc2-btn-secondary':          'o-color-7',
+            'o-cc2-btn-secondary-border':   'o-color-7',
 
             //gernral cc4
             'o-cc4-bg':                     'o-color-4',
@@ -154,6 +154,12 @@ $o-bg-shapes: map-merge($o-bg-shapes,
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Zigs/06', (4: 3, 5: 1));
 $o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Zigs/06', 'second', (1: 2, 2: 5));
 
-$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/13_001', (4: 3, 1: 2));
-$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Airy/13_001', 'second', (1: 2, 2: 5));
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/13_001', (1: 2, 4: 4));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Airy/13_001', 'second', (1: 2, 4: 4));
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Airy/12_001', (1: 2, 3: 1));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Airy/12_001', 'second', (1: 2, 3: 1));
+
+$o-bg-shapes: change-shape-colors-mapping('web_editor', 'Wavy/20', (2: 5));
+$o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Wavy/20', 'second', (2: 5));
 // $o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Airy/12_001', (3: 'footer'));
