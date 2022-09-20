@@ -14,7 +14,7 @@
     <field name="type">qweb</field>
     <field name="website_id" eval="1"/>
     <!-- Enable "Over the content" option -->
-    <!-- <field name="header_overlay" eval="True"/> -->
+    <field name="header_overlay" eval="True"/>
     <field name="arch" type="xml">
 
         <t name="Home" t-name="website_helena.page_home">
@@ -23,7 +23,7 @@
                 <div id="wrap" class="oe_structure">
 
                     <!--Hero Cover-->
-                    <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 o_colored_level o_half_screen_height" data-scroll-background-ratio="1" data-snippet="s_cover" style="background-image: none; position: relative;" title="" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/13_001&quot;,&quot;flip&quot;:[]}">
+                    <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 o_colored_level o_full_screen_height" data-scroll-background-ratio="1" data-snippet="s_cover" style="background-image: none; position: relative;" title="" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/13_001&quot;,&quot;flip&quot;:[]}">
                         <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website_helena.img_s_helena_cover'); background-position: 50% 0;"></span>
                         <div class="o_we_bg_filter bg-black-50"></div>
                         <div class="o_we_shape o_web_editor_Airy_13_001 o_second_extra_shape_mapping"></div>
@@ -39,7 +39,7 @@
                     </section>
 
                     <!--Text image-->
-                    <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip599419">
+                    <section class="s_text_image pt32 pb32 o_colored_level o_cc o_cc4" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip599419">
                         <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 pt16 pb16 o_colored_level" style="">
@@ -48,7 +48,7 @@
                                     data-file-name="float_square_1.svg"
                                     data-original-mimetype="image/jpeg"
                                     data-shape="website_helena/float_square/float_square_1"
-                                    data-shape-colors="o-color-1;o-color-1;o-color-1;o-color-1;o-color-1"
+                                    data-shape-colors=";;;;"
                                     alt=""/>
                             </div>
                             <div class="col-lg-6 pt16 pb16 o_colored_level">
@@ -67,7 +67,7 @@
                     </section>
 
                     <!--Text title-->
-                    <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                    <section class="s_text_block pt40 o_colored_level pb0 o_cc o_cc4" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
                         <div class="container s_allow_columns">
                             <h1 style="text-align: center;">Title</h1>
                             <p style="text-align: center;">
@@ -77,8 +77,8 @@
                     </section>
 
                     <!--Showcase-->
-                    <section class="s_showcase pt48 o_colored_level pb144" data-vcss="002" data-snippet="s_showcase" data-name="Showcase" style="background-image: none; position: relative;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/12_001&quot;,&quot;flip&quot;:[&quot;y&quot;]}" title="">
-                        <div class="o_we_shape o_web_editor_Airy_12_001" style="background-image: url(&quot;/web_editor/shape/web_editor/Airy/12_001.svg?c1=%2335979c&amp;c3=%23F6F6F6&amp;flip=y&quot;); background-position: 50% 100%;"></div>
+                    <section class="s_showcase pt48 o_colored_level pb144 o_cc o_cc4" data-vcss="002" data-snippet="s_showcase" data-name="Showcase" style="background-image: none; position: relative;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/12_001&quot;,&quot;flip&quot;:[&quot;y&quot;]}" title="">
+                        <div class="o_we_shape o_web_editor_Airy_12_001 o_second_extra_shape_mapping" style="background-image:url(&quot;/web_editor/shape/web_editor/Airy/12_001.svg?c1=%23a8dadc&amp;c3=%23FFFFFF&amp;flip=y&quot;);background-position: 50% 100%;" ></div>
                         <div class="container">
                         <div class="row no-gutters s_col_no_resize s_col_no_bgcolor s_nb_column_fixed">
                             <div class="col-lg text-lg-right">
@@ -142,7 +142,7 @@
 
                     <!--Comparsion-->
                     <section class="s_comparisons o_colored_level pt0 pb160" data-snippet="s_comparisons" data-name="Comparisons" style="background-image: none; position: relative;" data-original-title="" title="" aria-describedby="tooltip59719" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Wavy/20&quot;,&quot;flip&quot;:[]}">
-                        <div class="o_we_shape o_web_editor_Wavy_20"></div>
+                        <div class="o_we_shape o_web_editor_Wavy_20 o_second_extra_shape_mapping"></div>
                         <div class="container">
                         <div class="row">
                             <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">

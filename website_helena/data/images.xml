@@ -15,4 +15,11 @@
     <field name="public" eval="True"/>
 </record>
 
+<record id="img_s_helena_mega_menu" model="ir.attachment">
+    <field name="name">Menu - Mega menu image</field>
+    <field name="datas" type="base64" file="website_helena/static/src/img/content/s_helena_undraw_online_shopping.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
 </odoo>

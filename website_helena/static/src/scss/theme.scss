@@ -9,4 +9,28 @@ header .o_header_centered_logo {
     width: 40%;
     margin-bottom: 1rem;
 }
-} 
+}
+//header color change when overlay
+// #wrapwrap.o_header_overlay > header:not(.o_header_affixed):not(.o_top_menu_collapse_shown) > .navbar .nav-item > .nav-link {
+//     color: o-color('o-color-4') !important;
+//     &:hover {
+//         color: o-color('o-color-8') !important;
+//     }
+// }
+
+#wrapwrap.o_header_overlay > header:not(.o_header_affixed):not(.o_top_menu_collapse_shown) > .navbar>#top_menu_container{
+        :is(.nav-link,i) {
+        color: o-color('o-color-3') !important;
+        &:hover {
+            color: o-color('o-color-1') !important;
+        }
+    }
+    hr{
+        border-color: #a8dadc !important;
+    }
+    
+}
+//Mega menu
+.dropdown-menu{
+    border: unset;
+}

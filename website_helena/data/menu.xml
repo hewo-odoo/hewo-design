@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Delete Home -->
+<delete model="website.menu" search="[('url','in', ['/', '/']), ('website_id', '=', 1)]"/>
+
+<!-- Delete Contact us -->
+<delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]"/>
+
+<!-- Delete Shop -->
+<delete model="website.menu" search="[('url','in', ['/', '/shop']), ('website_id', '=', 1)]"/>
+
+<!-- About us -->
+<record id="menu_about_us" model="website.menu">
+    <field name="name">About us</field>
+    <field name="url">/aboutus</field>
+    <field name="website_id">1</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="sequence" type="int">10</field>
+</record>
+
+<!-- About us -->
+<record id="menu_contact_us" model="website.menu">
+    <field name="name">Contact us</field>
+    <field name="url">/contactus</field>
+    <field name="website_id">1</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="sequence" type="int">12</field>
+</record>
+
+
+<record id="menu_mega_menu" model="website.menu">
+    <field name="is_mega_menu">true</field>
+    <field name="mega_menu_classes">o_mega_menu_container_size</field>
+    <field name="name">Mega Menu</field>
+    <field name="url">/mega-menu</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="website_id">1</field>
+    <field name="sequence" type="int">30</field>
+    <field name="mega_menu_content">
+        <![CDATA[
+        <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc5" style="backdrop-filter: blur(10px);"  title="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg pt16 pb24 o_colored_level" style="">
+                    <h4 class="text-uppercase h5 font-weight-bold mt-0" title="" ><img class="img-fluid o_we_custom_image" src="/web/image/website_helena.img_s_helena_mega_menu" alt="" data-gl-filter="custom" data-filter-options='{"filterColor": "rgba(0, 0, 0, 0.5)"}' loading="lazy" style=""><br></h4>
+                    <nav class="nav flex-column"><a href="#" class="nav-link px-0 oe_unremovable" title=""></a>
+                        <h5><strong>Start your journey with us.</strong></h5><br>
+                        </nav>
+                </div>
+                <div class="col-md-6 col-lg pt16 pb24 o_colored_level" title="">
+                    <h4 class="o_default_snippet_text text-uppercase h5 font-weight-bold mt-0">Monitors</h4>
+                    <div class="s_hr text-left pt4 pb16 text-o-color-1">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-style: solid;">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Televisions</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Office screens</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Projectors</a>
+                    </nav>
+                </div>
+                <div class="col-md-6 col-lg pt16 pb24 o_colored_level" title="">
+                    <h4 class="o_default_snippet_text text-uppercase h5 font-weight-bold mt-0">Electronics</h4>
+                    <div class="s_hr text-left pt4 pb16 text-o-color-2">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-style: solid;">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Camera</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">GPS &amp; navigation</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Accessories</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Home audio</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Office audio</a>
+                    </nav>
+                </div>
+                <div class="col-md-6 col-lg pt16 pb24 o_colored_level" title="">
+                    <h4 class="o_default_snippet_text text-uppercase h5 font-weight-bold mt-0">Promotions</h4>
+                    <div class="s_hr text-left pt4 pb16 text-o-color-5">
+                        <hr class="w-100 mx-auto" style="border-top-width: 2px; border-top-style: solid;">
+                    </div>
+                    <nav class="nav flex-column">
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Computers</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Electronics</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Monitors</a>
+                        <a href="#" class="nav-link o_default_snippet_text px-0 oe_unremovable">Networks</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid border-top s_mega_menu_odoo_menu_footer">
+            <div class="row">
+                <div class="col-12 pt8 pb8">
+                    <nav class="nav justify-content-center">
+                        <a href="#" class="mx-3 my-2 text-o-color-5 oe_unremovable" style="font-size: 14px;"><i class="fa fa-fw fa-2x fa-github"></i></a>
+                        <a href="#" class="mx-3 my-2 text-o-color-5 oe_unremovable" style="font-size: 12px;"><i class="fa fa-fw fa-2x fa-youtube-play"></i></a>
+                        <a href="#" class="mx-3 my-2 text-o-color-5 oe_unremovable" style="font-size: 12px;"><i class="fa fa-fw fa-2x fa-twitter"></i></a>
+                        <a href="#" class="mx-3 my-2 text-o-color-5 oe_unremovable" style="font-size: 12px;"><i class="fa fa-fw fa-2x fa-linkedin"></i></a>
+                        <a href="#" class="mx-3 my-2 text-o-color-5 oe_unremovable" style="font-size: 12px;"><i class="fa fa-fw fa-2x fa-instagram"></i></a>
+                        <a href="#" class="mx-3 my-2 text-o-color-5 oe_unremovable" style="font-size: 12px;"><i class="fa fa-fw fa-2x fa-facebook"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+        ]]>
+    </field>
+</record>
+</odoo>

@@ -83,9 +83,9 @@
                             </div>
 
                             <!-- Call To Action -->
-                            <t t-call="website.placeholder_header_call_to_action">
+                            <!-- <t t-call="website.placeholder_header_call_to_action">
                                 <t t-set="_div_classes" t-valuef="ml-1 d-block d-lg-none ml-auto mr-4"/>
-                            </t>
+                            </t> -->
                             
                             <!-- Navbar Toggler -->
                             <t t-call="website.navbar_toggler">
@@ -124,9 +124,9 @@
                                     
                                 </t>
                                 <!-- Call To Action -->
-                                <t t-call="website.placeholder_header_call_to_action">
+                                <!-- <t t-call="website.placeholder_header_call_to_action">
                                     <t t-set="_div_classes" t-valuef="d-none d-lg-block order-lg-last"/>
-                                </t>
+                                </t> -->
                             </div>
                         </div>
                         <!-- Lower header flex container CLOSE -->
