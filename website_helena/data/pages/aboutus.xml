@@ -14,7 +14,10 @@
         <t name="Homepage" t-name="website_helena.page_about_us">
         <t t-call="website.layout">
             <t t-set="pageName" t-value="'About us'"/>
+
             <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Cover-->
             <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 o_colored_level" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Cover" style="background-image: none;">
                 <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;"/>
                 <div class="o_we_bg_filter bg-black-50"/>
@@ -29,6 +32,8 @@
                 </p>
                 </div>
             </section>
+
+            <!--Text title-->
             <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
                 <div class="s_allow_columns container">
                 <h1>
@@ -36,6 +41,8 @@
                 </h1>
                 </div>
             </section>
+
+            <!--Feature box-->
             <section class="s_features pt32 pb32 o_colored_level o_half_screen_height" data-snippet="s_features" data-name="Features" style="background-image: none;">
                 <div class="container">
                 <div class="row">
@@ -57,6 +64,8 @@
                 </div>
                 </div>
             </section>
+
+            <!--Quote carousel-->
             <section class="s_quotes_carousel_wrapper o_colored_level" data-vxml="001" data-vcss="001" data-snippet="s_quotes_carousel" data-name="Quotes" style="background-image: none;">
                 <div class="s_quotes_carousel s_carousel_default carousel slide o_cc o_cc2" data-interval="10000" id="myCarousel1663643511869" style="background-image: none;">
                 <ol class="carousel-indicators o_we_no_overlay">
@@ -118,6 +127,8 @@
                 </div>
                 </div>
             </section>
+
+            <!--Text title-->
             <section class="s_text_block pt40 o_colored_level pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
                 <div class="s_allow_columns container">
                 <h1>
@@ -192,6 +203,8 @@
                 </h1>
                 </div>
             </section>
+
+            <!--Team-->
             <section class="s_company_team pt48 pb48 o_colored_level" data-snippet="s_company_team" data-name="Team" style="background-image: none;">
                 <div class="container">
                 <div class="row s_nb_column_fixed">
@@ -246,6 +259,8 @@
                 </div>
                 </div>
             </section>
+
+            <!--Masorny Block-->
             <section class="s_masonry_block" data-vcss="001" data-snippet="s_masonry_block" data-name="Masonry" data-masonry-template="default" style="">
                 <div class="container-fluid">
                 <div class="row">
