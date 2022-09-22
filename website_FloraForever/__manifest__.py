@@ -8,7 +8,7 @@
     'license': 'OEEL-1',
     'data': [
         # Options
-        'data/presets.xml',
+        #'data/presets.xml',
         # Menu
         # 'data/menu.xml',
         # Images
