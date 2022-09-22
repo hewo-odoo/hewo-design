@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="image_shapes_options" inherit_id="web_editor.snippet_options" name="Helena - Image Shapes">
+        <xpath expr="//*[@data-name='shape_img_opt']/*[last()]" position="after">
+            <we-select-page string="Theme">
+                <we-button data-set-img-shape="website_helena/float_square/float_square_1" data-select-label="Flt Square 1" data-animated="false"/>
+            </we-select-page>
+        </xpath>
+    </template>
+</odoo>

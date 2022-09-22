@@ -10,15 +10,16 @@
         # Options
         'data/presets.xml',
         # Menu
-        # 'data/menu.xml',
+         'data/menu.xml',
         # Images
-        #'data/images.xml',
+        'data/images.xml',
+        'data/shapes.xml',
         # Pages
-        # 'data/pages/about_us.xml',
-        # 'data/pages/contact.xml',
-        # 'data/pages/home.xml',
+        'data/pages/aboutus.xml',
+        'data/pages/contactus.xml',
+        'data/pages/home.xml',
         # Snippets
-        
+        'views/snippets/options.xml',
         # Frontend
         #'views/website_templates.xml',
         # Backend
@@ -27,7 +28,7 @@
         'views/header.xml',
 
         # Footer
-        #'views/footer.xml',
+        'views/footer.xml',
     ],
     'assets': {
         'web._assets_primary_variables': [
@@ -36,10 +37,10 @@
         # 'web._assets_frontend_helpers': [
         #     ('prepend', 'website_helena/static/src/scss/bootstrap_overridden.scss'),
         # ],
-        #'web.assets_frontend': [
+        'web.assets_frontend': [
             # SCSS
             #'website_helena/static/src/scss/helpers.scss',
-            #'website_helena/static/src/scss/theme.scss',
-        #],
+            'website_helena/static/src/scss/theme.scss',
+        ],
     },
 }

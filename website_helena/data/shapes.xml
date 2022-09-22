@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="img_shape_flaot_square_1" model="ir.attachment">
+    <field name="name">float_square_1.svg</field>
+    <field name="datas" type="base64" file="website_helena/static/image_shapes/float_square/float_square_1.svg"/>
+    <field name="url">/web_editor/shape/illustration/float_square/float_square_1.svg</field>
+    <field name="public" eval="False"/>
+</record>
+
+</odoo>

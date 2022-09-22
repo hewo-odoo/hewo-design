@@ -24,42 +24,115 @@
     <field name="arch" type="xml">
         <xpath expr="//header//nav" position="replace">
             <t t-call="website.navbar">
-                <t t-set="_navbar_classes" t-value="'py-4'"/>
-                <div id="top_menu_container" class="container justify-content-end">
-                    <!-- Brand -->
-                    <t t-call="website.placeholder_header_brand">
-                        <t t-set="_link_class" t-value="'mt-n1 mr-4'"/>
-                    </t>
-                    <t>Success!</t>
-                    <!-- Navbar Toggler -->
-                    <t t-call="website.navbar_toggler">
-                        <t t-set="_toggler_class" t-value="'ml-auto'"/>
-                    </t>
-                    <!-- Navbar Collapse -->
-                    <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
-                        <t t-call="website.navbar_nav">
-                            <t t-set="_nav_class" t-value="'flex-grow-1'"/>
-                            <!-- Menu -->
-                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                <t t-call="website.submenu">
-                                    <t t-set="item_class" t-value="'nav-item'"/>
-                                    <t t-set="link_class" t-value="'nav-link'"/>
+                <t t-set="_navbar_classes" t-value="'flex-lg-column shadow-sm py-0'"/>
+                    <!-- Top Menu Container -->
+                    <div id="top_menu_container" class="container align-items-center flex-lg-column flex-wrap">
+                        
+                        <!-- Upper header flex container -->
+                        <div class="d-flex flex-lg-row justify-content-between w-100 align-items-center flex-wrap flex-lg-nowrap">
+
+                            <!-- Social Media Block -->
+                            <div class="o_header_centered_logo">
+                                <div class="oe_structure oe_structure_solo" id="oe_structure_header_vertical_1" data-oe-id="5950" data-oe-xpath="/data/xpath/div" data-oe-model="ir.ui.view" data-oe-field="arch">
+                                    <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
+                                        <div class="container">
+                                            <div class="s_share no_icon_color" data-snippet="s_share" data-name="Social Media">
+                                                <h6 class="s_share_title d-none">Follow us</h6>
+                                                <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                                    <i class="fa fa-facebook m-1">​</i>
+                                                </a>
+                                                <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                                    <i class="fa fa-twitter m-1">​</i>
+                                                </a>
+                                                <a href="/website/social/linkedin" class="s_share_linkedin" target="_blank">
+                                                    <i class="fa fa-linkedin m-1">​</i>
+                                                </a>
+                                                <a href="/website/social/instagram" class="s_share_instagram" target="_blank">
+                                                    <i class="fa fa-instagram m-1">​</i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                            <!--Logo-->
+                            <t t-call="website.placeholder_header_brand">
+                                <t t-set="_link_class" t-value="'m-0'"/>
+                            </t>
+
+                            <!--Dropdown & Contact us-->
+                            <div class="o_header_centered_logo text-right">
+                                <div class="oe_structure oe_structure_solo list-unstyled" id="oe_structure_header_vertical_2">
+
+                                <!-- User Dropdown -->
+                                <t t-call="portal.user_dropdown">
+                                    <t t-set="_icon" t-value="true"/>
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="_item_class" t-value="'nav-item dropdown'"/>
+                                    <t t-set="_link_class" t-value="'nav-link font-weight-bold'"/>
                                 </t>
+
+                                <!--Sign in-->
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-value="'nav-item ml-lg-3'"/>
+                                    <t t-set="_link_class" t-value="'nav-link font-weight-bold'"/>
+                                </t>
+
+                                </div>
+                            </div>
+
+                            <!-- Call To Action -->
+                            <!-- <t t-call="website.placeholder_header_call_to_action">
+                                <t t-set="_div_classes" t-valuef="ml-1 d-block d-lg-none ml-auto mr-4"/>
+                            </t> -->
+                            
+                            <!-- Navbar Toggler -->
+                            <t t-call="website.navbar_toggler">
+                                <t t-set="_toggler_class" t-valuef="my-3"/>
                             </t>
-                            <!-- Sign In -->
-                            <t t-call="portal.placeholder_user_sign_in">
-                                <t t-set="_item_class" t-value="'nav-item'"/>
-                                <t t-set="_link_class" t-value="'nav-link font-weight-bold'"/>
-                            </t>
-                            <!-- User Dropdown -->
-                            <t t-call="portal.user_dropdown">
-                                <t t-set="_user_name" t-value="true"/>
-                                <t t-set="_item_class" t-value="'nav-item dropdown'"/>
-                                <t t-set="_link_class" t-value="'nav-link font-weight-bold'"/>
-                            </t>
-                        </t>
+
+                        </div>
+                        <!-- Upper header flex container Close -->
+                        
+                        <!-- Lower header flex container -->
+                        <div class="d-lg-flex flex-lg-row align-items-center w-100">
+
+                            <!-- Navbar Collapse -->
+                            <div id="top_menu_collapse" class="collapse navbar-collapse flex-wrap">
+                                <div class="oe_structure oe_structure_solo w-100" id="oe_structure_header_vertical_3">
+                                    <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
+                                        <div class="container">
+                                            <div class="s_hr w-100 text-left pt0 pb0" data-name="Separator">
+                                                <hr class="w-100 mx-auto my-2" style="border-top-width: 1px; border-top-style: solid; border-color: var(--300);"/>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                
+                                <!-- Nav -->
+                                <t t-call="website.navbar_nav">
+                                    <t t-set="_nav_class" t-valuef="mx-auto order-first order-lg-12"/>
+                                    <!-- Menu -->
+                                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                        <t t-call="website.submenu">
+                                            <t t-set="item_class" t-valuef="nav-item"/>
+                                            <t t-set="link_class" t-valuef="nav-link"/>
+                                        </t>
+                                    </t>
+
+                                    
+                                </t>
+                                <!-- Call To Action -->
+                                <!-- <t t-call="website.placeholder_header_call_to_action">
+                                    <t t-set="_div_classes" t-valuef="d-none d-lg-block order-lg-last"/>
+                                </t> -->
+                            </div>
+                        </div>
+                        <!-- Lower header flex container CLOSE -->
+
                     </div>
-                </div>
+                    <!-- Top Menu Container Close -->
             </t>
         </xpath>
     </field>

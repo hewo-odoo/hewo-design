@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="img_s_helena_parallax" model="ir.attachment">
+    <field name="name">Contact us - Parallax image</field>
+    <field name="datas" type="base64" file="website_helena/static/src/img/content/s_helena_parallax.jpeg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_s_helena_cover" model="ir.attachment">
+    <field name="name">Home - Cover image</field>
+    <field name="datas" type="base64" file="website_helena/static/src/img/content/s_helena_cover.jpeg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_s_helena_mega_menu" model="ir.attachment">
+    <field name="name">Menu - Mega menu image</field>
+    <field name="datas" type="base64" file="website_helena/static/src/img/content/s_helena_undraw_online_shopping.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+</odoo>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Theme Footer - Option -->
+<template id="template_footer_opt" inherit_id="website.snippet_options" name="Helena Footer Template - Option">
+    <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+        <we-button title="helena"
+            data-customize-website-views="website_helena.template_footer_layout"
+            data-customize-website-variable="'helena'"
+            data-img="/website_helena/static/src/img/wbuilder/template_footer_opt.svg"/>
+    </xpath>
+</template>
+
+<!-- Theme Footer - Layout -->
+<record id="template_footer_layout" model="ir.ui.view">
+    <field name="name">Helena Footer</field>
+    <field name="type">qweb</field>
+    <field name="key">website_helena.template_footer_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                    <section class="s_text_block pt32" data-snippet="s_text_block" data-name="Text">
+                        <div class="container s_allow_columns">
+                            <div class="s_share text-center mb-4" data-snippet="s_share" data-name="Social Media">
+                                <h5 class="s_share_title d-none">Follow us</h5>
+                                <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                    <i class="fa fa-facebook rounded-circle rounded shadow-sm"/>
+                                </a>
+                                <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                    <i class="fa fa-twitter rounded-circle rounded shadow-sm"/>
+                                </a>
+                                <a href="/website/social/linkedin" class="s_share_linkedin" target="_blank">
+                                    <i class="fa fa-linkedin rounded-circle rounded shadow-sm"/>
+                                </a>
+                            </div>
+                            <p class="text-center mb-1">250 Executive Park Blvd, Suite 3400 • San Francisco CA 94134 • United States</p>
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-phone mr-2"/><span class="o_force_ltr"><a href="tel:1 (650) 555-0111">+1 (650) 555-0111</a></span></li>
+                                <li class="list-inline-item mx-3"><i class="fa fa-1x fa-fw fa-envelope mr-2"/><span><a href="mailto:info@yourcompany.example.com">info@yourcompany.example.com</a></span></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="s_text_block pt16 pb16" data-snippet="s_text_block" data-name="Logo">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-2 offset-lg-5">
+                                    <a href="/" class="o_footer_logo logo">
+                                        <img src="/website/static/src/img/website_logo.svg" class="img-fluid mx-auto" aria-label="Logo of MyCompany" title="MyCompany" role="img"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+    </field>
+</record>
+</odoo>
