@@ -8,15 +8,15 @@
     'license': 'OEEL-1',
     'data': [
         # Options
-        #'data/presets.xml',
+        'data/presets.xml',
         # Menu
         # 'data/menu.xml',
         # Images
-        #'data/images.xml',
+        'data/images.xml',
         # Pages
         # 'data/pages/about_us.xml',
         # 'data/pages/contact.xml',
-        # 'data/pages/home.xml',
+         'data/pages/home.xml',
         # Snippets
         
         # Frontend
@@ -24,10 +24,10 @@
         # Backend
 
         # Header
-        #'views/header.xml',
+        'views/header.xml',
 
         # Footer
-        #'views/footer.xml',
+        'views/footer.xml',
     ],
     'assets': {
         'web._assets_primary_variables': [
@@ -36,10 +36,10 @@
         # 'web._assets_frontend_helpers': [
         #     ('prepend', 'website_FloraForever/static/src/scss/bootstrap_overridden.scss'),
         # ],
-        #'web.assets_frontend': [
+        'web.assets_frontend': [
             # SCSS
             #'website_FloraForever/static/src/scss/helpers.scss',
-            #'website_FloraForever/static/src/scss/theme.scss',
-        #],
+            'website_FloraForever/static/src/scss/theme.scss',
+        ],
     },
 }

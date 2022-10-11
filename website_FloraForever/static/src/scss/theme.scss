@@ -1,0 +1,32 @@
+
+header #top_menu{
+    li{
+        margin-top: 1rem;
+    }
+    
+    a>span::before{
+    font-family: "FontAwesome" !important;
+    position:relative;
+    left: 50%;
+    top: -1.25rem;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    @include media-breakpoint-down(md){
+        content:"" !important;
+        }
+    }
+
+    
+    a[href="/contactus"]>span::before{
+        content:"\f007";
+    } 
+
+    a[href="/"]>span::before{
+        content:"\f015";
+    }    
+
+    
+
+
+}

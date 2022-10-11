@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Disable Default Header -->
+<record id="website.template_header_default" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Disable Default Footer -->
+<record id="website.footer_custom" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+</odoo>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- FOOTER - Add Custom Footer -->
+<!-- ========================== -->
+
+<!-- Theme Footer - Option -->
+<template id="template_footer_opt" inherit_id="website.snippet_options" name="FloraForever Footer Template - Option">
+    <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+        <we-button title="FloraForever"
+            data-customize-website-views="website_FloraForever.template_footer_layout"
+            data-customize-website-variable="'FloraForever'"
+            data-img="/website_FloraForever/static/src/img/wbuilder/template_footer_opt.svg"/>
+    </xpath>
+</template>
+
+<record id="template_footer_layout" model="ir.ui.view">
+    <field name="name">FloraForever Footer</field>
+    <field name="type">qweb</field>
+    <field name="key">website_FloraForever.template_footer_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+
+
+                <section class="s_text_block pt32 pb0" data-snippet="s_text_block" data-name="Logo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2 offset-lg-5">
+                                <a href="/" class="o_footer_logo logo">
+                                    <img src="/website_FloraForever/static/src/img/content/logo.svg" class="img-fluid mx-auto" aria-label="Logo of MyCompany" title="MyCompany" role="img"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="s_text_block pt16" data-snippet="s_text_block" data-name="Text">
+                    <p class="text-center mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci sit ultrices dui a purus. <br/>Quam adipiscing </p>
+                    
+                    <div class="s_hr text-center pt32 pb32" data-snippet="s_hr" data-name="Separator">
+                        <hr class="w-75 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>                      
+                    
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item mx-3"><a href="/">Overview</a></li>
+                        <li class="list-inline-item mx-3"><a href="/">Teams</a></li>
+                        <li class="list-inline-item mx-3"><a href="/">Jobs</a></li>
+                        <li class="list-inline-item mx-3"><a href="/">Help</a></li>
+                        <li class="list-inline-item mx-3"><a href="/">Privacy</a></li>
+                    </ul>
+
+             
+                    
+                    <div class="container s_allow_columns">
+                        <div class="s_share text-center mb-4" data-snippet="s_share" data-name="Social Media">
+                            <h5 class="s_share_title d-none">Follow us</h5>
+                            <a href="/website/social/facebook" class="s_share_facebook" target="_blank">
+                                <i class="fa fa-facebook fa-2x shadow-sm text-o-color-4 mx-2"/>
+                            </a>
+                            <a href="/website/social/twitter" class="s_share_twitter" target="_blank">
+                                <i class="fa fa-twitter fa-2x  shadow-sm text-o-color-4 mx-2"/>
+                            </a>
+                            <a href="/website/social/linkedin" class="s_share_linkedin" target="_blank">
+                                <i class="fa fa-linkedin fa-2x  shadow-sm text-o-color-4 mx-2"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </xpath>
+    </field>
+</record>
+
+</odoo>
