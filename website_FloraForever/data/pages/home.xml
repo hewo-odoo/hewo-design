@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Disable Default Home -->
+<record id="website.homepage" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Home -->
+<record id="page_home" model="website.page">
+    <field name="name">Home</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_FloraForever.page_home</field>
+    <field name="url">/</field>
+    <field name="type">qweb</field>
+    <field name="website_id" eval="1"/>
+    <field name="arch" type="xml">
+        <t name="Home" t-name="website_FloraForever.page_home">
+            <!-- Title -->
+            <t t-set="additional_title" t-value="'Home'"/>
+            <!-- Content -->
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure">
+
+                <!--Banner-->
+                    <section class="s_parallax parallax s_parallax_is_fixed bg-black-50 o_half_screen_height o_colored_level" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip396750">
+                        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_parallax_default_image'); background-position: 50% 75%;"/>
+                        <div class="o_we_bg_filter bg-black-50"/>
+                        <div class="oe_structure oe_empty">
+                        <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
+                            <div class="container">
+                            <div class="row align-items-center" data-original-title="" title="" aria-describedby="tooltip965542">
+                                <div class="col-lg-6 pt16 pb16 o_colored_level">
+                                <h1 class="o_default_snippet_text font-weight-bold">
+                                    <span style="font-size: 62px;">Flower for Forever</span>
+                                </h1>
+                                <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                                <p>
+                                    <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Learn more</a>
+                                    <a href="#" class="btn btn-secondary mb-2">More</a>
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </section>
+                        </div>
+                    </section>
+
+                    <!--Dynamic snippets-->
+                        <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet_products s_dynamic pt32 pb32 o_colored_level s_product_product_borderless_1 d-none" data-name="Products" style="background-image: none;" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="6" data-carousel-interval="5000" data-original-title="" title="" aria-describedby="tooltip9488">
+                            <div class="container o_not_editable">
+                            <div class="css_non_editable_mode_hidden">
+                                <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                            Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                                        </div>
+                            </div>
+                            <div class="dynamic_snippet_template"/>
+                            </div>
+                        </section>
+                        
+                        <!--Reason section-->
+                        <section>
+
+                            <!--Title-->
+                            <section class="s_text_block pt40 o_colored_level o_cc o_cc2 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                                <div class="container s_allow_columns">
+                                <h3 style="text-align: center;">
+                                    <strong>Why FloraForever?</strong>
+                                </h3>
+                                <p style="text-align: center;">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+                                </div>
+                            </section>
+
+                            <!--Features-->
+                            <section class="s_features pt16 pb32 o_colored_level o_cc o_cc2" data-snippet="s_features" data-name="Features" style="background-image: none;">
+                                <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                                    <i class="fa fa-3x fa-gear rounded bg-primary m-3"/>
+                                    <h3 class="o_default_snippet_text">First Feature</h3>
+                                    <p class="o_default_snippet_text">Tell what's the value for the <br/>customer for this feature.</p>
+                                    </div>
+                                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                                    <i class="fa fa-3x fa-photo rounded bg-o-color-5 m-3"/>
+                                    <h3 class="o_default_snippet_text">Second Feature</h3>
+                                    <p class="o_default_snippet_text">Write what the customer would like to know, <br/>not what you want to show.</p>
+                                    </div>
+                                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                                    <i class="fa fa-3x fa-leaf rounded bg-secondary m-3"/>
+                                    <h3 class="o_default_snippet_text">Third Feature</h3>
+                                    <p class="o_default_snippet_text">A small explanation of this great <br/>feature, in clear words.</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </section>
+
+                        </section>
+
+                        <!--Carousal section-->
+                        <section>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
+                                        <div class="container">
+                                        <div class="row align-items-center" data-original-title="" title="" aria-describedby="tooltip965542">
+                                            <div class="col-lg-10 pt16 pb16 o_colored_level">
+                                            <h1 class="o_default_snippet_text font-weight-bold">
+                                                <span style="font-size: 62px;">Explore<br/>Flora life hacks</span>
+                                            </h1>
+                                            <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                                            <p>
+                                                <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Learn more</a>
+                                                <a href="#" class="btn btn-secondary mb-2">More</a>
+                                            </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div class="col-lg-6 col-12">
+                                    <!--Slideshow-->
+                                          <section class="s_image_gallery o_slideshow s_image_gallery_show_indicators s_image_gallery_indicators_rounded pt24 o_colored_level" data-vcss="001" data-columns="3" style="height: 500px; overflow: hidden; background-image: none;" data-snippet="s_image_gallery" data-name="Image Gallery">
+                                                <div class="container">
+                                                <div id="slideshow_1664356816817" class="carousel slide" data-ride="carousel" data-interval="0" style="margin: 0 12px;">
+                                                    <div class="carousel-inner" style="padding: 0;">
+                                                    <div class="carousel-item active" style="">
+                                                        <img class="img img-fluid d-block" src="/web/image/website.library_image_08" data-name="Image" data-index="0" loading="lazy" data-original-id="921" data-original-src="/website/static/src/img/library/mobile.jpg" data-mimetype="image/jpeg"/>
+                                                    </div>
+                                                    <div class="carousel-item" style="">
+                                                        <img class="img img-fluid d-block" src="/web/image/website.library_image_03" data-name="Image" data-index="1" loading="lazy" data-original-id="916" data-original-src="/website/static/src/img/library/clock.jpg" data-mimetype="image/jpeg"/>
+                                                    </div>
+                                                    <div class="carousel-item" style="">
+                                                        <img class="img img-fluid d-block" src="/web/image/website.library_image_02" data-name="Image" data-index="2" loading="lazy" data-original-id="915" data-original-src="/website/static/src/img/library/deliver.jpg" data-mimetype="image/jpeg"/>
+                                                    </div>
+                                                    </div>
+                                                    <ul class="carousel-indicators">
+                                                    <li class="o_indicators_left text-center d-none" aria-label="Previous" title="Previous">
+                                                        <i class="fa fa-chevron-left"/>
+                                                    </li>
+                                                    <li data-target="#slideshow_1664356816817" data-slide-to="0" style="background-image: url(/web/image/website.library_image_08)" class="active"/>
+                                                    <li data-target="#slideshow_1664356816817" data-slide-to="1" style="background-image: url(/web/image/website.library_image_03)"/>
+                                                    <li data-target="#slideshow_1664356816817" data-slide-to="2" style="background-image: url(/web/image/website.library_image_02)"/>
+                                                    <li class="o_indicators_right text-center d-none" aria-label="Next" title="Next">
+                                                        <i class="fa fa-chevron-right"/>
+                                                    </li>
+                                                    </ul>
+                                                    <a class="carousel-control-prev o_we_no_overlay" href="#slideshow_1664356816817" data-slide="prev" aria-label="Previous" title="Previous">
+                                                    <span class="fa fa-chevron-left fa-2x text-white"/>
+                                                    <span class="sr-only o_default_snippet_text">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next o_we_no_overlay" href="#slideshow_1664356816817" data-slide="next" aria-label="Next" title="Next">
+                                                    <span class="fa fa-chevron-right fa-2x text-white"/>
+                                                    <span class="sr-only o_default_snippet_text">Next</span>
+                                                    </a>
+                                                </div>
+                                                </div>
+                                            </section>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+
+
+                    <!--Mansory image display section-->
+                    <section class="o_colored_level o_cc o_cc4">
+
+                        <!--Title-->
+                        <section class="s_text_block pt40 o_colored_level o_cc o_cc4 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                            <div class="container s_allow_columns">
+                            <h3 style="text-align: left;">
+                                Great stories have a personality.&amp;nbsp;
+                            </h3>
+                            <p style="text-align: left;">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>.&amp;nbsp;</p>
+                            </div>
+                        </section>
+
+                        <!--Mansory display-->
+                        <section class="s_image_gallery o_spc-small pt24 pb24 o_colored_level o_grid  o_cc o_cc4" data-vcss="001" data-columns="3" style="overflow: hidden; background-image: none;" data-snippet="s_images_wall" data-name="Images Wall">
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col col-lg-6 col-12">
+                                        <figure class="figure">
+                                            <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_03" data-index="0" data-name="Image" loading="lazy" data-original-id="916" data-original-src="/website/static/src/img/library/clock.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip869759" style="min-height:360px; height:100%; object-fit:cover;"/>
+                                            <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                        </figure>
+                                    </div>
+
+                                    <div class="col col-lg-6 col-12">
+                                        <div class="row">
+                                            <div class="col">
+                                                <figure class="figure">
+                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_13" data-index="1" data-name="Image" loading="lazy" data-original-id="926" data-original-src="/website/static/src/img/library/shop.jpg" data-mimetype="image/jpeg"/>
+                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col">
+                                                <figure class="figure">
+                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_14" data-index="2" data-name="Image" loading="lazy" data-original-id="927" data-original-src="/website/static/src/img/library/sign.jpg" data-mimetype="image/jpeg"/>
+                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <figure class="figure">
+                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_05" data-index="4" data-name="Image" loading="lazy" data-original-id="918" data-original-src="/website/static/src/img/library/compass.jpg" data-mimetype="image/jpeg"/>
+                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="col">
+                                                <figure class="figure">
+                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_16" data-index="5" data-name="Image" loading="lazy" data-original-id="929" data-original-src="/website/static/src/img/library/wine.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip86627"/>
+                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="row justify-content-center"><a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Learn more</a></div>
+                    </section>
+
+                    <!--Text Image section-->
+                    <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_text_image" data-name="Text - Image" style="background-image: none;">
+                        <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <h2 class="o_default_snippet_text">A Section Subtitle</h2>
+                            <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                            <p class="o_default_snippet_text">Start with the customer – find out what they want and give it to them.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Learn more</a>
+                            </p>
+                            </div>
+                            <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="961" data-original-src="/website/static/src/img/snippets_demo/s_text_image.jpg" data-mimetype="image/jpeg"/>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Accordion Display Section-->
+                    <section class="o_colored_level o_cc o_cc1">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-4 pt16 pb16 o_colored_level">
+                                        <h3>
+                                            <span>A Section Subtitle</span>
+                                        </h3>
+                                        <p>Write one or two paragraphs describing your product or services.</p>
+                                </div>
+                                
+                                <div class="col-lg-8">
+                                    <section class="s_faq_collapse pt32 pb32 o_colored_level" data-snippet="s_faq_collapse" data-name="Accordion" style="background-image: none;">
+                                        <div class="container">
+                                        <div id="myCollapse1664430374548" class="accordion" role="tablist">
+                                            <div class="card bg-white mb-2 border-0" data-name="Item">
+                                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header o_default_snippet_text" data-target="#myCollapseTab1664430374549">Terms of service</a>
+                                            <div class="collapse show" data-parent="#myCollapse1664430374548" role="tabpanel" id="myCollapseTab1664430374549">
+                                                <div class="card-body">
+                                                <p class="card-text o_default_snippet_text">These terms of service ("Terms", "Agreement") are an agreement between the website ("Website operator", "us", "we" or "our") and you ("User", "you" or "your"). This Agreement sets forth the general terms and conditions of your use of this website and any of its products or services (collectively, "Website" or "Services").</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="card bg-white mb-2 border-0" data-name="Item">
+                                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text" data-target="#myCollapseTab1664430374550">Links to other Websites</a>
+                                            <div class="collapse" data-parent="#myCollapse1664430374548" role="tabpanel" id="myCollapseTab1664430374550">
+                                                <div class="card-body">
+                                                <p class="card-text o_default_snippet_text">Although this Website may be linked to other websites, we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked website, unless specifically stated herein.</p>
+                                                <p class="card-text o_default_snippet_text">You should carefully review the legal statements and other conditions of use of any website which you access through a link from this Website. Your linking to any other off-site pages or other websites is at your own risk.</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="card bg-white mb-2 border-0" data-name="Item">
+                                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header o_default_snippet_text" data-target="#myCollapseTab1664430374551">Use of Cookies</a>
+                                            <div class="collapse" data-parent="#myCollapse1664430374548" role="tabpanel" id="myCollapseTab1664430374551">
+                                                <div class="card-body">
+                                                <p class="card-text o_default_snippet_text">Website may use cookies to personalize and facilitate maximum navigation of the User by this site. The User may configure his / her browser to notify and reject the installation of the cookies sent by us.</p>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

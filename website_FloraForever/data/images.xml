@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+<!-- Branding -->
+<record id="logo" model="ir.attachment">
+    <field name="name">Company Logo</field>
+    <field name="datas" type="base64" file="website_FloraForever/static/src/img/content/logo.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="website.default_website" model="website">
+    <field name="logo" type="base64" file="website_FloraForever/static/src/img/content/logo.png"/>
+</record>
+
+</odoo>
