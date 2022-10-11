@@ -164,7 +164,7 @@
 
 
                     <!--Mansory image display section-->
-                    <section class="o_colored_level o_cc o_cc4">
+                    <section class="o_colored_level o_cc o_cc4 pb40">
 
                         <!--Title-->
                         <section class="s_text_block pt40 o_colored_level o_cc o_cc4 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
@@ -177,14 +177,14 @@
                         </section>
 
                         <!--Mansory display-->
-                        <section class="s_image_gallery o_spc-small pt24 pb24 o_colored_level o_grid  o_cc o_cc4" data-vcss="001" data-columns="3" style="overflow: hidden; background-image: none;" data-snippet="s_images_wall" data-name="Images Wall">
+                        <section class="s_image_gallery o_spc-small pt24 pb0 o_colored_level o_grid  o_cc o_cc4" data-vcss="001" data-columns="3" style="overflow: hidden; background-image: none;" data-snippet="s_images_wall" data-name="Images Wall">
                             <div class="container">
 
                                 <div class="row">
                                     <div class="col col-lg-6 col-12">
                                         <figure class="figure">
-                                            <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_03" data-index="0" data-name="Image" loading="lazy" data-original-id="916" data-original-src="/website/static/src/img/library/clock.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip869759" style="min-height:360px; height:100%; object-fit:cover;"/>
-                                            <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                            <img class="img figure-img img-fluid d-block rounded border border-white" src="/web/image/website.library_image_03" data-index="0" data-name="Image" loading="lazy" data-original-id="916" data-original-src="/website/static/src/img/library/clock.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip869759" style="min-height:425px; height:100%; object-fit:cover;"/>
+                                            <figcaption class="figure-caption text-white">White Mist<br/><span class="font-weight-light">$120</span></figcaption>
                                         </figure>
                                     </div>
 
@@ -192,14 +192,14 @@
                                         <div class="row">
                                             <div class="col">
                                                 <figure class="figure">
-                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_13" data-index="1" data-name="Image" loading="lazy" data-original-id="926" data-original-src="/website/static/src/img/library/shop.jpg" data-mimetype="image/jpeg"/>
-                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                    <img class="img figure-img img-fluid d-block rounded border border-white" src="/web/image/website.library_image_13" data-index="1" data-name="Image" loading="lazy" data-original-id="926" data-original-src="/website/static/src/img/library/shop.jpg" data-mimetype="image/jpeg"/>
+                                                    <figcaption class="figure-caption text-white">White Mist<br/><span class="font-weight-light">$120</span></figcaption>
                                                 </figure>
                                             </div>
                                             <div class="col">
                                                 <figure class="figure">
-                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_14" data-index="2" data-name="Image" loading="lazy" data-original-id="927" data-original-src="/website/static/src/img/library/sign.jpg" data-mimetype="image/jpeg"/>
-                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                    <img class="img figure-img img-fluid d-block rounded border border-white" src="/web/image/website.library_image_14" data-index="2" data-name="Image" loading="lazy" data-original-id="927" data-original-src="/website/static/src/img/library/sign.jpg" data-mimetype="image/jpeg"/>
+                                                    <figcaption class="figure-caption text-white">White Mist<br/><span class="font-weight-light">$120</span></figcaption>
                                                 </figure>
                                             </div>
                                         </div>
@@ -207,14 +207,14 @@
                                         <div class="row">
                                             <div class="col">
                                                 <figure class="figure">
-                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_05" data-index="4" data-name="Image" loading="lazy" data-original-id="918" data-original-src="/website/static/src/img/library/compass.jpg" data-mimetype="image/jpeg"/>
-                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                    <img class="img figure-img img-fluid d-block rounded border border-white" src="/web/image/website.library_image_05" data-index="4" data-name="Image" loading="lazy" data-original-id="918" data-original-src="/website/static/src/img/library/compass.jpg" data-mimetype="image/jpeg"/>
+                                                    <figcaption class="figure-caption text-white">White Mist<br/><span class="font-weight-light">$120</span></figcaption>
                                                 </figure>
                                             </div>
                                             <div class="col">
                                                 <figure class="figure">
-                                                    <img class="img figure-img img-fluid d-block rounded" src="/web/image/website.library_image_16" data-index="5" data-name="Image" loading="lazy" data-original-id="929" data-original-src="/website/static/src/img/library/wine.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip86627"/>
-                                                    <figcaption class="figure-caption">White Mist<br/>$120</figcaption>
+                                                    <img class="img figure-img img-fluid d-block rounded border border-white" src="/web/image/website.library_image_16" data-index="5" data-name="Image" loading="lazy" data-original-id="929" data-original-src="/website/static/src/img/library/wine.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip86627"/>
+                                                    <figcaption class="figure-caption text-white">White Mist<br/><span class="font-weight-light">$120</span></figcaption>
                                                 </figure>
                                             </div>
                                         </div>
@@ -223,7 +223,7 @@
                             </div>
                         </section>
 
-                        <div class="row justify-content-center"><a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Learn more</a></div>
+                        <div class="row justify-content-center"><a href="#" class="btn btn-primary btn-lg mb-2 text-white">Learn more</a></div>
                     </section>
 
                     <!--Text Image section-->
