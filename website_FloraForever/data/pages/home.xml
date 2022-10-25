@@ -164,7 +164,7 @@
 
 
                     <!--Mansory image display section-->
-                    <section class="o_colored_level o_cc o_cc4 pb40">
+                    <section class="o_colored_level o_cc o_cc4 pb40" id="home_mansory">
 
                         <!--Title-->
                         <section class="s_text_block pt40 o_colored_level o_cc o_cc4 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
@@ -183,7 +183,7 @@
                                 <div class="row">
                                     <div class="col col-lg-6 col-12">
                                         <figure class="figure">
-                                            <img class="img figure-img img-fluid d-block rounded border border-white" src="/web/image/website.library_image_03" data-index="0" data-name="Image" loading="lazy" data-original-id="916" data-original-src="/website/static/src/img/library/clock.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip869759" style="min-height:425px; height:100%; object-fit:cover;"/>
+                                            <img class="img figure-img img-fluid d-block rounded border border-white" src="/web/image/website.library_image_03" data-index="0" data-name="Image" loading="lazy" data-original-id="916" data-original-src="/website/static/src/img/library/clock.jpg" data-mimetype="image/jpeg" data-original-title="" title="" aria-describedby="tooltip869759"/>
                                             <figcaption class="figure-caption text-white">White Mist<br/><span class="font-weight-light">$120</span></figcaption>
                                         </figure>
                                     </div>

@@ -10,12 +10,13 @@
         # Options
         'data/presets.xml',
         # Menu
-        # 'data/menu.xml',
+         'data/menu.xml',
         # Images
         'data/images.xml',
         # Pages
-        # 'data/pages/about_us.xml',
+        'data/pages/aboutus.xml',
         # 'data/pages/contact.xml',
+        'data/pages/lesson.xml',
          'data/pages/home.xml',
         # Snippets
         

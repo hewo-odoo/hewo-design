@@ -18,15 +18,35 @@ header #top_menu{
     }
 
     
-    a[href="/contactus"]>span::before{
+    a[href="/aboutus"]>span::before{
         content:"\f007";
     } 
 
     a[href="/"]>span::before{
         content:"\f015";
-    }    
-
+    }
     
+    a[href="/contactus"]>span::before{
+        content:"\f0e0";
+    } 
+
+    a[href="/lesson"]>span::before{
+        content: "\f19d";
+    }
 
 
+}
+
+#home_mansory>.s_image_gallery figure>img[data-index="0"]{
+    object-fit: cover;
+    min-height: 425px;
+    @include media-breakpoint-down(lg){
+        min-height: 365px;
+    }
+}
+
+@font-face {
+    font-family: 'Sutro';
+    src: url('https://use.typekit.net/vxd0cac.css');
+    font-weight: 300;
 }
