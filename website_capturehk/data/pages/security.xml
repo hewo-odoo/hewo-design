@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_security" model="website.page">
+    <field name="name">security</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_security</field>
+    <field name="url">/aboutus/security</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_security">
+            <t t-set="additional_title" t-value="'Security'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Title and sub-title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                    <p><font class="text-o-color-1"><strong>SECURITY</strong></font></p>
+                    <h1><strong>We keep your media and memories secure</strong></h1>
+                    </div>
+            </section>
+
+            <!--Text-->
+            <section class="s_text_block pt40 o_colored_level pb32" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                        <p>When you drop off your media, you can be assured that it is in good hands.  Unlike other digitisation services, you media will never leave our CEC and digitisation facility.  We also go to great lengths to make sure that we handle your media safely and securely. </p>
+                    </div>
+            </section>
+
+            <!--Title-->
+            <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="container s_allow_columns">
+                <h3>Our Security Measures</h3>
+                </div>
+            </section>
+
+            <!--Promise columns-->
+            <section class="s_features pt32 pb0 o_colored_level" data-snippet="s_features" data-name="Features">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 pt32 pb32 text-center o_colored_level">
+                        <i class="fa rounded bg-o-color-2 m-3 fa-3x rounded-circle fa-barcode rounded m-3 fa-3x rounded-circle"/>
+                        <h4 class="x_font_family_rubrik my-3 h2">Barcoded &amp; Tracked</h4>
+                        <p> Your media is barcoded and tracked through the digitisation process so that we know where it is at all time until it is safely returned to you</p>
+                    </div>
+                    <div class="col-lg-3 pt32 pb32 text-center o_colored_level">
+                    <i class="fa rounded bg-o-color-2 m-3 fa-3x rounded-circle fa-shield roundedm-3 fa-3x rounded-circle"/>
+                    <h4 class="x_font_family_rubrik my-3 h2">Secure<br/><br/></h4>
+                    <p>We ensure that the media never leaves the premises for any purpose</p>
+                    </div>
+                    <div class="col-lg-3 pt32 pb32 text-center o_colored_level">
+                    <i class="fa rounded bg-o-color-2 m-3 fa-3x rounded-circle fa-eye rounded m-3 fa-3x rounded-circle"/>
+                    <h4 class="x_font_family_rubrik my-3 h2">24-Hour Monitoring</h4>
+                    <p>We have 24/7 security cameras monitoring our premises and the the digitisation process</p>
+                    </div>
+                    <div class="col-lg-3 pt32 pb32 text-center o_colored_level">
+                    <i class="fa rounded bg-o-color-2 m-3 fa-3x rounded-circle fa-id-badge rounded m-3 fa-3x rounded-circle"/>
+                    <h4 class="x_font_family_rubrik my-3 h2">Access Control<br/><br/></h4>
+                    <p>We have security access codes to ensure that only screened and trained memory specialists have access to your media</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+        <!--Media list-->
+        <section class="s_media_list pt40 pb72 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List">
+            <div class="container">
+            <div class="row s_nb_column_fixed s_col_no_bgcolor">
+
+                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center justify-content-center o_cc o_cc3 o_colored_level pt-5 pb-0 py-lg-5">
+                        
+                        <div class="col-lg-5 align-self-stretch s_media_list_img_wrapper">
+                            <img src="/web/image/website_capturehk.img_security_barcode" class="s_media_list_img h-100 w-100" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+
+                        <div class="col-lg-5 s_media_list_body">
+                            <h3 class="x_font_family_rubrik">Barcoded Tracking System</h3>
+                            <p>
+                            <br/>
+                            All media is labelled and tracked. It secures your privacy and digitisation of analogue media and ensures complete return of them.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center justify-content-center o_cc o_cc3 o_colored_level pt-5 pb-0 py-lg-5 flex-row-reverse">
+                        
+                        <div class="col-lg-5 align-self-stretch s_media_list_img_wrapper">
+                            <img src="/web/image/website_capturehk.img_security_cctv" class="s_media_list_img h-100 w-100" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+
+                        <div class="col-lg-5 s_media_list_body">
+                            <h3 class="x_font_family_rubrik">24-hour Monitoring</h3>
+                            <p>
+                            <br/>
+                            From the minute your media arrives to the time you receive, we track every single step of your order.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Disable Default Header -->
+<record id="website.template_header_default" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Disable Default Footer -->
+<record id="website.footer_custom" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Disable Copyright bar -->
+<record id="website.footer_no_copyright" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!-- Theme Header - Option -->
+<template id="template_header_opt" inherit_id="website.snippet_options" name="capturehk Header Template - Option">
+    <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+        <we-button title="capturehk"
+            data-customize-website-views="website_capturehk.template_header_layout"
+            data-customize-website-variable="'capturehk'"
+            data-img="/website_capturehk/static/src/img/wbuilder/template_header_opt.svg"/>
+    </xpath>
+</template>
+
+
+<!-- Theme Footer - Option -->
+<template id="template_footer_opt" inherit_id="website.snippet_options" name="capturehk Footer Template - Option">
+    <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+        <we-button title="capturehk"
+            data-customize-website-views="website_capturehk.template_footer_layout"
+            data-customize-website-variable="'capturehk'"
+            data-img="/website_capturehk/static/src/img/wbuilder/template_footer_opt.svg"/>
+    </xpath>
+</template>
+
+<!--Blog Preset-->
+
+    <!--Deactviate default "our blog"-->
+    <record id="website_blog.blog_blog_1" model="blog.blog">
+        <field name="active" eval="False"/>
+    </record>
+
+    <!--Blog Home page layout-->
+    <record id="website_blog.opt_blog_cover_post_fullwidth_design" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+   <!--Blog Home page Posts List - Author-->
+    <record id="website_blog.opt_posts_loop_show_author" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+    <!--Blog Home page Posts List - Teaser & Tags-->
+    <record id="website_blog.opt_posts_loop_show_teaser" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+<!--Blog post preset-->
+
+    <!--Blog post deativate default breadcrumb-->
+    <record id="website_blog.opt_blog_post_breadcrumb" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+    <!--Blog post activiate regular cover-->
+    <record id="website_blog.opt_blog_post_regular_cover" model="ir.ui.view">
+        <field name="active" eval="True"/>
+    </record>
+
+</odoo>

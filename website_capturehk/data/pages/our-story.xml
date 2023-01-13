@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_our_story" model="website.page">
+    <field name="name">Our Story</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_our_story</field>
+    <field name="url">/aboutus/our-story</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_our_story">
+            <t t-set="additional_title" t-value="'Our Story'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Title and sub-title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                    <p><font class="text-o-color-1"><strong>ABOUT US</strong></font></p>
+                    <h1 class="text-dark"><strong>Our Story</strong></h1>
+                    </div>
+            </section>
+
+
+            <!--Text-->
+            <section class="s_text_block pt40 o_colored_level pb40" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                        <p>Our goal is to help families to preserve and share their most precious media and turn them into memories that will last forever.</p>
+                        <p>For over 20 years we have been dedicated to providing the highest quality media digitisation services available.  In that time, we’ve been fortunate enough to help more than 12 million families.  You might say that’s our What.  But we think our Why is the part that really matters: we exist to help people preserve memories, share incredible moments from the past and strengthen the connections that matter most. </p>
+                        <p>How do we do it?  We hand-process all orders here in Hong Kong using proprietary technology that’s earned us multiple patents.  Finally, we make it easy to share those newly digitised memories. In fact, ours is the only service that saves your memories directly to Google Photos.</p>
+                        <p>In 2021, we launched a new brand, Capture™, a new place, Capture Experience Centre to offer our customers even more convenient ways to digitise their memories with one-to-one consultation service. Having the longest history in the industry serving the most customers, we look forward to helping millions more capture their memories forever.</p>
+                    </div>
+            </section>
+
+            <!--Image-->
+            <section>
+                <div class="container">
+                     <img src="/web/image/website_capturehk.img_our-story_timeline" class="img img-fluid mx-auto" alt="" loading="lazy" data-mimetype="image/jpeg"/>
+                </div>
+            </section>
+
+            <!--Reference-->
+            <section class="s_references pt48 pb32 o_colored_level" data-snippet="s_references" data-name="References">
+                <div class="container">
+                <p style="text-align: center;">AS SEEN ON</p>
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-lg-2 pt16 pb16 o_colored_level">
+                    <img src="/web/image/website_capturehk.img_brands_Line" class="img img-fluid mx-auto" alt="Line Today" loading="lazy" data-mimetype="image/png" style="max-width:200px;"/>
+                    </div>
+                    <div class="col-lg-2 pt16 pb16 o_colored_level">
+                    <img src="/web/image/website_capturehk.img_brands_PCM" class="img img-fluid mx-auto" alt="PCM" loading="lazy" data-mimetype="image/png" style="max-width:200px;"/>
+                    </div>
+                    <div class="col-lg-2 pt16 pb16 o_colored_level">
+                    <img src="/web/image/website_capturehk.img_brands_funky-kit" class="img img-fluid mx-auto" alt="Funky-kit" data-mimetype="image/png" style="max-width:200px;"/>
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-lg-2 pt16 pb16 o_colored_level">
+                    <img src="/web/image/website_capturehk.img_brands_CVS" class="img img-fluid mx-auto" alt="CVS pharmacy" loading="lazy" data-original-id="969" data-original-src="/website/static/src/img/snippets_demo/s_references_4.png" data-mimetype="image/png" style="max-width:200px;"/>
+                    </div>
+                    <div class="col-lg-2 pt16 pb16 o_colored_level">
+                    <img src="/web/image/website_capturehk.img_brands_Walmart" class="img img-fluid mx-auto" alt="Walmart" loading="lazy" data-original-id="970" data-original-src="/website/static/src/img/snippets_demo/s_references_5.png" data-mimetype="image/png" style="max-width:200px;"/>
+                    </div>
+                    <div class="col-lg-2 pt16 pb16 o_colored_level">
+                    <img src="/web/image/website_capturehk.img_brands_Costco" class="img img-fluid mx-auto" alt="Costco" loading="lazy" data-original-id="971" data-original-src="/website/static/src/img/snippets_demo/s_references_6.png" data-mimetype="image/png" style="max-width:200px;"/>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <hr class="w-75 text-300"/>
+
+            <!--title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns container">
+                    <h2>Our Misssion &amp; Vision</h2>
+                </div>
+            </section>
+
+            <!--Mission & Vision-->
+            <section class="s_three_columns pt32 pb32 o_colored_level o_cc o_cc1" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+                <div class="container">
+                <div class="row d-flex align-items-stretch">
+                    
+                    <div class="s_col_no_bgcolor pt16 pb16 col-lg-6">
+                    <div class="card h-100 rounded border-0 o_cc o_cc3" style="border-radius: 20px !important;">
+                        <div class="p-5">
+                            <div class="card-title">
+                                <span class="fa fa-flag text-o-color-2 fa-3x m-2"/>
+                                <br/><br/>
+                                <h3 class="x_font_family_rubrik"><strong>Mission</strong></h3>
+                            </div>
+                            <p class="card-text">By capturing and reliving memories, we can help generations of humanity give more meaning to their lives, bring family and friends closer together and spark more empathy in the world. </p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="s_col_no_bgcolor pt16 pb16 col-lg-6">
+                    <div class="card h-100 rounded border-0 o_cc o_cc2" style="border-radius: 20px !important;">
+                        <div class="p-5">
+                            <div class="card-title">
+                                <span class="fa fa-eye text-o-color-1 fa-3x m-2"/>
+                                <br/><br/>
+                                <h3 class="x_font_family_rubrik"><strong>Vision</strong></h3>
+                            </div>
+                            <p class="card-text">Capturing the world's analogue media. <br/>Capture what matters.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+
+            <!--title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns container">
+                    <h2>Our people</h2>
+                </div>
+            </section>
+
+            <!--Our people carousel-->
+            <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+                <div class="s_carousel carousel s_carousel_rounded slide" data-interval="10000" id="myCarousel1667275252920">
+                <ol class="carousel-indicators o_we_no_overlay">
+                    <li data-slide-to="0" class="active" data-target="#myCarousel1667275252920"/>
+                    <li data-slide-to="1" data-target="#myCarousel1667275252920"/>
+                    <li data-target="#myCarousel1667275252920" data-slide-to="2"/>
+                    <li data-target="#myCarousel1667275252920" data-slide-to="3"/>
+                    <li data-target="#myCarousel1667275252920" data-slide-to="4"/>
+                    <li data-target="#myCarousel1667275252920" data-slide-to="5"/>
+                    <li data-target="#myCarousel1667275252920" data-slide-to="6"/>
+                    <li data-target="#myCarousel1667275252920" data-slide-to="7"/>
+                </ol>
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item pt40 pb96 o_colored_level active" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_michael" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"We value beautiful and touching moments in the past, we would be very glad to help preserve it via our digitalisation service"</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">MICHAEL</font></strong>, Marketing</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb96 o_colored_level" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_benson" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"Generational memories and legacy can bring the people of the world closer together."</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">BENSON</font></strong>, Operations</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb96 o_colored_level" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_andy" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"Our technology supports fast media digitalisation prcess"</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">ANDY</font></strong>, CTO of Capture Limited</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb96 o_colored_level" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_apryl" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"There are limited devices to take photos or videos back to 70s-90s, that's what makes it more valuable nowadays "</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">APRYL</font></strong>, Marketing</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb96 o_colored_level" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_chloe" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"It was great when I share the digitised media to my families during gathering"</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">CHLOE</font></strong>, Marketing</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb96 o_colored_level" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_daisy" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"The photos make my memories come alive and remind me of my happy childhood"</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">DAISY</font></strong>, Marketing</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb96 o_colored_level" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_ulrika" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"What makes everyone unique is that each of us has different stories behind"</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">ULRIKA</font></strong>, Operations</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb96 o_colored_level" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-center justify-content-center">
+                        <div class="carousel-content col-lg-4 o_colored_level">
+                            <img class="img-fluid o_we_custom_image mx-auto d-block rounded x_capturehk_square-image_cover" src="/web/image/website_capturehk.img_our-people_deron" data-mimetype="image/svg+xml" loading="lazy"/>
+                        </div>
+                        <blockquote class="s_blockquote col-12 col-sm-10 col-lg-6 o_animable blockquote s_blockquote_minimalist border-0" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded d-none"/>
+                            <div class="s_blockquote_content">
+                                <p>
+                                    <span class="font-weight-lighter">"You never how important it is somtimes until you lost your old photos or videos"</span>
+                                    <br/><br/>
+                                </p>
+                                <p style="text-align: right;">
+                                    <span style="font-style: normal;"><strong><font class="text-o-color-1">DERON</font></strong>, Operations</span>
+                                </p>
+                            </div>
+                        </blockquote>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1667275252920">
+                    <span class="carousel-control-prev-icon"/>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1667275252920">
+                    <span class="carousel-control-next-icon"/>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </section>
+            <section class="pb80"></section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

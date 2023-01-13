@@ -1,0 +1,147 @@
+// ------------------------------------------------------------------------------ //
+// PRESETS
+// ------------------------------------------------------------------------------ //
+
+$o-website-values-palettes: (
+    (
+        // Colors
+        'color-palettes-name':              'capturehk',
+
+        // Fonts
+        'font':                             'Rubik',
+        'headings-font':                    'Sutro',
+        'navbar-font':                      'Rubik',
+        'buttons-font':                     'Rubik',
+
+        // Buttons outline
+        'btn-primary-outline':              false,
+        'btn-secondary-outline':            true,
+
+        // Buttons
+        'btn-padding-y':                    0.75rem,
+        'btn-padding-x':                    3rem,
+        'btn-border-radius':                0.625rem,
+
+        // Header
+        'header-template':                  'default',
+        'hamburger-position':               'right',
+        'logo-height':                      3rem,
+        'fixed-logo-height':                3rem,
+        'header-font-size':                 0.875rem,
+
+        // Footer
+        'footer-template':                  'capturehk',
+    ),
+);
+
+
+// ------------------------------------------------------------------------------ //
+// FONTS
+// ------------------------------------------------------------------------------ //
+
+$o-theme-font-configs: (
+    'Sutro': (
+        'family':                           ('Sutro','Noto Sans TC', serif),
+        'properties' : (
+            'base': (
+                'font-size-base':           1rem,
+            ),
+        ),
+    ),
+
+    'Rubik': (
+        'family':                           ('Rubik','Noto Sans TC', serif),
+        'url':                              'Rubik:300,400,400i,500,700',
+        'properties' : (
+            'base': (
+                'font-size-base':           1rem,
+            ),
+        ),
+    ),
+    'Noto Sans TC': (
+        'family':                           ('Noto Sans TC', serif),
+        'url':                              'Noto+Sans+TC:300;400;500;700',
+        'properties' : (
+            'base': (
+                'font-size-base':           1rem,
+            ),
+        ),
+    ),
+);
+
+
+
+
+// ------------------------------------------------------------------------------ //
+// COLORS
+// ------------------------------------------------------------------------------ //
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'capturehk': (
+            'o-color-1':                    #19BF8C,
+            'o-color-2':                    #4784F2,
+            'o-color-3':                    #FDBD2D,
+            'o-color-4':                    #E9F7FF,
+            'o-color-5':                    #D9F4EA,
+
+            //extra colors
+            'o-color-6':                    #000000,
+            'o-color-7':                    #3A3A3B,
+            'o-color-8':                    #FFFFFF,
+            'o-color-9':                    #DFF3FF,
+
+            //specific palettes
+            'o-cc1-bg':                     'o-color-8',
+            'o-cc1-text':                   'o-color-7',
+            'o-cc1-headings':               'o-color-6',
+            'o-cc1-link':                   'o-color-2',
+            'o-cc1-btn-primary':            'o-color-2',
+            //'o-cc1-btn-primary-border':     'o-color-2',
+            'o-cc1-btn-secondary':          'o-color-6',
+            'o-cc1-btn-secondary-border':   #DCDDDF,
+            // 'o-cc1-h5':                     'o-color-1',
+
+            'o-cc2-bg':                     'o-color-5',
+            'o-cc2-text':                   var(--900),
+            'o-cc2-headings':               'o-color-6',
+            'o-cc2-link':                   'o-color-1',
+            'o-cc2-btn-primary':            'o-color-6',
+            //'o-cc2-btn-primary-border':     'o-color-6',
+            'o-cc2-btn-secondary':          'o-color-8',
+            'o-cc2-btn-secondary-border':   var(--300),
+
+            'o-cc3-bg':                     'o-color-4',
+            'o-cc3-text':                   'o-color-7',
+            'o-cc3-headings':               'o-color-6',
+            'o-cc3-link':                   'o-color-6',
+            'o-cc3-btn-primary':            'o-color-2',
+            //'o-cc3-btn-primary-border':     'o-color-3',
+            'o-cc3-btn-secondary':          'o-color-4',
+            'o-cc3-btn-secondary-border':   'o-color-4',
+
+            'o-cc4-bg':                     #192D42,
+            'o-cc4-text':                   var(--100),
+            'o-cc4-headings':               'o-color-8',
+            'o-cc4-link':                   'o-color-8',
+
+            'o-cc5-bg':                     'o-color-8',
+            'o-cc5-text':                   var(--100),
+            'o-cc5-headings':               'o-color-8',
+            'o-cc5-link':                   'o-color-6',
+            'o-cc5-btn-priamry':            'o-color-1',
+            //'o-cc5-btn-primary-border':     'o-color-5',
+            //'o-cc5-btn-secondary':          'o-color-6',
+            //'o-cc5-btn-secondary-border':   'o-color-6',
+
+
+            'menu':                         5,
+            'footer':                       4,
+            'copyright':                    4,
+        ),
+    )
+);
+
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'capturehk');
+$o-website-values-palette-number: 1;

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_privacy" model="website.page">
+    <field name="name">Privacy</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_privacy</field>
+    <field name="url">/aboutus/privacy</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_privacy">
+            <t t-set="additional_title" t-value="'Privacy'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Title and sub-title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                    <p><font class="text-o-color-1"><strong>PRIVACY</strong></font></p>
+                    <h1><strong>We Care about Your Privacy</strong></h1>
+                    </div>
+            </section>
+
+
+            <!--Text-->
+            <section class="s_text_block pt40 o_colored_level pb40" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                        <p>Your family memories are some of your most personal an intimate moments with your loved ones, family and friends.  We understand, not only how important they are to you, but also how sensitive and private they are.  At Capture Hong Kong, we take your privacy seriously.</p>
+                    </div>
+            </section>
+
+            <!--Title-->
+            <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="container s_allow_columns">
+                <h3>Our promise to you</h3>
+                </div>
+            </section>
+
+            <!--Promise columns-->
+            <section class="s_features pt32 pb32 o_colored_level" data-snippet="s_features" data-name="Features">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                        <i class="fa rounded bg-o-color-1 m-3 fa-3x rounded-circle fa-heart rounded m-3 fa-3x rounded-circle"/>
+                        <h4 class="x_font_family_rubrik my-3 h2">Handled with Care</h4>
+                        <p>Our Memory Specialists take the utmost care of your analogue meadia throughout our digitisation process</p>
+                    </div>
+
+                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                        <i class="fa rounded bg-o-color-1 m-3 fa-3x rounded-circle fa-lock roundedm-3 fa-3x rounded-circle"/>
+                        <h4 class="x_font_family_rubrik my-3 h2">Security</h4>
+                        <p>Capture only has access to upload to Google Photos your digitised media, or provide upload to an USB flash drive</p>
+                    </div>
+
+                    <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                        <i class="fa rounded bg-o-color-1 m-3 fa-3x rounded-circle fa-file-zip-o rounded m-3 fa-3x rounded-circle"/>
+                        <h4 class="x_font_family_rubrik my-3 h2">Confidentiality</h4>
+                        <p>Our automation keeps your private memories safe and are never publicaly disclosed</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!--title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns container">
+                    <h2 class="h1">Our Reliable Partner: <font class="text-o-color-1">Google Photos</font></h2>
+                </div>
+            </section>
+
+            <!--Text-image-->
+            <section class="s_text_image pt48 pb80 o_colored_level" data-snippet="s_image_text" data-name="Image - Text">
+                <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="/web/image/website_capturehk.img_privacy_google-photos" class="img img-fluid" loading="lazy" data-mimetype="image/jpeg"/>
+                    </div>
+
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <p>Capture partners with Google Photos to allow our users the ability to more easily store and share their photos.  To facilitate this partnership, we ask for your permission to only allow uploading your memories when you place an order with us, with the standard secure Google OAuth login portal. Capture does not have the ability to list, view, or remove existing Google Photo content.</p>
+                    </div>
+                    
+                </div>
+                </div>
+            </section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

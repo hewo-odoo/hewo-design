@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_buy_now" model="website.page">
+    <field name="name">buy_now</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_buy_now</field>
+    <field name="url">/buy-now</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_buy_now">
+            <t t-set="additional_title" t-value="'Buy Now'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Title-->
+            <section class="s_text_block pt80 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                        <h1 class="text-center"><font class="font-weight-bold">Two Ways To Get It Done!</font></h1>
+                    </div>
+            </section>
+
+            <!--2 big blocks-->
+            <section class="s_color_blocks_2" data-snippet="s_color_blocks_2" data-name="Big Boxes">
+                <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 col-lg-6 o_cc o_cc1 text-center o_colored_level">
+                        <h2><strong><span class="text-o-color-1 x_font_family_rubrik">Online Prepayment</span></strong></h2>                    
+                        <img src="/web/image/website_capturehk.img_buy-now_online-prepayment" class="img img-fluid mt-3 mx-auto mb-3 mb-md-none" style="max-width:300px;" loading="lazy" data-mimetype="image/jpeg"/>
+                        <p class="font-weight-lighter text-dark px-5  mt-3">Best practice to speed up your drop off experience.<br/></p>
+                        <a class="btn btn-primary bg-o-color-1 border-0 mt-3" href="/shop">BUY NOW</a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 o_cc o_cc1 text-center o_colored_level">
+                        <h2><strong><span class="text-o-color-2 x_font_family_rubrik">On-site Payment</span></strong></h2>                    
+                        <img src="/web/image/website_capturehk.img_buy-now_onsite-payment" class="img img-fluid mt-3 mx-auto mb-3 mb-md-none" style="max-width:300px;" loading="lazy" data-mimetype="image/jpeg"/>
+                        <p class="font-weight-lighter text-dark px-5 mt-3">Learn more about our service at the Capture Experience Centre.</p>
+                        <a class="btn btn-primary mt-3" href="/calendar">Schedule Now</a>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

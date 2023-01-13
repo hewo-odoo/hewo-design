@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_customer_care" model="website.page">
+    <field name="name">Customer Care</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_customer_care</field>
+    <field name="url">/aboutus/customer-care</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_customer_care">
+            <t t-set="additional_title" t-value="'Customer Care'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Image carousel-->
+            <section class="s_carousel_wrapper x_fontsize_customercare_heading" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+                <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1667296149731">
+                <ol class="carousel-indicators o_we_no_overlay">
+                    <li data-slide-to="0" class="active" data-target="#myCarousel1667296149731"/>
+                    <li data-slide-to="1" data-target="#myCarousel1667296149731"/>
+                    <li data-slide-to="3" data-target="#myCarousel1667296149731"/>
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item pt96 pb96 oe_img_bg o_bg_img_center o_colored_level active" style="background-image: url(&quot;/web/image/website_capturehk.img_customer-care_hero1&quot;);" data-name="Slide">
+                    <div class="container oe_unremovable">
+                        <div class="row content">
+                            <div class="carousel-content col-lg-8 offset-lg-2 bg-white-85 text-center pt48 pb40 o_colored_level rounded-lg">
+                                <h1 class="text-o-color-1 x_font_family_rubrik mb-3">Capture Experience Centre</h1>
+                                <p class="font-weight-lighter">Our Memory Specialists are here to help with your Capture experience</p>
+                                <br/>
+                                <p><a href="/calendar" class="btn btn-primary mb-2">Schedule Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website_capturehk.img_customer-care_hero2&quot;);" data-name="Slide">
+                    <div class="o_we_bg_filter bg-black-15"/>
+                    <div class="oe_unremovable container">
+                        <div class="row content">
+
+                        </div>
+                    </div>
+                    </div>
+
+                     <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website_capturehk.img_customer-care_hero3&quot;);" data-name="Slide">
+                    <div class="o_we_bg_filter bg-black-15"/>
+                    <div class="oe_unremovable container">
+                        <div class="row content">
+
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1667296149731">
+                    <span class="carousel-control-prev-icon"/>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1667296149731">
+                    <span class="carousel-control-next-icon"/>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </section>
+
+            <!--Text-image-->
+            <section class="s_text_image pt40 pb40 o_colored_level" data-snippet="s_text_image" data-name="Text - Image">
+                <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <h2>Personalised Consultation</h2>
+                        <p>We will walk you through the whole digitisation and Google Photos process from start to finish. Any questions you have will be answered by a dedicated member of our team. We will help you organise and categorise your images on Google Photos.</p>
+                        <p><a href="/contactus" class="btn btn-primary mb-2">Contact us</a></p>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16 o_colored_level">
+                        <img src="/web/image/website_capturehk.img_customer-care_hero3" class="img img-fluid mx-auto" alt="Capture customer-care center with an old camera" loading="lazy" data-mimetype="image/jpeg"/>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!--Title-->
+            <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="container s_allow_columns">
+                <h3 style="text-align: left;" class="font-weight-bold">
+                    <font style="font-size: 28px;">What we will do with you in the personalised consultation?</font>
+                </h3>
+                </div>
+            </section>
+
+            <!--Mission & Vision-->
+            <section class="s_three_columns pt32 pb32 o_colored_level o_cc o_cc1" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+                <div class="container">
+                <div class="row d-flex align-items-stretch">
+                    
+                    <div class="s_col_no_bgcolor pt16 pb16 col-lg-6">
+                    <div class="card bg-white h-100 rounded" style="border-radius: 20px !important;">
+                        <div class="card-body py-5">
+                            <h4 class="card-title">
+                                <span class="fa fa-2x fa-handshake-o m-2 text-o-color-1"/>
+                                <br/><br/>
+                                <span class="x_font_family_rubrik"><strong>Review your media with a Memory Specialist</strong></span>
+                            </h4>
+                            <p class="card-text">You will review analogue media with our Memory Specialist. We will do quality checking for potential issues, obtain permission to fix known breakages in tapes, identify physical defects or mould damage that may not allow digitisation.</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="s_col_no_bgcolor pt16 pb16 col-lg-6">
+                    <div class="card bg-white h-100 rounded" style="border-radius: 20px !important;">
+                        <div class="card-body py-5">
+                            <h4 class="card-title">
+                                <span class="fa fa-2x fa-google m-2 text-o-color-1"/>
+                                <br/><br/>
+                                <span class="x_font_family_rubrik"><strong>Google Photos Authentication</strong></span>
+                            </h4>
+                            <p class="card-text">Google Photos authentication is to ensure your Google Account is linked to the order, allowing automated upload upon completion of digitisation; for USB flash drive only orders, this is not needed.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="s_col_no_bgcolor pt16 pb16 col-lg-6">
+                    <div class="card bg-white h-100 rounded" style="border-radius: 20px !important;">
+                        <div class="card-body py-5">
+                            <h4 class="card-title">
+                                <span class="fa fa-2x fa-file-text m-2 text-o-color-1"/>
+                                <br/><br/>
+                                <span class="x_font_family_rubrik"><strong>Customise title &amp; date</strong></span>
+                            </h4>
+                            <p class="card-text">We apply tracking barcodes to all media and customise the title and date for every item or photograph set, helping you find and organise the digitised media.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="s_col_no_bgcolor pt16 pb16 col-lg-6">
+                    <div class="card bg-white h-100 rounded" style="border-radius: 20px !important;">
+                        <div class="card-body py-5">
+                            <h4 class="card-title">
+                                <span class="fa fa-2x fa-credit-card m-1 text-o-color-1"/>
+                                <br/><br/>
+                                <span class="x_font_family_rubrik"><strong>Payment</strong></span>
+                            </h4>
+                            <p class="card-text">Complete payment calculation and transaction.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+
+            <!--title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns container">
+                    <h2>Memory Specialist</h2>
+                </div>
+            </section>
+
+            <!--Memory specialist carousel-->
+            <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+                <div class="s_carousel carousel slide s_carousel_rounded" data-interval="10000" id="myCarousel1667294129612">
+                <ol class="carousel-indicators o_we_no_overlay">
+                    <li data-slide-to="0" class="active" data-target="#myCarousel1667294129612"/>
+                    <li data-target="#myCarousel1667294129612" data-slide-to="1"/>
+                    <li data-target="#myCarousel1667294129612" data-slide-to="2"/>
+                    <li data-target="#myCarousel1667294129612" data-slide-to="3"/>
+                </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item pt40 pb64 o_colored_level o_cc o_cc1 active" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-start justify-content-center">
+                        <div class="col-lg-4 o_colored_level">
+                            <img src="/web/image/website_capturehk.img_our-people_ulrika" class="img img-fluid mx-auto rounded x_capturehk_square-image_cover" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+                        <div class="carousel-content col-lg-6 o_colored_level text-center text-lg-left">
+                            <h3 class="text-o-color-1 h1 x_fontsize_customercare_name mt-4 mt-lg-0">Ulrika</h3>
+                            <p>A literary lady who is good at seeking the beauty of life.</p>
+                            
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote" data-snippet="s_blockquote" data-name="Blockquote">
+                                <i class="s_blockquote_icon fa fa-1x fa-quote-left rounded bg-o-color-1"/>
+                                <div class="s_blockquote_content bg-100">
+                                    <p class="font-weight-lighter"><i>"You never know how surprise it is until you unbox your old media!"</i></p>
+                                </div>
+                            </blockquote>
+                            <p>
+                            <br/>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb64 o_colored_level o_cc o_cc1" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-start justify-content-center">
+                        <div class="col-lg-4 o_colored_level">
+                            <img src="/web/image/website_capturehk.img_our-people_hiu-ching" class="img img-fluid mx-auto rounded x_capturehk_square-image_cover" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+                        <div class="carousel-content col-lg-6 o_colored_level text-center text-lg-left">
+                            <h3 class="text-o-color-1 h1 x_fontsize_customercare_name mt-4 mt-lg-0">Hiu-ching</h3>
+                            <p>A sportive lady</p>
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left rounded bg-o-color-1"/>
+                            <div class="s_blockquote_content bg-100">
+                                <p class="font-weight-lighter"><i>"The memory comes alive. I laugh, I cry and I really miss the live in the past"</i></p>
+                            </div>
+                            </blockquote>
+                            <p>
+                            <br/>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb64 o_colored_level o_cc o_cc1" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-start justify-content-center">
+                        <div class="col-lg-4 o_colored_level">
+                            <img src="/web/image/website_capturehk.img_our-people_daisy" class="img img-fluid mx-auto rounded x_capturehk_square-image_cover" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+                        <div class="carousel-content col-lg-6 o_colored_level text-center text-lg-left">
+                            <h3 class="text-o-color-1 h1 x_fontsize_customercare_name mt-4 mt-lg-0">Daisy Wong</h3>
+                            <p>A warm-hearted lady with passion of helping people preserve memories.</p>
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left rounded bg-o-color-1"/>
+                            <div class="s_blockquote_content bg-100">
+                                <p class="font-weight-lighter"><i>"It's a pity to see people throwing away their old media which record beautiful moments of the past"</i></p>
+                            </div>
+                            </blockquote>
+                            <p>
+                            <br/>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item pt40 pb64 o_colored_level o_cc o_cc1" data-name="Slide">
+                    <div class="oe_unremovable container">
+                        <div class="row content align-items-start justify-content-center">
+                        <div class="col-lg-4 o_colored_level">
+                            <img src="/web/image/website_capturehk.img_our-people_deron" class="img img-fluid mx-auto rounded x_capturehk_square-image_cover" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+                        <div class="carousel-content col-lg-6 o_colored_level text-center text-lg-left">
+                            <h3 class="text-o-color-1 h1 x_fontsize_customercare_name mt-4 mt-lg-0">Deron To</h3>
+                            <p>An emotional gentleman with a love of life</p>
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left rounded bg-o-color-1"/>
+                            <div class="s_blockquote_content bg-100">
+                                <p class="font-weight-lighter"><i>"I feel touched, seeing how our service helps families reminisce their past and spark the world's empathy "</i></p>
+                            </div>
+                            </blockquote>
+                            <p>
+                            <br/>
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1667294129612">
+                    <span class="carousel-control-prev-icon"/>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1667294129612">
+                    <span class="carousel-control-next-icon"/>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </section>
+
+            <!--Customer care CTA-->
+            <section class="s_text_block pt24 pb72 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns container">
+                <p style="text-align: center;">
+                    <a class="btn btn-primary mr-sm-3 mb-3 mb-sm-0" href="/buy-now">Order Now</a>
+                    <a class="btn btn-secondary text-dark" href="/calendar">Schedule Now</a></p>
+                </div>
+            </section>
+        
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

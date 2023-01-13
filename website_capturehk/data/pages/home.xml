@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Disable Default Home -->
+<record id="website.homepage" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<record id="page_home" model="website.page">
+    <field name="name">Home</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_home</field>
+    <field name="url">/</field>
+    <field name="type">qweb</field>
+    <field name="website_id" eval="1"/>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_home">
+            <t t-set="additional_title" t-value="'Home'"/>
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+
+                    <section class="s_cover o_colored_level s_parallax_no_overflow_hidden pb0 pt192 x_home_hero" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="position: relative; background-image: none;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Floats/06&quot;,&quot;colors&quot;:{&quot;c1&quot;:&quot;#192D42&quot;,&quot;c2&quot;:&quot;#FDBD2D&quot;,&quot;c3&quot;:&quot;#D9F4EA&quot;,&quot;c5&quot;:&quot;#FFFFFF&quot;},&quot;flip&quot;:[]}">
+                        <div class="o_we_shape o_web_editor_Floats_06 bg-white-85" style="background-image: url(&quot;/web_editor/shape/web_editor/Floats/06.svg?c1=%23192D42&amp;c2=%23FDBD2D&amp;c3=%23D9F4EA&amp;c5=%23FFFFFF&quot;);"/>
+                        <div class="s_allow_columns container">
+                        <img class="img-fluid o_we_custom_image w-100 d-block d-md-none pb-5" src="/web/image/website_capturehk.img_photo-album_hero" loading="lazy"/>
+                        <h1 style="text-align: center;" class="x_font_family_rubrik text-dark">
+                        <strong>
+                            Forever Preserve Your Memories 
+                            <br/>with
+                            <font class="text-o-color-1">
+                                Google Photos
+                                <img class="img-fluid o_we_custom_image x_googlephoto_logo" src="/web/image/website_capturehk.img_home_googlelogo" style="transform: translateY(-10%);"/>
+                            </font>
+                            </strong>
+                        </h1>
+                        <p><br/></p>
+                        <p class="lead" style="text-align: center;">20 years' experience, helping 12 million families.</p>
+                        <p><br/></p>
+                        <p style="text-align: center;">
+                            <a class="btn btn-primary" href="/products">LEARN MORE</a>
+                        </p>
+                        <p style="text-align: center;">
+                            <img class="img-fluid o_we_custom_image float-right d-none d-md-block" src="/web/image/website_capturehk.img_photo-album_hero" style="transform: translateX(-5.4%) translateY(-30.3%) scaleX(1.62) scaleY(1.62); width: 25% !important;" loading="lazy"/>
+                        </p>
+                        </div>
+                    </section>
+
+                    <!--title-->
+                    <section class="s_text_block o_colored_level pb0 pt80" data-snippet="s_text_block" data-name="Text">
+                        <div class="container s_allow_columns">
+                        <h2 class="x_font_family_rubrik">Digitisation Services
+                        </h2>
+                        </div>
+                    </section>
+
+                    <!--Features-->
+                    <section class="s_features pt0 pb32 o_colored_level" data-snippet="s_features" data-name="Features">
+                    <div class="container">
+                    <div class="row">
+                    
+                        <div class="col-xl-3 col-md-6 pt32 pb32 text-left o_colored_level">
+                            <a href="/products/photo-album" class="w-100">
+                                <i class="fa fa-2x fa-book float-left bg-primary rounded-circle mr-3"/>                                           
+                                <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Photo Album</strong></h5>
+                                <span style="font-size: 14px;" class="text-600">From HK$1.38/photo</span>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 pt32 pb32 o_colored_level">
+                            <a href="/products/photographs" class="w-100">
+                                <i class="fa fa-2x fa-photo float-left bg-primary rounded-circle mr-3"/>                                           
+                                <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Photographs</strong></h5>
+                                <span style="font-size: 14px;" class="text-600">From HK$1.38/photo</span>
+                            </a>                             
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 pt32 pb32 o_colored_level">
+                            <a href="/products/videotape" class="w-100">
+                                <i class="fa fa-2x fa-file-movie-o float-left bg-primary rounded-circle mr-3"/>                                           
+                                <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Videotape</strong></h5>
+                                <span style="font-size: 14px;" class="text-600">From HK$1.38/tape</span>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 pt32 pb32 o_colored_level">
+                            <a href="/products/digital-media" class="w-100">
+                                <i class="fa fa-2x fa-usb float-left bg-primary rounded-circle mr-3"/>                                           
+                                <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Digital Media</strong></h5>
+                                <span style="font-size: 14px;" class="text-600">From HK$138/media</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    </div>
+                </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="page_onsite_payment" model="website.page">
+    <field name="name">onsite-payment</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_onsite_payment</field>
+    <field name="url">/onsite-payment</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_onsite_payment">
+            <t t-set="additional_title" t-value="'Onsite Payment'"/>
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+
+                    <!--title-->
+                    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                        <div class="container s_allow_columns">
+                        <p class="text-o-color-1">
+                            <strong>HOW IT WORKS</strong>
+                        </p>
+                        <h1>
+                            <strong>On-site Payment</strong>
+                        </h1>
+                        <p class="lead">Learn more with our service at Capture Epxerience Centre.</p>
+                        </div>
+                    </section>
+
+                    <!--Step 1 card-->
+                     <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                        <div class="s_allow_columns container">
+                            <div class="card">
+                                <h5 class="card-header bg-o-color-4 x_font_family_rubrik">
+                                    <span class="fa fa-calendar-check-o rounded-circle mr-2 text-white bg-o-color-2"/>
+                                    <span>STEP 1.</span>
+                                    <span><strong> Schedule a Consultation</strong></span>
+                                </h5>
+
+                                <div class="card-body row align-items-center">
+                                    <div class="col col-12 col-md-6 o_colored_level">
+                                        <img src="/web/image/website_capturehk.img_onsite-payment_step1" class="img img-fluid mx-auto mb-3 mb-md-none" loading="lazy" data-mimetype="image/jpeg"/>
+                                    </div>
+                                    <div class="col col-12 col-md-6 o_colored_level">
+                                        <h6 class="card-text x_font_family_rubrik">
+                                            <strong>Prepare for consultation</strong>
+                                        </h6>
+                                        <ul class="card-text">
+                                            <li>You will receive a notification email with your appointment details.</li>
+                                            <li>The whole consultation may take around 15 mins.</li>
+                                            <li>Your are highly suggested to prepare and bring your analogue media to Capture Customer Experience Centre to review with our Memory Specialist.</li>
+                                        </ul>
+
+                                        <p class="card-text">
+                                            During the consultation, you will:
+                                        </p>
+                                        <div class="card-text">
+                                            <h5 class="x_font_family_rubrik">
+                                                <i class="fa fa-comments fa-1x mr-2 text-o-color-2"/>
+                                                <strong> Review media with Memory Specialist</strong>
+                                            </h5>
+                                            <span class="text-700">
+                                                Our memory specialist will review your analogue media and do quality checking for potential issues, obtain permission to fix breakages in tapes, identify physical or mould damage that may not allow digitisation.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--Step 2 card-->
+                     <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                        <div class="s_allow_columns container">
+                            <div class="card">
+                                <h5 class="card-header bg-o-color-4 x_font_family_rubrik">
+                                    <span class="fa fa-money rounded-circle mr-2 text-white bg-o-color-2"/>
+                                    <span>STEP 2.</span>
+                                    <span><strong>Pay at the Capture Experience Centre</strong></span>
+                                </h5>
+
+                                <div class="card-body row align-items-center">
+                                    <div class="col col-12 col-md-6 o_colored_level">
+                                        <img src="/web/image/website_capturehk.img_onsite-payment_step2" class="img img-fluid mx-auto  mb-3 mb-md-none" loading="lazy" data-mimetype="image/jpeg"/>
+                                    </div>
+                                    <div class="col col-12 col-md-6 o_colored_level">
+                                        <p class="card-text">
+                                            If you are happy with our service, you can pay at Capture Experience Centre. Here are a few things we will do with you.
+                                        </p>
+
+                                        <div class="card-text">
+                                            <h5 class="x_font_family_rubrik">
+                                                <i class="fa fa-credit-card fa-1x mr-2 text-o-color-2"/>
+                                                <strong>Complete Payment</strong>
+                                            </h5>
+                                            <span class="text-700">
+                                                We will customise your order based on your media volume and finish the transaction.
+                                            </span>
+                                        </div>
+
+                                        <p><br/></p>
+
+                                        <div class="card-text">
+                                            <h5 class="x_font_family_rubrik">
+                                                <i class="fa fa-check-circle fa-1x mr-2 text-o-color-2"/>
+                                                <strong>Google Photos Authorisation</strong>
+                                            </h5>
+                                            <span class="text-700">
+                                                Google Photos authorisation is to ensure your Google Account is linked to the order, allowing automated upload upon completion of digitisation; for USB flash drive only orders, this is not needed.
+                                            </span>
+                                        </div>
+
+                                        <p><br/></p>
+
+                                        <div class="card-text">
+                                            <h5 class="x_font_family_rubrik">
+                                                <i class="fa fa-file-text fa-1x mr-2 text-o-color-2"/>
+                                                <strong>Customise title &amp; date</strong>
+                                            </h5>
+                                            <span class="text-700">
+                                                We will apply tracking barcodes to all media and customise the title and date for every folder.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--Step 3 card-->
+                    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                        <div class="card">
+                            <h5 class="card-header bg-o-color-4 x_font_family_rubrik">
+                                <span class="fa fa-dropbox rounded-circle mr-2 text-white bg-o-color-2"/>
+                                <span>STEP 3.</span>
+                                <span><strong>Schedule a Pickup</strong></span>
+                            </h5>
+
+                            <div class="card-body row align-items-center">
+                                <div class="col col-12 col-md-6 o_colored_level">
+                                    <img src="/web/image/website_capturehk.img_onsite-payment_step3" class="img img-fluid mx-auto mb-3 mb-md-none" loading="lazy" data-mimetype="image/jpeg"/>
+                                </div>
+                                <div class="col col-12 col-md-6 o_colored_level">
+                                        <h6 class="card-text x_font_family_rubrik">
+                                            <strong>How long?</strong>
+                                        </h6>
+                                        <ul class="card-text">
+                                            <li>The whole process takes 1 to 2 weeks.</li>
+                                        </ul>
+                                        
+                                        <h6 class="card-text x_font_family_rubrik">
+                                            <strong>Prepare for pickup</strong>
+                                        </h6>
+                                        <ul class="card-text">
+                                            <li>A notification email will alert you to the readiness of the order</li>
+                                            <li>Please schedule a time at the Capture Experience Centre to pick up your analogue media, and USB flash drive if included in your order.</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--features columns-->
+                <section class="s_features pt32 pb32 o_colored_level" data-snippet="s_features" data-name="Features">
+                <div class="container">
+                <div class="row">
+                        <div class="col-lg-6 pt32 pb32 text-center o_colored_level">
+                        <i class="fa fa-3x fa-shopping-cart rounded bg-o-color-3 m-3 rounded-circle text-white"/>
+                        <h3 class="my-4">Interest in Our Service?</h3>
+                        <a class="btn btn-primary" href="/buy-now">BUY NOW</a>
+                        </div>
+                        
+                        <div class="col-lg-6 pt32 pb32 text-center o_colored_level">
+                        <i class="fa fa-3x fa-question rounded bg-o-color-3 m-3 rounded-circle text-white"/>
+                        <h3 class="my-4">More Question?</h3>
+                        <a class="btn btn-secondary text-dark" href="/faq">Visit Our FAQ</a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                    
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

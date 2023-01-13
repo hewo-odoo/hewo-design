@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Disable Default Contact us -->
+<record id="website.contactus" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<record id="page_contactus" model="website.page">
+    <field name="name">contactus</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_contactus</field>
+    <field name="url">/contactus</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_contactus">
+            <t t-set="additional_title" t-value="'Contact Us'"/>
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+
+                    <!--title-->
+                    <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                        <div class="container s_allow_columns">
+                        <h1>
+                            <strong>Contact Us</strong>
+                            <br/>
+                        </h1>
+                        </div>
+                    </section>
+
+                    <!--columns-->
+                    <section class="s_three_columns x_contactus pt32 pb32 o_colored_level o_cc o_cc1" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+                        <div class="container">
+                        <div class="row d-flex align-items-stretch">
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                            <div class="card bg-white h-100">
+                                <div class="card-body">
+                                    <i class="fa fa-phone fa-3x text-o-color-1 mx-1 mb-3"/>
+                                    <h3 class="card-title">
+                                        <span class="x_font_family_rubrik h4"><strong>Phone</strong></span>
+                                    </h3>
+                                    <p class="card-text">
+                                        <strong>+852 2882 8707</strong>
+                                    </p>
+                                    <p class="card-text">Monday - Friday<br/>9:30 - 17:30</p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                            <div class="card bg-white h-100" >
+                                <div class="card-body">
+                                <i class="fa fa-envelope fa-3x text-o-color-1 mb-3 mx-1"/>
+                                <h3 class="card-title">
+                                    <span class="x_font_family_rubrik h4"><strong>Email</strong></span>
+                                </h3>
+                                <p class="card-text">
+                                    <strong>support@capture.hk</strong>
+                                </p>
+                                <p class="card-text">Expect to hear back from us within 24 hours.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                            <div class="card bg-white h-100">
+                                <div class="card-body">
+                                <span class="fa fa-map-marker fa-3x text-o-color-1 mb-3 mx-1"/>
+                                <h3 class="card-title">
+                                    <span class="x_font_family_rubrik h4">
+                                        <strong>Visit Us</strong>
+                                    </span>
+                                    <br/>
+                                    <span class="x_font_family_rubrik h5">
+                                        <strong>(Schedule an Appointment)</strong>
+                                    </span>
+                                </h3>
+                                <p class="card-text">
+                                    <strong>Room 202, So Hong Commercial Building, 41-47 Jervois St, Sheung Wan</strong>
+                                </p>
+                                <br/>
+                                <p class="card-text">Find us on Goole Maps :</p>
+                                <section class="s_map pb56 pt56" data-map-type="m" data-map-zoom="15" data-snippet="s_map" data-map-address="Room 202, So Hong Commercial Building, 41-47 Jervois St, Sheung Wan" data-name="Map">
+                                    <div class="map_container o_not_editable">
+                                    <div class="css_non_editable_mode_hidden">
+                                        <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                    An address must be specified for a map to be embedded
+                                </div>
+                                    </div>
+                                    <iframe class="s_map_embedded o_not_editable" width="100%" height="100%" src="https://maps.google.com/maps?q=Room%20202%2C%20So%20Hong%20Commercial%20Building%2C%2041-47%20Jervois%20St%2C%20Sheung%20Wan&amp;t=m&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"/>
+                                    <div class="s_map_color_filter"/>
+                                    </div>
+                                </section>
+                                <p class="card-text">
+                                    <br/>
+                                    <a href="#">Video guide to find us</a>
+                                </p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

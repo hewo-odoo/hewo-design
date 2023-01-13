@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- HEADER - METHOD #01 - Add Custom Header -->
+<!-- ======================================= -->
+
+<!-- Theme Header - Layout -->
+<record id="template_header_layout" model="ir.ui.view">
+    <field name="name">capturehk Header</field>
+    <field name="type">qweb</field>
+    <field name="key">website_capturehk.template_header_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//header//nav" position="replace">
+
+                <t t-call="website.navbar">
+                    <t t-set="_navbar_classes" t-valuef="shadow-sm"/>
+                    <div id="top_menu_container" class="container justify-content-start justify-content-lg-between">
+                        <!-- Brand -->
+                        <t t-call="website.placeholder_header_brand">
+                            <t t-set="_link_class" t-valuef="mr-4"/>
+                        </t>
+                        <!-- Navbar Collapse -->
+                        <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
+                            <t t-call="website.navbar_nav">
+                                <t t-set="_nav_class" t-valuef="flex-grow-1"/>
+                                <!-- Menu -->
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item"/>
+                                        <t t-set="link_class" t-valuef="nav-link"/>
+                                    </t>
+                                </t>
+                                <!-- Sign In -->
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-item ml-lg-auto"/>
+                                    <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                </t>
+                                <!-- User Dropdown -->
+                                <t t-call="portal.user_dropdown">
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown ml-lg-auto"/>
+                                    <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
+                                </t>
+                            </t>
+
+                            <!-- Language Selector -->
+                            <t t-call="website.placeholder_header_language_selector">
+                                <t t-set="_div_classes" t-valuef="my-auto ml-lg-2"/>
+                            </t>
+                            
+                            <!-- Call To Action -->
+                            <div class="d-block d-lg-none mt-3"><a class="btn btn-primary btn_cta border-0 bg-o-color-1 rounded-0" href="/buy-now">Buy Now</a></div>
+                        </div>
+
+                        <!-- Shopping cart-->
+                        <t t-call="website_sale.header_cart_link">
+                                <t t-set="_icon" t-value="True"/>
+                                <t t-set="_item_class" t-value="'align-self-md-center nav-item position-relative list-unstyled ml-auto ml-lg-0'"/>
+                                <t t-set="_link_class" t-value="'nav-link'"/>
+                        </t>
+
+                        <div class="ml-lg-4 d-none d-lg-block"><a class="btn btn-primary btn_cta border-0 bg-o-color-1 rounded-0" href="/buy-now">Buy Now</a></div>
+
+                        <!-- Navbar Toggler -->
+                        <t t-call="website.navbar_toggler">
+                            <t t-set="_toggler_class" t-valuef="ml-0"/>
+                        </t>
+                    </div>
+                </t>
+
+        </xpath>
+    </field>
+</record>
+
+<!-- FOOTER - Add Custom Footer -->
+<!-- ========================== -->
+
+<record id="template_footer_layout" model="ir.ui.view">
+    <field name="name">capturehk Footer</field>
+    <field name="type">qweb</field>
+    <field name="key">website_capturehk.template_footer_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+                
+                <!--Upper footer block-->
+                <section class="s_text_block pt32 pb16" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <div class="row">
+                            
+                            <!--Logo column-->
+                            <div class="o_colored_level pt24 pb96 col-lg-2 col-md-3">
+                                <a href="/" class="o_footer_logo logo">
+                                    <img src="/web/image/website_capturehk.logo_white" class="img-fluid o_we_force_no_transition" role="img" loading="lazy"/>
+                                </a>
+                                <br/>
+                                <span style="font-size: 14px;" class="text-nowrap">Sezie the yesterday.</span>
+                            </div>
+
+                            <!--Digistisation Services column-->
+                            <div class="pt24 pb24 o_colored_level col-lg-2 col-md-3 d-none d-md-block">
+                                <p class="mb-3">Digitisation Services</p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/products/photo-album">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Photo Album</font>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="/products/photographs">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Photographs</font>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/products/videotape">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Videotape</font>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/products/digital-media">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Digital Media</font>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--Mobile Digistisation Services collapse-->
+                            <div class="pt24 pb24 o_colored_level d-block d-md-none col-12 px-3 px-md-0" style="cursor:pointer;">
+                                <p class="mb-3 border-bottom" data-toggle="collapse" data-target="#capturehk_mobileDS" aria-expanded="false">
+                                    <strong>Digitisation Services</strong>
+                                    <i class="fa fa-plus text-100 fa-1x float-right"></i>
+                                </p>
+
+                                <ul class="list-unstyled collapse" id="capturehk_mobileDS">
+                                    <li>
+                                        <a href="/products/photo-album">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Photo Album</font>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="/products/photographs">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Photographs</font>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/products/videotape">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Videotape</font>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/products/digital-media">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Digital Media</font>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <!--Customer Service column-->
+                            <div class="o_colored_level pt24 pb72 col-lg-2 col-md-3 d-none d-md-block">
+                                <p class="mb-3">Customer Service</p>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/contactus">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Contact Us</font>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/faq">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">FAQ</font>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--Mobile Customer Service collapse-->
+                            <div class="o_colored_level pt24 pb72 col-12 d-block d-md-none px-3 px-md-0" style="cursor:pointer;">
+                                <p class="mb-3 border-bottom" data-toggle="collapse" data-target="#capturehk_mobileCS" aria-expanded="false">
+                                    <strong>Customer Service</strong>
+                                    <i class="fa fa-plus text-100 fa-1x float-right"></i>
+                                </p>
+                                <ul class="list-unstyled collapse" id="capturehk_mobileCS">
+                                    <li>
+                                        <a href="/contactus">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">Contact Us</font>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/faq">
+                                            <span style="font-size: 14px;">
+                                            <font class="text-400">FAQ</font>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--Social media-->
+                            <div class="o_colored_level col-lg-6 align-self-end">
+                                <div class="s_share text-right" data-snippet="s_share" data-name="Social Media">
+                                    <p class="s_share_title d-block">SOCIAL</p>
+                                    <a href="https://www.facebook.com/CaptureLimited" class="s_share_facebook" target="_blank">
+                                        <i class="fa shadow-sm fa-facebook-square text-100 fa-2x"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/capture_hongkong/" class="s_share_instagram" target="_blank">
+                                        <i class="fa shadow-sm text-100 fa-instagram fa-2x" ></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UC9npy9yWNsH9qG-ZcaxfC7A" class="s_share_linkedin" target="_blank">
+                                        <i class="fa shadow-sm text-100 fa-youtube-play fa-2x" ></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!--divider-->
+                <section class="s_text_block" data-snippet="s_text_block">
+                    <div class="container allow_columns">
+                        <div class="s_hr pt16 pb16" data-name="Separator">
+                            <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-color: var(--600);"/>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Lower footer block-->
+                <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-10 text-left o_colored_level">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                            <span class="fa fa-copyright" contenteditable="false">​</span>
+                                            2022 Capture Limited
+                                        <span style="font-size: 14px;">
+                                            <font class="text-400 ml-3">All rights reserved.</font>
+                                        </span>
+                                    </li>
+                                </ul>
+
+                                <p style="font-size: 14px;">
+                                    <span>
+                                        <font class="text-400">202 So Hong Commercial Centre 41 Jervois Street, Sheung Wan</font>
+                                        <br/>
+
+                                        <font class="text-400">Phone:</font>
+                                        <a class="text-white" href="tel://+85228828397">+852 2882 8397</a>
+                                        <br/>
+
+                                        <font class="text-400">Whatsapp:</font>
+                                        <a class="text-white" href="https://wa.me/85252710931?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A3%E4%B8%8B%E4%BD%A0%E5%93%8B%E5%98%85%E8%88%8A%E5%AA%92%E9%AB%94%E6%95%B8%E7%A2%BC%E5%8C%96%E6%9C%8D%E5%8B%99%E3%80%82%0AHi!%20I%20would%20like%20to%20know%20more%20about%20the%20analogue%20media%20digitisation%20service.">
+                                            +852 5271 0931
+                                        </a>
+                                        <br/>
+
+                                        <font class="text-400">Email: cs@capture.hk </font>
+                                        
+                                    </span>
+                                </p>
+
+                                <p style="font-size: 14px;">
+                                    <span >
+                                        <font class="text-200 mr-3"><a href="/privacy-policy">Privacy</a></font>
+                                    </span>
+
+                                    <span style="font-size: 14px;">
+                                        <font class="text-200"><a href="/term">Terms</a></font>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </xpath>
+    </field>
+</record>
+</odoo>

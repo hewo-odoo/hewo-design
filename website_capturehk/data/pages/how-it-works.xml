@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="page_howitworks" model="website.page">
+    <field name="name">howitworks</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_howitworks</field>
+    <field name="url">/how-it-works</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_howitworks">
+            <t t-set="additional_title" t-value="'How It Works'"/>
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+
+                    <!--title-->
+                    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                        <div class="container s_allow_columns">
+                        <p class="text-o-color-1">
+                            <strong>HOW IT WORKS</strong>
+                        </p>
+                        <h1>
+                            <strong>Choose Your Way</strong>
+                        </h1>
+                        <p class="lead">Either prepay online or pay on-site to get it down.</p>
+                        </div>
+                    </section>
+
+                    <!--section title-->
+                    <section class="s_text_block pt40 o_colored_level o_cc o_cc2 x_white_desktop_background" data-snippet="s_text_block" data-name="Text">
+                        <div class="s_allow_columns container">
+                        <h2 style="text-align: center;" class="x_font_family_rubrik text-o-color-1">
+                            <strong>Online Prepayment</strong>
+                        </h2>
+                        <p style="text-align: center;" class="lead">Best practice to speed up your the drop off experience.</p>
+                        </div>
+                    </section>
+
+                    <!--online prepay process-->
+                    <section class="s_process_steps pb24 o_colored_level o_cc o_cc2 x_white_desktop_background" data-snippet="s_process_steps" data-name="Steps">
+                        <div class="container">
+                        <div class="row no-gutters">
+
+                            <div class="s_process_step pt24 pb24 o_colored_level col-lg-4">
+                                <div class="s_process_step_icon">
+                                    <span><i class="fa fa-3x fa-credit-card mx-auto rounded-circle bg-primary"/></span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4 class="x_font_family_rubrik">Prepay Online</h4>
+                                </div>
+                            </div>
+
+                            <div class="s_process_step pt24 pb24 o_colored_level col-lg-4">
+                                <div class="s_process_step_icon">
+                                    <span><i class="fa fa-3x fa-arrow-down mx-auto rounded-circle bg-primary"/></span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4 class="x_font_family_rubrik">Schedule a Drop-off</h4>
+                                </div>
+                            </div>
+
+                            <div class="s_process_step pt24 pb24 o_colored_level col-lg-4">
+                            <div class="s_process_step_icon">
+                                <span><i class="fa fa-3x fa-dropbox mx-auto rounded-circle bg-primary"/></span>
+                            </div>
+                            <div class="s_process_step_content text-center">
+                                <h4 class="x_font_family_rubrik">Schedule a Pickup</h4>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Learn more button-->
+                    <section class="s_text_block pb56 o_colored_level o_cc o_cc2 x_white_desktop_background" data-snippet="s_text_block" data-name="Text">
+                        <div class="container s_allow_columns">
+                        <p style="text-align: center;">
+                            <a class="btn btn-primary x_btn-primary_o_cc2 border-0" href="/online-prepayment">LEARN MORE</a>
+                        </p>
+                        </div>
+                    </section>
+
+                    <!--section title-->
+                    <section class="s_text_block pt40 o_colored_level o_cc o_cc3 x_white_desktop_background" data-snippet="s_text_block" data-name="Text">
+                        <div class="s_allow_columns container">
+                        <h2 style="text-align: center;" class="text-o-color-2 x_font_family_rubrik">
+                            <strong>On-site Payment</strong>
+                        </h2>
+                        <p style="text-align: center;" class="lead">Learn more with our service at Capture Epxerience Centre.</p>
+                        </div>
+                    </section>
+
+                    <!--online prepay process-->
+                    <section class="s_process_steps pb24 o_colored_level o_cc o_cc3 x_white_desktop_background" data-snippet="s_process_steps" data-name="Steps">
+                        <div class="container">
+                        <div class="row no-gutters">
+                            <div class="s_process_step pt24 pb24 o_colored_level col-lg-4">
+                                <div class="s_process_step_icon">
+                                    <span><i class="fa fa-3x fa-calendar-check-o mx-auto rounded-circle bg-secondary"/></span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4 class="x_font_family_rubrik">Schedule a Consultation </h4>
+                                </div>
+                            </div>
+
+                            <div class="s_process_step pt24 pb24 o_colored_level col-lg-4">
+                                <div class="s_process_step_icon">
+                                    <span><i class="fa fa-3x fa-money mx-auto rounded-circle bg-secondary"/></span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4 class="x_font_family_rubrik">Pay at the Capture Experience Centre</h4>
+                                </div>
+                            </div>
+
+                            <div class="s_process_step pt24 pb24 o_colored_level col-lg-4">
+                                <div class="s_process_step_icon">
+                                    <span><i class="fa fa-3x fa-dropbox mx-auto rounded-circle bg-secondary"/></span>
+                                </div>
+                                <div class="s_process_step_content text-center">
+                                    <h4 class="x_font_family_rubrik">Schedule a Pickup</h4>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Learn more button-->
+                    <section class="s_text_block pb56 o_colored_level o_cc o_cc3 x_white_desktop_background" data-snippet="s_text_block" data-name="Text">
+                        <div class="container s_allow_columns">
+                        <p style="text-align: center;">
+                            <a class="btn btn-primary" href="/onsite-payment">LEARN MORE</a>
+                        </p>
+                        </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

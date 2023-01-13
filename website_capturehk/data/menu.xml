@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+<!--Remove default nmenu items-->
+<!-- Home -->
+<delete model="website.menu" search="[('url','in', ['/', '/']), ('website_id', '=', 1)]"/>
+
+<!-- Contact us -->
+<delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]"/>
+
+<!-- Shop -->
+<delete model="website.menu" search="[('url','in', ['/', '/shop']), ('website_id', '=', 1)]"/>
+
+
+<!--Products-->
+<record id="menu_products" model="website.menu">
+    <field name="name">Products</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="website_id">1</field>
+    <field name="sequence" type="int">20</field>
+</record>
+
+    <record id="menu_products_overview" model="website.menu">
+        <field name="name">Overview</field>
+        <field name="url">/products</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_products"/>
+        <field name="sequence" type="int">21</field>
+    </record>
+
+    <record id="menu_products_photo_album" model="website.menu">
+        <field name="name">Photo Album</field>
+        <field name="url">/products/photo-album</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_products"/>
+        <field name="sequence" type="int">22</field>
+    </record>
+
+    <record id="menu_products_photographs" model="website.menu">
+        <field name="name">Photographs</field>
+        <field name="url">/products/photographs</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_products"/>
+        <field name="sequence" type="int">23</field>
+    </record>
+
+    <record id="menu_products_videotape" model="website.menu">
+        <field name="name">Videotape</field>
+        <field name="url">/products/videotape</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_products"/>
+        <field name="sequence" type="int">24</field>
+    </record>
+
+    <record id="menu_products_digital_media" model="website.menu">
+        <field name="name">Digital Media</field>
+        <field name="url">/products/digital-media</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_products"/>
+        <field name="sequence" type="int">25</field>
+    </record>
+
+    <record id="menu_products_google_photos" model="website.menu">
+        <field name="name">Google Photos</field>
+        <field name="url">/products/google-photos</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_products"/>
+        <field name="sequence" type="int">26</field>
+    </record>
+
+    <record id="menu_products_videotapes" model="website.menu">
+        <field name="name">USB Flash Drive</field>
+        <field name="url">/products/usb</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_products"/>
+        <field name="sequence" type="int">27</field>
+    </record>
+
+<!--About us-->
+<record id="menu_aboutus" model="website.menu">
+    <field name="name">About Us</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="website_id">1</field>
+    <field name="sequence" type="int">28</field>
+</record>
+
+    <record id="menu_aboutus_our_story" model="website.menu">
+        <field name="name">Our Story</field>
+        <field name="url">/aboutus/our-story</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_aboutus"/>
+        <field name="sequence" type="int">29</field>
+    </record>
+
+    <record id="menu_aboutus_privacy" model="website.menu">
+        <field name="name">Privacy</field>
+        <field name="url">/aboutus/privacy</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_aboutus"/>
+        <field name="sequence" type="int">30</field>
+    </record>
+
+    <record id="menu_aboutus_security" model="website.menu">
+        <field name="name">Security</field>
+        <field name="url">/aboutus/security</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_aboutus"/>
+        <field name="sequence" type="int">31</field>
+    </record>
+
+    <record id="menu_aboutus_customer_care" model="website.menu">
+        <field name="name">Customer Care</field>
+        <field name="url">/aboutus/customer-care</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_aboutus"/>
+        <field name="sequence" type="int">32</field>
+    </record>
+
+<!--How It Works-->
+<record id="menu_howitworks" model="website.menu">
+    <field name="name">How It Works</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="website_id">1</field>
+    <field name="sequence" type="int">33</field>
+</record>
+
+    <record id="menu_howitworks_overview" model="website.menu">
+        <field name="name">How it works</field>
+        <field name="url">/how-it-works</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_howitworks"/>
+        <field name="sequence" type="int">34</field>
+    </record>
+
+    <record id="menu_online_prepayment" model="website.menu">
+        <field name="name">Online Prepayment</field>
+        <field name="url">/online-prepayment</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_howitworks"/>
+        <field name="sequence" type="int">35</field>
+    </record>
+
+    <record id="menu_onsite_payment" model="website.menu">
+        <field name="name">Onsite Payment</field>
+        <field name="url">/onsite-payment</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_capturehk.menu_howitworks"/>
+        <field name="sequence" type="int">36</field>
+    </record>
+
+</odoo>

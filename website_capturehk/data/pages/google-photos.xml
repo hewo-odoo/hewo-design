@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_google_photos" model="website.page">
+    <field name="name">Google Photo</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_google_photos</field>
+    <field name="url">/products/google-photos</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_google_photos">
+            <t t-set="additional_title" t-value="'Google Photos'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Title and sub-title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                        <p><font class="text-o-color-1"><strong>PARTNER</strong></font></p>
+                        <h1 class="text-dark"><strong>The Only Trusted Digitisation Partner of <font class="text-o-color-1">Google Photos</font></strong></h1>
+                    </div>
+            </section>
+
+            <!--Hero section-->
+            <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_image_text" data-name="Image - Text">
+                <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-5 pt16 pb16 o_colored_level">
+                        <p><strong>Capture</strong> was chosen as a premier partner to <strong>Google Photos</strong> at Google I/O in 2018. Google Photos is the largest storage solution for family memories in the World.</p>
+                        <p><span>Google Photos is the largest storage solution for family memories in the World.</span>
+                            <ul>
+                                <li><strong><font class="text-o-color-1">500+ million</font></strong> users in 2017</li>
+                                <li><strong><font class="text-o-color-1">1 billion</font></strong> users in 2019</li>
+                                <li><strong><font class="text-o-color-1">2 billion users</font></strong> with 4 trillion photos stored</li>
+                            </ul>
+                        </p>
+                        <p>We continue to believe that Google Photos is the best long term solution for your family memories</p>
+                    </div>
+
+                    <div class="col-lg-6 offset-lg-1 pt16 pb16 o_colored_level">
+                    <div class="media_iframe_video mx-auto" data-oe-expression="//www.youtube.com/embed/KIFfibtzaEo?autoplay=0&amp;rel=0">
+                        <div class="css_editable_mode_display">&amp;nbsp;</div>
+                        <div class="media_iframe_video_size">&amp;nbsp;</div>
+                        <iframe src="//www.youtube.com/embed/KIFfibtzaEo?autoplay=0&amp;rel=0" frameborder="0" allowfullscreen="allowfullscreen"/>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </section>
+
+        <!--Sub-title & title-->
+        <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns container">
+                    <h2>Media on Google Photos</h2>
+                    <p>The best choice for digital media management</p>
+                </div>
+        </section>
+
+        <!--Media list-->
+        <section class="s_media_list pt32 pb80 o_colored_level" data-vcss="001" data-snippet="s_media_list" data-name="Media List">
+            <div class="container">
+            <div class="row s_nb_column_fixed s_col_no_bgcolor">
+
+                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_cc o_cc3 o_colored_level" style="min-height:220px;">
+                        
+                        <div class="col-lg-6 align-self-stretch s_media_list_img_wrapper">
+                            <img src="/web/image/website_capturehk.img_google-photos_organising" class="s_media_list_img h-100 w-100 bg-o-color-9" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+
+                        <div class="col-lg-6 s_media_list_body">
+                            <h3 class="x_font_family_rubrik">Learn about <span class="text-o-color-1">Organising</span></h3>
+                            <p> Say no to mess. Organize your media automatically by date, location, people or event into your ower albums.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_cc o_cc3 o_colored_level flex-row-reverse" style="min-height:220px;">
+                        
+                        <div class="col-lg-6 align-self-stretch s_media_list_img_wrapper">
+                            <img src="/web/image/website_capturehk.img_google-photos_searching" class="s_media_list_img h-100 w-100 bg-o-color-9" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+
+                        <div class="col-lg-6 s_media_list_body">
+                            <h3 class="x_font_family_rubrik">Learn about <span class="text-o-color-1">Searching</span></h3>
+                            <p>With or without tagging your photos, you can use Google's powerful search tools to find the exact photo that you are looking for. Find the right photo from thousands of media in a flip.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12 s_media_list_item pt16 pb16" data-name="Media item">
+                    <div class="row s_col_no_resize s_col_no_bgcolor no-gutters align-items-center o_cc o_cc3 o_colored_level" style="min-height:220px;">
+                        
+                        <div class="col-lg-6 align-self-stretch s_media_list_img_wrapper">
+                            <img src="/web/image/website_capturehk.img_google-photos_sharing" class="s_media_list_img h-100 w-100 bg-o-color-9" loading="lazy" data-mimetype="image/jpeg"/>
+                        </div>
+
+                        <div class="col-lg-6 s_media_list_body">
+                            <h3 class="x_font_family_rubrik">Learn about <span class="text-o-color-1">Sharing</span></h3>
+                            <p>Share your favorite memories wth loved-ones both near and far away.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!--Title-->
+        <section class="s_title pt72 pb24 o_colored_level o_cc o_cc2" data-vcss="001" data-snippet="s_title" data-name="Title">
+            <div class="container s_allow_columns">
+                <h2 style="text-align: center;">What our customers says</h2>
+            </div>
+        </section>
+
+        <!--Customers reviews carousel-->
+        <section class="s_carousel_wrapper d-none d-md-block" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+            <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1666920806944">
+            <ol class="carousel-indicators o_we_no_overlay">
+                <li data-slide-to="0" class="active" data-target="#myCarousel1666920806944"/>
+                <li data-slide-to="1" data-target="#myCarousel1666920806944"/>
+                <li data-slide-to="2" data-target="#myCarousel1666920806944"/>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2 active" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+
+                        <div class="carousel-content col-lg-6 o_colored_level mb-3 mb-lg-0">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>The first time I tried Google Photos, I didn't understand a lot of things. Thanks to the company's patience and they sent me a lot of information. Good attitude!</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Jade W.</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+
+                        <div class="carousel-content col-lg-6 o_colored_level mb-3 mb-lg-0">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>I was asked to fill in the date and title of the video for this service, but I didn't expect the final output to be the same. Google Photos is sorted by time, and it's fast to search my videos by typing the title.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Kelvin L.</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+                        <div class="carousel-content col-lg-6 o_colored_level mb-3 mb-lg-0">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>I've been using Google Photos for three or four years and the sharing function is so easy, it's like using whatsapp and the picture quality is not affected. The cooperation between Capture and Google Photos works well. They are really professional!</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Gary.T</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+
+                        <div class="carousel-content col-lg-6 o_colored_level mb-3 mb-lg-0">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>A company that works with Google Photos and the results are really satisfying.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Jerry.C</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+                        <div class="carousel-content col-lg-6 o_colored_level mb-3 mb-lg-0">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>Google Photos is convenient for searching my photos. Glad to have all media on it.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Sally S.</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+
+                        <div class="carousel-content col-lg-6 o_colored_level mb-3 mb-lg-0">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>Although CDs are already digital media, many laptops can't play CDs anymore. Thanks to Capture for uploading the photos and videos to Google Photos for easy viewing.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Sing</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806944">
+                <span class="carousel-control-prev-icon"/>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806944">
+                <span class="carousel-control-next-icon"/>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        
+        </section>
+
+        <!--MOBILE Customers reviews carousel-->
+        <section class="s_carousel_wrapper d-block d-md-none" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+            <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1666920806945">
+            <ol class="carousel-indicators o_we_no_overlay">
+                <li data-slide-to="0" class="active" data-target="#myCarousel1666920806945"/>
+                <li data-slide-to="1" data-target="#myCarousel1666920806945"/>
+                <li data-slide-to="2" data-target="#myCarousel1666920806945"/>
+                <li data-slide-to="3" data-target="#myCarousel1666920806945"/>
+                <li data-slide-to="4" data-target="#myCarousel1666920806945"/>
+                <li data-slide-to="5" data-target="#myCarousel1666920806945"/>
+            </ol>
+            <div class="carousel-inner">
+
+                <!--carousel 1-->
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2 active" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+
+                        <div class="carousel-content col o_colored_level">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>The first time I tried Google Photos, I didn't understand a lot of things. Thanks to the company's patience and they sent me a lot of information. Good attitude!</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Jade W.</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!--carousel 2-->
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+
+                        <div class="carousel-content col o_colored_level">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>I was asked to fill in the date and title of the video for this service, but I didn't expect the final output to be the same. Google Photos is sorted by time, and it's fast to search my videos by typing the title.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Kelvin L.</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                <!--carousel 3-->
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+                        <div class="carousel-content col o_colored_level">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>I've been using Google Photos for three or four years and the sharing function is so easy, it's like using whatsapp and the picture quality is not affected. The cooperation between Capture and Google Photos works well. They are really professional!</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Gary.T</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!--carousel 4-->
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+
+                        <div class="carousel-content col o_colored_level">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>A company that works with Google Photos and the results are really satisfying.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Jerry.C</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!--carousel 5-->
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+                        <div class="carousel-content col o_colored_level">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>Google Photos is convenient for searching my photos. Glad to have all media on it.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Sally S.</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!--carousel 6-->
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+
+                        <div class="carousel-content col o_colored_level">
+                            <blockquote class="s_blockquote s_blockquote_classic w-100 mx-auto o_animable blockquote h-100" data-snippet="s_blockquote" data-name="Blockquote">
+                            <i class="s_blockquote_icon fa fa-1x fa-quote-left bg-o-color-1 rounded"/>
+                            <div class="s_blockquote_content bg-100 p-md-5 h-100 d-flex flex-column justify-content-between">
+                                <p>Although CDs are already digital media, many laptops can't play CDs anymore. Thanks to Capture for uploading the photos and videos to Google Photos for easy viewing.</p>
+                                <footer class="blockquote-footer">
+                                <span class="s_blockquote_author"><b>Sing</b></span>
+                                </footer>
+                            </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806945">
+                <span class="carousel-control-prev-icon"/>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806945">
+                <span class="carousel-control-next-icon"/>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        
+        </section>
+
+        <!--Title-->
+        <section class="s_title pt80 pb32 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+            <div class="container s_allow_columns">
+            <h2 style="text-align: center;">Get Started with Google Photos</h2>
+            </div>
+        </section>
+
+        <!--Goolgle tutoirals columns-->
+        <section class="s_three_columns pb40 o_colored_level d-none d-md-block" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+            <div class="container">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-4 s_col_no_bgcolor pt16 pb16">
+                <div class="card bg-white h-100">
+                    <img class="card-img-top bg-o-color-9" src="/web/image/website_capturehk.img_google-photos_step1" loading="lazy" data-mimetype="image/jpeg"/>
+                    <div class="card-body">
+                        <h3 class="card-title x_font_family_rubrik">Step 1.</h3>
+                        <p class="card-text">Sign up for Gmail &amp; download the Google Photos App.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4 s_col_no_bgcolor pt16 pb16">
+                <div class="card bg-white h-100">
+                    <img class="card-img-top bg-o-color-9" src="/web/image/website_capturehk.img_google-photos_step2" loading="lazy" data-mimetype="image/jpeg"/>
+                    <div class="card-body">
+                        <h3 class="card-title x_font_family_rubrik">Step 2.</h3>
+                        <p class="card-text">Allow access and media will be uploaded automatically.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4 s_col_no_bgcolor pt16 pb16">
+                <div class="card bg-white h-100">
+                    <img class="card-img-top bg-o-color-9" src="/web/image/website_capturehk.img_google-photos_step3" loading="lazy" data-mimetype="image/jpeg"/>
+                    <div class="card-body">
+                        <h3 class="card-title x_font_family_rubrik">Step 3.</h3>
+                        <p class="card-text">Enjoy and share your media.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--MOBILE Google tutoirals carousel-->
+        <section class="s_carousel_wrapper d-block d-md-none" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+            <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1666920806947">
+            <ol class="carousel-indicators o_we_no_overlay">
+                <li data-slide-to="0" class="active" data-target="#myCarousel1666920806947"/>
+                <li data-slide-to="1" data-target="#myCarousel1666920806947"/>
+                <li data-slide-to="2" data-target="#myCarousel1666920806947"/>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level active" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+
+                        <div class="carousel-content col s_col_no_bgcolor pt16 pb16">
+                        <div class="card bg-white h-100">
+                            <img class="card-img-top bg-o-color-9" src="/web/image/website_capturehk.img_google-photos_step1" loading="lazy" data-mimetype="image/jpeg"/>
+                            <div class="card-body">
+                                <h3 class="card-title x_font_family_rubrik">Step 1.</h3>
+                                <p class="card-text">Sign up for Gmail &amp; download the Google Photos App.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+                        <div class="carousel-content col s_col_no_bgcolor pt16 pb16">
+                        <div class="card bg-white h-100">
+                            <img class="card-img-top bg-o-color-9" src="/web/image/website_capturehk.img_google-photos_step2" loading="lazy" data-mimetype="image/jpeg"/>
+                            <div class="card-body">
+                                <h3 class="card-title x_font_family_rubrik">Step 2.</h3>
+                                <p class="card-text">Allow access and media will be uploaded automatically.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level" data-name="Slide">
+                <div class="container oe_unremovable">
+                    <div class="row content">
+                        <div class="carousel-content col s_col_no_bgcolor pt16 pb16">
+                        <div class="card bg-white h-100">
+                            <img class="card-img-top bg-o-color-9" src="/web/image/website_capturehk.img_google-photos_step3" loading="lazy" data-mimetype="image/jpeg"/>
+                            <div class="card-body">
+                                <h3 class="card-title x_font_family_rubrik">Step 3.</h3>
+                                <p class="card-text">Enjoy and share your media.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806947">
+                <span class="carousel-control-prev-icon"/>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806947">
+                <span class="carousel-control-next-icon"/>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        
+        </section>
+
+        <!--Google Photos Tutorail CTA-->
+        <section class="s_text_block pb80 o_colored_level" data-snippet="s_text_block" data-name="Text">
+            <div class="s_allow_columns container">
+            <p style="text-align: center;">
+                <a class="btn btn-primary mr-3 mb-3 mb-sm-0" href="https://photos.google.com/">Explore Your Google Photos<span class="fa fa-play-circle-o ml-2"/> </a>
+                <a class="btn btn-secondary text-dark" href="/blog">Tutorial</a></p>
+            </div>
+        </section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

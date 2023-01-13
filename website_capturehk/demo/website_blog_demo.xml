@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Capture hk blog setting -->
+<record id="blog_blog_1" model="blog.blog">
+    <field name="name">Digitisation</field>
+    <field name="subtitle">Capture's Pick on Digitisation</field>
+</record>
+
+<record id="blog_blog_2" model="blog.blog">
+    <field name="name">Nostaglic Memories</field>
+    <field name="subtitle">Capture's Pick on Nostaglic Memories</field>
+</record>
+
+<record id="blog_blog_3" model="blog.blog">
+    <field name="name">Google Photos</field>
+    <field name="subtitle">Capture's Pick on Google Photos</field>
+</record>
+
+</odoo>

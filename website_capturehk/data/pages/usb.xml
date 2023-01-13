@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_usb" model="website.page">
+    <field name="name">USB</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_usb</field>
+    <field name="url">/products/usb</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_usb">
+            <t t-set="additional_title" t-value="'USB'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <!--Title and sub-title-->
+            <section class="s_text_block pt40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                    <p><font class="text-o-color-1"><strong>PARTNER</strong></font></p>
+                    <h1><strong>Capture USB Flash Drive</strong></h1>
+                    </div>
+            </section>
+
+
+            <!--Text-image-->
+            <section class="s_text_image pt32 pb32 o_colored_level" data-snippet="s_image_text" data-name="Image - Text">
+                <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 px-lg-5 pt16 pb16 o_colored_level">
+                        <img src="/web/image/website_capturehk.img_usb_ritek" class="img img-fluid mx-auto" loading="lazy" data-mimetype="image/jpeg"/>
+                    </div>
+
+                    <div class="col-lg-6 px-lg-5 pt16 pb16 o_colored_level">
+                        <p>Capture has partnered with Ritek Corporation, a professional quality manufacturer of reliable flash memory.</p>
+                        <p>We will automatically upgrade the USB storage capacity with no extra charge, as the volume of your digitised video or photos grows in size.</p>
+                    </div>
+                    
+                </div>
+                </div>
+            </section>
+
+            <!--2 big blocks-->
+            <section class="s_color_blocks_2" data-snippet="s_color_blocks_2" data-name="Big Boxes">
+                <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-6 o_cc o_cc1 text-center o_colored_level">
+                        <i class="fa fa-usb m-3 rounded-circle fa-2x text-white bg-o-color-2"/>
+                        <h2 class="x_font_family_rubrik">Physical Storage Devices</h2>
+                        <h5 class="text-o-color-2 x_font_family_rubrik my-4"><strong>USB FLASH DRIVE</strong></h5>
+                        <p>A physical storage devices for digital media management for your computer. The USB flash drive is reliable and reusable after you transfer them into other storage.</p>
+                    </div>
+
+                    <div class="col-lg-6 o_cc o_cc1 text-center o_colored_level">
+                        <i class="fa fa-cloud-upload m-3 rounded-circle fa-2x text-white bg-o-color-1"/>
+                        <h2 class="x_font_family_rubrik">Digital Media Mangement</h2>
+                        <h5 class="text-o-color-1 x_font_family_rubrik my-4"><strong>GOOGLE PHOTOS</strong></h5>
+                        <p>The best choice for digital media management. <br/>
+                            Easy for media organising, searching and sharing.</p>
+                        <a href="/products/google-photos" class="btn btn-primary x_btn-primary_o_cc2 mb-2 mt-2">LEARN MORE</a>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

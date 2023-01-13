@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="page_terms" model="website.page">
+    <field name="name">terms</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_capturehk.page_terms</field>
+    <field name="url">/term</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_capturehk.page_terms">
+            <t t-set="additional_title" t-value="'Terms'"/>
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+
+                    <!--title-->
+                    <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                        <div class="container s_allow_columns">
+                        <h1>
+                            <strong>Terms Of Service</strong>
+                        </h1>
+                        </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p>This agreement (the "Agreement") is a legal agreement between you, either an individual or a single legal entity ("You" or "you"), and Capture Limited / Capture, Inc. ("Capture", formerly YesVideo Inc.) with respect to use of the Capture digital conversion, online hosting, and sharing services on this site (the "Service"). Your access to and use of the Service is expressly conditioned on your compliance with this Agreement. By accessing or using the Service, you agree to be bound by this Agreement.</p>
+                                <p>YOU UNDERSTAND THAT BY CLICKING THE "Place My Order" BUTTON AND BY USING THE SERVICE, YOU ARE AGREEING TO BOUND BY THIS AGREEMENT. IF YOU DO NOT ACCEPT THIS AGREEMENT IN ITS ENTIRETY, YOU MAY NOT ACCESS OR USE THE SERVICE. IF YOU AGREE TO THIS AGREEMENT ON BEHALF OF A BUSINESS, YOU REPRESENT AND WARRANT THAT YOU HAVE THE AUTHORITY TO BIND THAT BUSINESS TO THIS AGREEMENT, AND YOUR AGREEMENT TO BE BOUND WILL BE TREATED AS THE AGREEMENT OF THE BUSINESS. IN THAT EVENT, "YOU" AND "YOUR" WILL REFER AND APPLY TO THAT BUSINESS</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Privacy</strong></span></p>
+                                <p>Please see our Capture Privacy Policy, which is incorporated into this Agreement by reference.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Terms of Sale, Refunds</strong></span></p>
+                                <p>All sale transactions are deemed final, and refunds are only allowed within SEVEN (7) days of transaction or payment and MUST BE prior to any MEDIA DIGITISATION processing. Once the digitisation process starts, there will be no refund possible. All Pre-payments have a validity of NINETY (90) days from the time of transaction and are invalid after that. ALL REFUNDS MUST be credited to the same person/organisation that is recorded in the initial transaction and payment details of the Pre-payment; NO CREDIT will be entertained if the Pre-payment is received as a gift or otherwise. All COMPLAINTS must be lodged within SEVEN (7) days after the final order delivery and receipt of the completed SERVICE. Please contact <a href="mailto:support@capture.hk">support@capture.hk</a> directly for any issues and we will be happy to have a discussion.</p>
+                            </div>
+                    </section>
+                    
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Digital Files and Uploads</strong></span></p>
+                                <p>Once your MEDIA DIGITISATION Service order is complete, you will receive an email notice from Capture to pick up your order and instructions on how to access transferred digital files from this order ("Digital Files"). Digital Files are accessible for a specified number of days following delivery of this email notice. DIGITAL FILES ARE DELETED FROM THE CAPTURE SYSTEMS AFTER THE SPECIFIED NUMBER OF DAYS HAVE PASSED.</p>
+                                <p>For Digital Files automatically uploaded (Digital Uploads) to Google Photos, all Digital Files saved to Google Photos are stored at 'Original Quality' and count towards your Google Photos storage quota.</p>
+                            </div>
+                    </section>
+                    
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Accounts, Passwords and Security</strong></span></p>
+                                <p>You are responsible for keeping any passwords secure and preventing unauthorised access to your account. You will be solely responsible and liable for any activity that occurs under your username, whether or not you have authorised such activities or actions. If you lose your password for your account, you may not be able to access the data you uploaded to Google Photos or others including Capture or Capture's partners or affiliates uploaded to the Service on your behalf (your "Data"). You will immediately notify Capture of any unauthorised use of your password. Capture WILL NEVER ASK for your password credentials, as all security protocols are followed as per Google authentication and login.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Acceptable Use and Conduct</strong></span></p>
+                                <p>You are solely responsible for your conduct and your Data related to the Service. You agree to indemnify, defend, and hold harmless Capture, its partners and its affiliates from any and all claim, loss, cost, liability, and expenses (including, without limitation, reasonable attorneys' fees and costs), arising from or related to your Data, your use of the Service, your violation of this Agreement, and/or your violation of any third party right (including intellectual property, attribution, publicity, privacy, and confidentiality). Your use of the Service must be in compliance with all applicable laws, rules and regulations and must not infringe or violate any third-party rights. Any unauthorised use of the Service is a violation of this Agreement and certain federal and state laws. Such violations may subject the unauthorised user and his or her agents to civil and criminal penalties.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Responsibility For, Ownership and Consent to Access Your Data</strong></span></p>
+                                <p>Capture does not claim any ownership rights in your Data. You are solely responsible for your conduct with respect to the Service and for the content of your Data, as well as any of the content contained in your communications with other users of the Service. Capture allows you to share some or all your Data. If you decide to share your Data, you are giving certain legal rights to those individuals or entities whom you have given access to your Data. By utilising the Service, you consent to allow Capture to access your computer to access any Data that you choose to be uploaded to the Service. By placing Data into an accessible format through the use of the Service, you consent to share access to such Data with those other users that have been authorised to access such Data. Capture has no control over such other users' access and therefore Capture hereby disclaims any such associated liability. You represent and warrant that you own or have the necessary licenses, rights, consents, and permissions required to grant the licenses set forth herein with respect to your Data. You agree and acknowledge that Capture has no responsibility or obligation to monitor or notify you of any non-compliance related to the rights you may choose to grant to other users who have access to your Data, if any, and that Capture has no responsibility to enforce or police, or aid you in enforcing or policing, the permissions you have chosen to offer. In fact, you acknowledge that Capture does not have any obligation to monitor any of the Data that is uploaded, posted, submitted, linked to or otherwise transmitted using the Service, for any purpose and, as a result, is not responsible for the accuracy, completeness, appropriateness, timeliness, legality or applicability of the Data or anything said, depicted, or written by users in their submissions, including, without limitation, any information obtained by using the Service. Capture does not endorse anything contained in the Data, or any opinion, recommendation or advice expressed therein, and you agree to waive, and hereby do waive, any legal or equitable rights or remedies you have or may have against Capture with respect thereto.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>No Reliance</strong></span></p>
+                                <p>You acknowledge and agree that you should not rely on the Service for any reason. You further acknowledge and agree that you are responsible to maintain and protect any and all data or information that is stored or processed by the Service. Without limiting the foregoing, you will be responsible for all costs and expenses that you or others may incur with respect to backing up, restoring and/or recreating any data or information that is lost or corrupted as a result of your use of the Service. Your access to and use of the Service is at your own risk. Capture will have no responsibility for any harm to your computer system, loss or corruption of any data or information, or other harm that results from your access to or use of the Service.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Changes to the Service and Terms and Conditions</strong></span></p>
+                                <p>Capture reserves the right at any time to modify, suspend, or discontinue providing the Service or any part thereof in its sole discretion with or without notice. Capture will use commercially reasonable efforts to notify you of modification, suspension, or discontinuance of the Service either by sending an email to the email address you provide with your registration or by a posting on our website. However, in no event will Capture be liable to you or to any third party for any modification, suspension or discontinuance of the Service, with or without notice.</p>
+                                <p>Capture reserves the right at any time to modify this Agreement in its sole discretion, without liability to you. This Agreement, as amended, will be effective upon acceptance of registration for new users and effective for all existing users 15 days after the posting of any amended terms on our website. You agree to be bound by this Agreement, as modified. If you do not agree to any changes to this Agreement, you must terminate your account immediately. Please review the most current version of this Agreement from time to time, so that you will be apprised of any changes.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Intellectual Property</strong></span></p>
+                                <p>You acknowledge that, as between you and Capture, Capture or its licensors own all right, title and interest in and to the Service, portions thereof, and Capture content provided through or in conjunction with the Service, including without limitation all intellectual property rights therein and thereto. Except for the rights granted in this Agreement, all rights in and to the Service are hereby reserved, and no implied licenses are granted by Capture. You may not copy or modify the HTML or other code used to generate web pages on our sites.</p>
+                                <p>If you have comments on the Service or ideas on how to improve it, please send an email to support@capture.hk</p>
+                                <p>You should be aware that data or information available through the Service may be protected by intellectual property, proprietary or confidentiality rights which are owned by the user who submitted or created the data or information. You may not modify, rent, lease, loan, sell, distribute or create derivative works of another user's submitted data or information unless you have been expressly allowed to do so by the rightful owner of such data or information.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Restrictions</strong></span></p>
+                                <p>You agree not to do any of the following while using the Service:</p>
+                                <ul>
+                                    <li>Post, publish or transmit any text, graphics, or material that: (i) is false or misleading; (ii) is defamatory; (iii) invades another's privacy; (iv) is obscene, pornographic, or offensive; (v) promotes bigotry, racism, hatred or harm against any individual or group; (vi) infringes another's rights, including any intellectual property rights; (vii) violates, or encourages any conduct that would violate any applicable law or regulation or would give rise to civil liability; or (viii) violates a protective order;</li>
+                                    <li>Access, tamper with, or use non-public parts of the Service (including but not limited to user data that you have not been given permission to access), Capture's computer systems, or the technical delivery systems of Capture's providers;</li>
+                                    <li>Attempt to probe, scan, or test the vulnerability of any system or network or breach any security or authentication measures. You may not use the Service in any manner that in Capture's sole discretion could damage, disable, overburden, or impair it or interfere with any other party's use of the Service. You may not intentionally interfere with or damage the operation of the Service or any user's enjoyment of it, by any means, including uploading or otherwise disseminating viruses, worms, or other malicious code. You may not remove, circumvent, disable, damage or otherwise interfere with any security-related features of the Service, features that prevent or restrict the use or copying of any content accessible through the Service, or features that enforce limitations on the use of the Service. You may not attempt to gain unauthorised access to the Service, or any part of it, other accounts, computer systems or networks connected to the Service, or any part of it, through hacking, password mining or any other means or interfere or attempt to interfere with the proper working of the Service or any activities conducted on the Service. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available to you through the Service. You agree neither to modify the Service, nor to use modified versions of the Service, including (without limitation) for the purpose of obtaining unauthorised access to the Service;</li>
+                                    <li>Attempt to access or search the Service with any engine, software, tool, agent, device or mechanism other than the search agents provided by Capture;</li>
+                                    <li>Send unsolicited email, junk mail, "spam," or chain letters, or promotions or advertisements for products or services;</li>
+                                    <li>Forge any TCP/IP packet header or any part of the header information in any email or newsgroup posting, or in any way use the Service to send altered, deceptive or false source-identifying information;</li>
+                                    <li>Attempt to decipher, decompile, disassemble or reverse engineer any of the software used to provide the Service;</li>
+                                    <li>Interfere with, or attempt to interfere with, the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, or mail-bombing the Service; or plant malware on Capture's computer system, those systems of Capture's partners or providers, or otherwise use the Service to attempt to distribute malware; or</li>
+                                    <li>Impersonate or misrepresent your affiliation with any person or entity. Capture has the right to investigate and prosecute violations of any of the above, including intellectual property rights infringement and Service security issues, to the fullest extent of the law. Capture may involve and cooperate with law enforcement authorities in prosecuting users who violate this Agreement. You acknowledge that although Capture has no obligation to monitor any user's access to or use of the Service, it still has the right to do so for the purpose of operating the Service, to ensure users' compliance with this Agreement, or to comply with applicable law or the order or requirement of a court, administrative agency or other governmental body.</li>
+                                </ul>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Digital Millennium Copyright Act Compliance</strong></span></p>
+                                <p><span style="font-size:18px;"><strong>You will only submit, upload, post or otherwise transmit data and/or files: (i) that you have the lawful right to use, copy, distribute, transmit, or display; or (ii) that does not infringe the intellectual property rights or violate the privacy rights of any third party.</strong></span></p>
+                                <p><span style="font-size:18px;"><strong>In accordance with the Digital Millennium Copyright Act of 1998, the text of which may be found on the U.S. Copyright Office website at http://www.copyright.gov/legislation/dmca.pdf.</strong></span></p>
+                                <p><span style="font-size:18px;">DMCA Notice of Alleged Infringement ("Notice")<strong></strong></span></p>
+                                <ul>
+                                    <li>Post, publish or transmit any text, graphics, or material that: (i) is false or misleading; (ii) is defamatory; (iii) invades another's privacy; (iv) is obscene, pornographic, or offensive; (v) promotes bigotry, racism, hatred or harm against any individual or group; (vi) infringes another's rights, including any intellectual property rights; (vii) violates, or encourages any conduct that would violate any applicable law or regulation or would give rise to civil liability; or (viii) violates a protective order;</li>
+                                    <li>Access, tamper with, or use non-public parts of the Service (including but not limited to user data that you have not been given permission to access), Capture's computer systems, or the technical delivery systems of Capture's providers;</li>
+                                    <li>Attempt to probe, scan, or test the vulnerability of any system or network or breach any security or authentication measures. You may not use the Service in any manner that in Capture's sole discretion could damage, disable, overburden, or impair it or interfere with any other party's use of the Service. You may not intentionally interfere with or damage the operation of the Service or any user's enjoyment of it, by any means, including uploading or otherwise disseminating viruses, worms, or other malicious code. You may not remove, circumvent, disable, damage or otherwise interfere with any security-related features of the Service, features that prevent or restrict the use or copying of any content accessible through the Service, or features that enforce limitations on the use of the Service. You may not attempt to gain unauthorised access to the Service, or any part of it, other accounts, computer systems or networks connected to the Service, or any part of it, through hacking, password mining or any other means or interfere or attempt to interfere with the proper working of the Service or any activities conducted on the Service. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available to you through the Service. You agree neither to modify the Service, nor to use modified versions of the Service, including (without limitation) for the purpose of obtaining unauthorised access to the Service;</li>
+                                    <li>Attempt to access or search the Service with any engine, software, tool, agent, device or mechanism other than the search agents provided by Capture;</li>
+                                    <li>Send unsolicited email, junk mail, "spam," or chain letters, or promotions or advertisements for products or services;</li>
+                                    <li>Forge any TCP/IP packet header or any part of the header information in any email or newsgroup posting, or in any way use the Service to send altered, deceptive or false source-identifying information;</li>
+                                    <li>Attempt to decipher, decompile, disassemble or reverse engineer any of the software used to provide the Service;</li>
+                                    <li>Interfere with, or attempt to interfere with, the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, or mail-bombing the Service; or plant malware on Capture's computer system, those systems of Capture's partners or providers, or otherwise use the Service to attempt to distribute malware; or</li>
+                                    <li>Impersonate or misrepresent your affiliation with any person or entity. Capture has the right to investigate and prosecute violations of any of the above, including intellectual property rights infringement and Service security issues, to the fullest extent of the law. Capture may involve and cooperate with law enforcement authorities in prosecuting users who violate this Agreement. You acknowledge that although Capture has no obligation to monitor any user's access to or use of the Service, it still has the right to do so for the purpose of operating the Service, to ensure users' compliance with this Agreement, or to comply with applicable law or the order or requirement of a court, administrative agency or other governmental body.</li>
+                                </ul>
+                                <p>Deliver this Notice, with all items completed, to Capture's Designated Copyright Agent:</p>
+                                <p>Copyright Agent</p>
+                                <h3>
+                                    c/o Capture Limited
+                                    <br/>
+                                    202 So Hong Commercial Building
+                                    <br/>
+                                    41-47 Jervois Street, Sheung Wan, Hong Kong
+                                    <br/>
+                                    support@capture.hk
+                                </h3>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Third Party Links</strong></span></p>
+                                <p>The Service may contain links to third-party websites or resources. You acknowledge and agree that Capture is not responsible or liable for: (i) the availability or accuracy of such websites or resources; or (ii) the content, products, or services on or available from such websites or resources. Links to such websites or resources do not imply any endorsement by Capture of such websites or resources or the content, products, or services available from such websites or resources. You acknowledge sole responsibility for and assume all risk arising from your use of any such websites or resources.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Term and Termination</strong></span></p>
+                                <p>This Agreement is effective upon accessing or using the Service and remains in effect until your account is terminated. You may terminate this Agreement at any time by closing your account and following the instructions on the Service. This Agreement automatically terminates if you fail to comply with its terms and conditions. Subject to these terms and conditions, Capture reserves the right to refuse or discontinue participation to any user at any time at its sole discretion. You agree that, upon such termination, your access rights to the Service will immediately terminate. The terms of the Sections entitled Intellectual Property, Disclaimer of Warranties, Limitation of Liability, and Miscellaneous Provisions will survive any expiration or termination of this Agreement, along with provisions regarding responsibility for your Data and obligations of confidentiality. Capture has no obligation to provide you with a copy of your Data and may remove and discard any Data after termination.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Disclaimer of Warranties</strong></span></p>
+                                <p>THE SERVICE AND ANY THIRD-PARTY SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITH NO WARRANTIES WHATSOEVER. CAPTURE AND SUCH THIRD PARTIES EXPRESSLY DISCLAIM TO THE FULLEST EXTENT PERMITTED BY LAW, ALL EXPRESS, IMPLIED, AND STATUTORY WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS; ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE, AND ANY WARRANTIES REGARDING THE SECURITY, RELIABILITY, TIMELINESS, AND PERFORMANCE OF THE SERVICE AND SUCH THIRD-PARTY SERVICES. YOU ACKNOWLEDGE THAT USE OF THE SERVICE MAY RESULT IN UNEXPECTED RESULTS, LOSS OR CORRUPTION OF DATA OR COMMUNICATIONS, PROJECT DELAYS, OTHER UNPREDICTABLE DAMAGE OR LOSS, OR EXPOSURE OF YOUR DATA TO UNINTENDED THIRD PARTIES. YOU UNDERSTAND AND AGREE THAT YOU USE THE SERVICE, AND ALL THIRD-PARTY SERVICES MADE AVAILABLE IN CONJUNCTION WITH OR THROUGH THE SERVICE, AT YOUR OWN DISCRETION AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGES TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OR USE OF THE SERVICE AND SUCH THIRD PARTY SERVICES. CAPTURE MAKES NO WARRANTY THAT THE SERVICE WILL MEET YOUR REQUIREMENTS OR BE AVAILABLE ON AN UNINTERRUPTED, SECURE, OR ERROR-FREE BASIS. CAPTURE MAKES NO WARRANTY REGARDING THE QUALITY OF ANY PRODUCTS, SERVICES, OR INFORMATION PURCHASED OR OBTAINED THROUGH THE SITE OR SERVICE, OR THE ACCURACY, TIMELINESS, TRUTHFULNESS, COMPLETENESS OR RELIABILITY OF ANY INFORMATION OBTAINED THROUGH THE SITE OR SERVICE. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED FROM CAPTURE OR THROUGH THE SITE OR SERVICE WILL CREATE ANY WARRANTY.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Limitation of Liability</strong></span></p>
+                                <p>UNDER NO CIRCUMSTANCES SHALL CAPTURE, OR ITS SUPPLIERS, RESELLERS, PARTNERS OR THEIR RESPECTIVE AFFILIATES BE LIABLE FOR DAMAGES OF ANY KIND, INCLUDING WITHOUT LIMITATION, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES (INCLUDING LOSS OF USE, DATA, BUSINESS, PROFITS, OR THE COST OF SUBSTITUTE GOODS OR SERVICES), ARISING FROM OR RELATED TO THIS AGREEMENT, THE USE OF, OR INABILITLY TO USE THE SERVICE, THE CONTENT AVAILABLE OR UNAVAILABLE THROUGH THE SERVICE, OR FOR ANY ERROR, OMISSION OR DEFECT, WHETHER SUCH CLAIM IS BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), OR OTHERWISE, EVEN IF CAPTURE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. WITHOUT LIMITING THE FOREGOING, THE TOTAL AGGREGATE LIABILITY OF CAPTURE, AND ITS SUPPLIERS, RESELLERS, PARTNERS AND THEIR RESPECTIVE AFFILIATES ARISING FROM OR RELATED TO THIS AGREEMENT SHALL NOT EXCEED $100. THE FOREGOING LIMITATIONS OF LIABILITY SHALL APPLY WHETHER THE DAMAGES ARISE FROM USE OR MISUSE OF AND RELIANCE ON THE SERVICE, FROM INABILITY TO USE THE SERVICE, OR FROM THE INTERRUPTION, SUSPENSION, OR TERMINATION OF THE SERVICE (INCLUDING SUCH DAMAGES INCURRED BY THIRD PARTIES). SUCH LIMITATION SHALL APPLY NOTWITHSTANDING A FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY AND TO THE FULLEST EXTENT PERMITTED BY LAW.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Miscellaneous Provisions</strong></span></p>
+                                <p>This Agreement will be governed by and construed in accordance with the laws of the Hong Kong, without giving effect to any conflict of laws provisions. The United Nations Convention on Contracts for the International Sale of Goods shall not apply to this Agreement. All disputes arising out of this Agreement will be subject to the exclusive jurisdiction of the state and federal courts serving Hong Kong, and the parties agree and submit to the personal and exclusive jurisdiction and venue of these courts, except that nothing will prohibit Capture from instituting an action in any court of competent jurisdiction to obtain injunctive relief or protect or enforce its intellectual property rights.</p>
+                                <p>YOU AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR RELATING TO THE SERVICE MUST COMMENCE WITHIN 1 YEAR AFTER THE CAUSE OF ACTION ARISES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.</p>
+                                <p>The failure of Capture to exercise or enforce any right or provision of this Agreement does not constitute a waiver of such right or provision. If for any reason a court of competent jurisdiction finds any provision or portion of this Agreement to be unenforceable, the remainder of this Agreement will continue in full force and effect.</p>
+                                <p>Capture is not liable for any delay or failure in performance resulting directly or indirectly from causes beyond its reasonable control, including, without limitation, failure of the Internet, power failure, failure of computer, telecommunication or other equipment, strikes, labour disputes, riots, insurrections, civil disturbances, shortage of labour or materials, fires, floods, storms, explosions, acts of God, war, governmental actions, orders of domestic or foreign courts, or non-performance of third parties.</p>
+                                <p>This Agreement, which incorporates the Capture Privacy Policy, constitutes the entire agreement between you and Capture with respect to the subject matter hereof and supersedes and replaces all prior or contemporaneous understandings or agreements, written or oral, regarding such subject matter. Any waiver of any provision of this Agreement will be effective only if in writing and signed by Capture.</p>
+                                <p>You may not assign or transfer any of your rights or obligations under this Agreement to a third party without the prior written consent of Capture. Capture may freely assign this Agreement. Any attempted assignment or transfer in violation of the foregoing will be void from the beginning.</p>
+                            </div>
+                    </section>
+
+                    <!--Text-->
+                    <section class="s_text_block pt40 o_colored_level  pb40" data-snippet="s_text_block" data-name="Text">
+                            <div class="s_allow_columns container">
+                                <p><span style="font-size:18px;"><strong>Contacting Capture Limited</strong></span></p>
+                                <p>Users with questions about this Agreement or the Capture Privacy Policy may contact Capture Limited via email at support@capture.hk</p>
+                                <p><i>Revision Date: September 2022</i></p>
+                            </div>
+                    </section>
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

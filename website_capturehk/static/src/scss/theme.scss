@@ -1,0 +1,180 @@
+//Font-face
+@font-face {
+    font-family: 'Sutro';
+    src: url('https://use.typekit.net/vxd0cac.css');
+    font-weight: 400,400i,800;
+}
+@import url('https://use.typekit.net/vxd0cac.css');
+
+//Change heading font when using chinese translation
+// html[lang="Zh-HK"] h1,h2,h3,h4,h5,h6{font-family:"Noto Sans TC",serif !important;}
+
+//Responsive pt & pb
+@include media-breakpoint-down(lg) {
+    @for $i from 0 through (256 / 8) {
+        @include o-vspacing($i * 8, .5);
+    }
+ }
+ 
+//Font class
+// #wrapwrap *{letter-spacing: -0.02em;}
+h1,.h1{font-weight: 700 ;}
+h2,.h2{font-weight: 700 ;}
+h3{font-weight: 700;}
+
+.x_font_family_rubrik{font-family: 'Rubik','Noto Sans HK',serif;}
+
+.x_home_hero{
+    h1{@media (min-width: 768px){font-size: 62px;}}
+    .lead{@media (max-width: 576px){font-size: 16px;}}
+    .x_googlephoto_logo{@media (max-width: 768px){transform: scale(0.5) translateX(-60%) translateY(-10%) !important;}}
+}
+
+.x_products_hero{
+    h1{
+        font-weight:900;
+        color: o-color('o-color-1');
+        letter-spacing: -0.02em;
+        @media (min-width: 992px){white-space: nowrap;}
+    }
+    h2{
+        font-family: 'Rubik','Noto Sans HK',serif;
+        color: o-color('o-color-7');
+        letter-spacing: -0.02em;
+    }
+    h5{
+        font-family: 'Rubik','Noto Sans HK',serif;
+        color: o-color('700');
+        margin-bottom: 1rem;
+        font-weight: 400;
+        @media (max-width: 768px){font-size: 16px;}
+    }
+}
+.x_fontsize_customercare_heading{
+    h1{ @media (min-width: 768px){font-size: 3rem;}}
+}
+h3.x_fontsize_customercare_name{
+    @media (min-width: 768px){font-size: 4rem;}
+}
+
+.s_masonry_block{
+    a{color: #F8F9FA;};
+    h3{
+        font-family: 'Rubik','Noto Sans HK',serif;
+        font-weight: 900;
+        color:o-color('o-color-8');
+    }
+    p{ 
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
+.s_color_blocks_2{h5{letter-spacing: 0.05em;};}
+.s_features h4,.s_process_steps h4{font-weight: 500;}
+
+//Product format row responsive font
+.s_three_columns h5{@media (max-width: 768px){font-size: 14px;}}
+
+.s_text_block h5.x_font_family_rubrik.text-600{
+    font-weight: 400;
+    @media (max-width: 992px){font-size: 16px;}
+    @media (max-width: 768px){font-size: 14px;}
+}
+
+//Extra background class
+.bg-o-color-9{background-color: o-color('o-color-9');}
+
+//Image resize
+.x_capturehk_square-image{
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.x_capturehk_square-image_cover{
+    aspect-ratio: 1;
+    max-height: 300px;    
+    object-fit: cover;
+}
+.x_capturehk_products-blog-image{
+    object-fit: cover;
+    max-height: 300px;
+    width: 100%;
+}
+
+.s_media_list_img{
+    object-fit: contain !important;
+    max-height: 300px;
+    width: 100%;
+}
+
+//Footer logo resize
+.o_footer_logo.logo{
+    img{width:100%;max-width: 160px;}
+    @media(min-width: 768px){padding-bottom: 0 !important;}
+}
+
+
+//Blog navigation bar rearrangement
+.website_blog>nav ul.navbar-nav{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    @media(min-width: 576px){
+        flex-direction: unset;
+        flex-wrap: unset;
+    }
+    li a{padding-left: 0.5rem;padding-right: 0.5rem;}
+}
+
+//Blockquote stlying
+blockquote{font-style: normal;}
+.s_blockquote_author{float:right; font-size: 1.25rem;}
+.s_blockquote_content p{
+    color: black;
+    @media(max-width: 576px){font-size: 16px;}
+}
+ i.s_blockquote_icon{@media(max-width: 576px){display:none !important;}}
+
+//Navigation styling
+.navbar-light .navbar-nav .nav-link{
+    color:o-color('700');
+    font-weight: 600;
+}
+
+//Shopping cart enlargement
+li.o_wsale_my_cart>a{transform: scale(1.2);}
+
+//shop add-to-cart button no text wrap
+#add_to_cart.btn.a-submit{white-space: nowrap;}
+
+//Hide search box from shop & catalogue pages
+section#product_detail form.o_wsale_products_searchbar_form{display: none;}
+.o_wsale_products_main_row>#products_grid>.products_header form.o_wsale_products_searchbar_form{display: none;}
+
+//Secondary button text color
+.btn:is(.btn-secondary,.btn-outline-secondary){color: #000000;}
+//Primary button green ccolor
+.x_btn-primary_o_cc2{background-color: o-color('o-color-1') !important;border-color: o-color('o-color-1') !important;}
+
+//carousel indicator
+.carousel-indicators li{background-color: o-color('o-color-5') !important;}
+.carousel-indicators .active{background-color: o-color('o-color-1') !important;}
+
+//contactus card styling
+.x_contactus{
+    .card-body{padding: 2.25rem;}
+    .card{border-radius: 20px !important;}
+    p{font-size: 1.125rem;}
+    p>strong{font-weight: 500;}
+}
+
+//Newsletter border radius adjustment
+.s_text_highlight{border-radius: 8px !important;}
+
+//Step process responsive background change
+.x_white_desktop_background{
+    @media(min-width: 992px){background-color: unset;}
+}
+
+//Pricing
+.x_pricing font.ml-2{ @media(max-width: 768px){font-size: 12px;}}
+.x_pricing .card{ border-radius: 20px !important;}

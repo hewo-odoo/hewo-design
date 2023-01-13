@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+<!-- Branding -->
+<record id="logo" model="ir.attachment">
+    <field name="name">Capturehk Logo</field>
+    <field name="datas" type="base64" file="website_capturehk/static/src/img/content/capture-logo-green.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="website.default_website" model="website">
+    <field name="logo" type="base64" file="website_capturehk/static/src/img/content/capture-logo-green.png"/>
+</record>
+
+<record id="logo_white" model="ir.attachment">
+    <field name="name">Capturehk White Logo</field>
+    <field name="datas" type="base64" file="website_capturehk/static/src/img/content/capture-logo-white.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<!--Home-->
+<!-- <record id="img_home_hero" model="ir.attachment">
+    <field name="name">homepage heroimage</field>
+    <field name="datas" type="base64" file="website_capturehk/static/src/img/content/home/home_hero.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record> -->
+
+<record id="img_home_googlelogo" model="ir.attachment">
+    <field name="name">homepage Google Logo</field>
+    <field name="datas" type="base64" file="website_capturehk/static/src/img/content/home/home_googlelogo.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<!--Proucts-->
+    <!--Products Mansory-->
+    <record id="img_products_photo-album" model="ir.attachment">
+        <field name="name">Products mansory photo-album</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/products_mansory_photo-album.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_photographs" model="ir.attachment">
+        <field name="name">Products mansory photographs</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/products_mansory-photographs.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_videotapes" model="ir.attachment">
+        <field name="name">Products mansory videotapes</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/products_mansory_videotapes.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_digital-media" model="ir.attachment">
+        <field name="name">Products mansory digital-media</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/products_mansory_digital-media.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Reasons carousel-->
+    <record id="img_products_reason-share" model="ir.attachment">
+        <field name="name">Products reason sharings</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/reason_sharing-at-your-fingertips.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_reason-memories" model="ir.attachment">
+        <field name="name">Products reason unlock memories</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/reason_unlock-memories.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_reason-instant" model="ir.attachment">
+        <field name="name">Products reason instant</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/reason_find-touching-moments.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_reason-generations" model="ir.attachment">
+        <field name="name">Products reason generations</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/reason_last-for-generations.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_reason-space" model="ir.attachment">
+        <field name="name">Products reason space</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/reason_reclaim-space.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_products_reason-gifts" model="ir.attachment">
+        <field name="name">Products reason gifts</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/products/reason_sentimental-gifts.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--Products - Photo-Album-->
+
+    <!--Photo-Album Hero-->
+    <record id="img_photo-album_hero" model="ir.attachment">
+        <field name="name">photo-album hero image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photo-album/album_hero.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Photo album format columns-->
+    <record id="img_photo-album_small-album" model="ir.attachment">
+        <field name="name">photo-album format small album image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photo-album/format_small-album.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_photo-album_medium-album" model="ir.attachment">
+        <field name="name">photo-album format medium album image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photo-album/format_medium-album.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_photo-album_large-album" model="ir.attachment">
+        <field name="name">photo-album format large album image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photo-album/format_large-album.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_photo-album_scrapbook" model="ir.attachment">
+        <field name="name">photo-album format scrapbook image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photo-album/format_scrapbook.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Photo-album Media list-->
+    <record id="img_photo-album_auto-crop" model="ir.attachment">
+        <field name="name">photo-album auto-crop image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photo-album/album_auto-crop.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_photo-album_full-page" model="ir.attachment">
+        <field name="name">photo-album full-page image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photo-album/album_full-page.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--Products - Photographs-->
+
+    <!--Photographs Hero-->
+    <record id="img_photographs_hero" model="ir.attachment">
+        <field name="name">photographs hero image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photographs/photographs_hero.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Photographs format columns-->
+    <record id="img_photographs_calendar" model="ir.attachment">
+        <field name="name">photographs format calendar image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photographs/format_calendar.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_photographs_details" model="ir.attachment">
+        <field name="name">photographs format detail image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photographs/format_details.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Photographs Media list-->
+    <record id="img_photographs_calendar01" model="ir.attachment">
+        <field name="name">photographs calendar image 01</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photographs/photographs_calendar-digitisation-01.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_photographs_calendar02" model="ir.attachment">
+        <field name="name">photographs calendar image 02</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photographs/photographs_calendar-digitisation-02.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_photographs_calendar03" model="ir.attachment">
+        <field name="name">photographs calendar image 03</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photographs/photographs_calendar-digitisation-03.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Photographs faded photo-->
+    <record id="img_photographs_faded-photo" model="ir.attachment">
+        <field name="name">photographs faded photo image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/photographs/photographs_faded-photo.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--Products - Videotape-->
+
+    <!--Videotape Hero-->
+    <record id="img_videotape_hero" model="ir.attachment">
+        <field name="name">vidoetape hero image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/videotape/videotape_hero.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Videotape format columns-->
+    <record id="img_videotape_VHS" model="ir.attachment">
+        <field name="name">vidoetape format VHS image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/videotape/format_VHS.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_videotape_VHS-C" model="ir.attachment">
+        <field name="name">vidoetape format VHS-C image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/videotape/format_VHS-C.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_videotape_Hi8" model="ir.attachment">
+        <field name="name">vidoetape format Hi8 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/videotape/format_Hi8Dig8Video8.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_videotape_DV" model="ir.attachment">
+        <field name="name">vidoetape format DV image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/videotape/format_DV-DVCAM.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_videotape_MiniDV" model="ir.attachment">
+        <field name="name">vidoetape format MiniDV image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/videotape/format_MiniDV-DVC.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Videotape lifespan-->
+    <record id="img_videotape_lifespan" model="ir.attachment">
+        <field name="name">videotape lifespan image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/videotape/videotape_20-years-lifespan.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--Products - digital Media-->
+
+    <!--Digital Media Hero-->
+    <record id="img_digital-media_hero" model="ir.attachment">
+        <field name="name">digital-media hero image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/digital-media_hero.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Digital Media formats Columns-->
+    <record id="img_digital-media_SD" model="ir.attachment">
+        <field name="name">digital-media format SD image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/format_security-digital-sd.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_digital-media_SM" model="ir.attachment">
+        <field name="name">digital-media format SM image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/format_smart-media-sm.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_digital-media_MMC" model="ir.attachment">
+        <field name="name">digital-media format MMC image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/format_multi-media-card-mmc.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_digital-media_CF" model="ir.attachment">
+        <field name="name">digital-media format CF image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/format_compact-flsh.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_digital-media_xD" model="ir.attachment">
+        <field name="name">digital-media format xD image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/format_xD-Picture Card.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_digital-media_USB" model="ir.attachment">
+        <field name="name">digital-media format USB image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/format_USB-drive.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_digital-media_CD" model="ir.attachment">
+        <field name="name">digital-media format CD image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/format_cddvd.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Digital media not safe-->
+    <record id="img_digital-media_not-safe" model="ir.attachment">
+        <field name="name">digital-media not safe image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/digital-media/digital-media_not-safe.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--Products - Google Photos-->
+    <!--Google Photos Medias-->
+    <record id="img_google-photos_organising" model="ir.attachment">
+        <field name="name">google-photos organising image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/google-photos/google_photos-organising.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_google-photos_searching" model="ir.attachment">
+        <field name="name">google-photos searching image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/google-photos/google_photos-searching.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_google-photos_sharing" model="ir.attachment">
+        <field name="name">google-photos sharing image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/google-photos/google_photos-sharing.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Google Photos Medias-->
+    <record id="img_google-photos_step1" model="ir.attachment">
+        <field name="name">google-photos step 1 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/google-photos/google_Step1.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_google-photos_step2" model="ir.attachment">
+        <field name="name">google-photos step 2 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/google-photos/google_Step2.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_google-photos_step3" model="ir.attachment">
+        <field name="name">google-photos step 3 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/google-photos/google_Step3.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--Products - usb-->
+    <!--USB ritek-->
+    <record id="img_usb_ritek" model="ir.attachment">
+        <field name="name">usb ritek image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/usb/usb_ritek.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--About us - our story-->
+    <!--Our story timeline-->
+    <record id="img_our-story_timeline" model="ir.attachment">
+        <field name="name">Our story timeline image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/aboutus_Timeline.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--brandings-->
+    <record id="img_brands_Line" model="ir.attachment">
+        <field name="name">Our stroy brands Line image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/as_seen_on/News-Line-today.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_brands_PCM" model="ir.attachment">
+        <field name="name">Our stroy brands PCM image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/as_seen_on/News-PCM.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_brands_funky-kit" model="ir.attachment">
+        <field name="name">Our stroy brands funcky kit image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/as_seen_on/News-funky-kit.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_brands_CVS" model="ir.attachment">
+        <field name="name">Our stroy brands CVS image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/as_seen_on/Retail-CVS.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_brands_Walmart" model="ir.attachment">
+        <field name="name">Our stroy brands Walmart image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/as_seen_on/Retail-Walmart.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_brands_Costco" model="ir.attachment">
+        <field name="name">Our stroy brands Costco image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/as_seen_on/Retail-Costco.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <!--Our perople-->
+    <record id="img_our-people_michael" model="ir.attachment">
+        <field name="name">Our people Michael image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Michael.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_our-people_benson" model="ir.attachment">
+        <field name="name">Our people Benson image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Benson.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>    
+    
+    <record id="img_our-people_andy" model="ir.attachment">
+        <field name="name">Our people Andy image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/andy.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_our-people_apryl" model="ir.attachment">
+        <field name="name">Our people Apryl image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Apryl.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_our-people_chloe" model="ir.attachment">
+        <field name="name">Our people Chloe image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Chloe.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_our-people_daisy" model="ir.attachment">
+        <field name="name">Our people Daisy image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Daisy.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_our-people_hiu-ching" model="ir.attachment">
+        <field name="name">Our people Hiu-Ching image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Hiu-Ching.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_our-people_deron" model="ir.attachment">
+        <field name="name">Our people Deron image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Deron.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_our-people_ulrika" model="ir.attachment">
+        <field name="name">Our people Ulrika image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/aboutus/our_people/Ulrika.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--About us - Privacy-->
+    <!--Privacy google photos-->
+    <record id="img_privacy_google-photos" model="ir.attachment">
+        <field name="name">Privacy google photos image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/privacy/privacy_google-photos.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+
+<!--About us - Security-->
+    <!--Security Media lists-->
+    <record id="img_security_cctv" model="ir.attachment">
+        <field name="name">Security cctv image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/security/security_24cctv.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_security_barcode" model="ir.attachment">
+        <field name="name">Security barcode image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/security/security_barcode-checking.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--About us - Customer care-->
+    <!--Customer Care Hero-->
+    <record id="img_customer-care_hero1" model="ir.attachment">
+        <field name="name">Customer care hero image 1</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/customer-care/customercare_capture-experience-centre-1.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_customer-care_hero2" model="ir.attachment">
+        <field name="name">Customer care hero image 2</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/customer-care/customercare_capture-experience-centre-2.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_customer-care_hero3" model="ir.attachment">
+        <field name="name">Customer care hero image 3</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/customer-care/customercare_capture-experience-centre-3.jpg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--How it works - Online prepayment-->
+    <!--Online prepayment steps-->
+    <record id="img_online-prepayment_step1" model="ir.attachment">
+        <field name="name">Online prepayment step 1 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/online-prepayment/online_Prepay-online.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_online-prepayment_step2" model="ir.attachment">
+        <field name="name">Online prepayment step 2 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/online-prepayment/online_Schedule-a-drop-off.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_online-prepayment_step3" model="ir.attachment">
+        <field name="name">Online prepayment step 3 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/online-prepayment/online_Schedule-a-pick-up.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--How it works - Onsite payments-->
+    <!--Onsite payments steps-->
+    <record id="img_onsite-payment_step1" model="ir.attachment">
+        <field name="name">Onsite payment step 1 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/onsite-payment/onsite_schedule consultation.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_onsite-payment_step2" model="ir.attachment">
+        <field name="name">Onsite payment step 2 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/onsite-payment/onsite_payment with specialist_.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_onsite-payment_step3" model="ir.attachment">
+        <field name="name">Onsite payment step 3 image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/onsite-payment/onsite_Schedule-a-pick-up.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+<!--Buy Now-->
+    <record id="img_buy-now_online-prepayment" model="ir.attachment">
+        <field name="name">Buy Now Online prepayment image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/buy-now/buynow_online-prepayment.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+
+    <record id="img_buy-now_onsite-payment" model="ir.attachment">
+        <field name="name">Buy Now Onsite payment image</field>
+        <field name="datas" type="base64" file="website_capturehk/static/src/img/content/buy-now/buynow_onsite-payment.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+</odoo>
