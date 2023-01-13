@@ -1,7 +1,7 @@
 {
     'name': 'capturehk Theme',
     'category': 'Website/Theme',
-    'version': '15.0.0',
+    'version': '16.0.0',
     'depends': ['website_sale','website_blog','website_mass_mailing'],
     'license': 'OEEL-1',
     'data': [
