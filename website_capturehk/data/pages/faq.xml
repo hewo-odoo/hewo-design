@@ -36,7 +36,7 @@
                                     <span style="font-size:24px;">
                                         <strong>
                                             Placing an Order &amp;amp; Pricing
-                                            <span class="fa fa-arrow-right float-md-right text-o-color-1 ml-2 ml-md-0"/>
+                                            <span class="fa fa-arrow-right float-md-right text-o-color-1 ms-2 ms-md-0"/>
                                         </strong>
                                     </span>
                                 </p>
@@ -53,7 +53,7 @@
                                     <span style="font-size: 24px;">
                                         <strong>
                                             Order Procssing
-                                            <span class="fa fa-arrow-right float-md-right text-o-color-1 ml-2 ml-md-0"/>
+                                            <span class="fa fa-arrow-right float-md-right text-o-color-1 ms-2 ms-md-0"/>
                                         </strong>
                                     </span>
                                 </p>
@@ -68,7 +68,7 @@
                                     <span class="fa fa-2x mb-3 text-o-color-4 bg-o-color-1 rounded-circle fa-truck mt-4"/>
                                     <br/>
                                     <span style="font-size: 24px;">
-                                    <strong>Media Drop-off &amp;amp; Pick Up<span class="fa fa-arrow-right float-md-right text-o-color-1 ml-2 ml-md-0"/></strong>
+                                    <strong>Media Drop-off &amp;amp; Pick Up<span class="fa fa-arrow-right float-md-right text-o-color-1 ms-2 ms-md-0"/></strong>
                                     </span>                                    
                                 </p>
                                 </a>
@@ -81,7 +81,7 @@
                                     <span class="fa fa-2x mb-3 text-o-color-4 bg-o-color-1 rounded-circle fa-dropbox mt-4"/>
                                     <br/>
                                     <span style="font-size: 24px;">
-                                    <strong>Your Finished Product<span class="fa fa-arrow-right float-md-right text-o-color-1 ml-2 ml-md-0"/></strong>
+                                    <strong>Your Finished Product<span class="fa fa-arrow-right float-md-right text-o-color-1 ms-2 ms-md-0"/></strong>
                                     </span>                                    
                                 </p>
                                 </a>
@@ -94,7 +94,7 @@
                                     <span class="fa fa-2x mb-3 text-o-color-4 bg-o-color-1 rounded-circle fa-google mt-4"/>
                                     <br/>                                
                                     <span style="font-size: 24px;">
-                                    <strong>Google Photos<span class="fa fa-arrow-right float-md-right text-o-color-1 ml-2 ml-md-0"/></strong>
+                                    <strong>Google Photos<span class="fa fa-arrow-right float-md-right text-o-color-1 ms-2 ms-md-0"/></strong>
                                     </span>
                                 </p>
                                 </a>
@@ -107,7 +107,7 @@
                                     <span class="fa fa-2x mb-4 text-o-color-4 bg-o-color-1 rounded-circle fa-lock mt-4"/>
                                     <br/>                                
                                     <span style="font-size: 24px;">
-                                    <strong>Security<span class="fa fa-arrow-right float-md-right text-o-color-1 ml-2 ml-md-0"/></strong>
+                                    <strong>Security<span class="fa fa-arrow-right float-md-right text-o-color-1 ms-2 ms-md-0"/></strong>
                                     </span>
                                 </p>
                                 </a>

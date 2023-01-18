@@ -20,7 +20,7 @@
                     <div id="top_menu_container" class="container justify-content-start justify-content-lg-between">
                         <!-- Brand -->
                         <t t-call="website.placeholder_header_brand">
-                            <t t-set="_link_class" t-valuef="mr-4"/>
+                            <t t-set="_link_class" t-valuef="me-4"/>
                         </t>
                         <!-- Navbar Collapse -->
                         <div id="top_menu_collapse" class="collapse navbar-collapse order-last order-lg-0">
@@ -35,20 +35,20 @@
                                 </t>
                                 <!-- Sign In -->
                                 <t t-call="portal.placeholder_user_sign_in">
-                                    <t t-set="_item_class" t-valuef="nav-item ml-lg-auto"/>
+                                    <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
                                     <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
                                 </t>
                                 <!-- User Dropdown -->
                                 <t t-call="portal.user_dropdown">
                                     <t t-set="_user_name" t-value="true"/>
-                                    <t t-set="_item_class" t-valuef="nav-item dropdown ml-lg-auto"/>
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
                                     <t t-set="_link_class" t-valuef="nav-link font-weight-bold"/>
                                 </t>
                             </t>
 
                             <!-- Language Selector -->
                             <t t-call="website.placeholder_header_language_selector">
-                                <t t-set="_div_classes" t-valuef="my-auto ml-lg-2"/>
+                                <t t-set="_div_classes" t-valuef="my-auto ms-lg-2"/>
                             </t>
                             
                             <!-- Call To Action -->
@@ -58,15 +58,15 @@
                         <!-- Shopping cart-->
                         <t t-call="website_sale.header_cart_link">
                                 <t t-set="_icon" t-value="True"/>
-                                <t t-set="_item_class" t-value="'align-self-md-center nav-item position-relative list-unstyled ml-auto ml-lg-0'"/>
+                                <t t-set="_item_class" t-value="'align-self-md-center nav-item position-relative list-unstyled ms-auto ms-lg-0'"/>
                                 <t t-set="_link_class" t-value="'nav-link'"/>
                         </t>
 
-                        <div class="ml-lg-4 d-none d-lg-block"><a class="btn btn-primary btn_cta border-0 bg-o-color-1 rounded-0" href="/buy-now">Buy Now</a></div>
+                        <div class="ms-lg-4 d-none d-lg-block"><a class="btn btn-primary btn_cta border-0 bg-o-color-1 rounded-0" href="/buy-now">Buy Now</a></div>
 
                         <!-- Navbar Toggler -->
                         <t t-call="website.navbar_toggler">
-                            <t t-set="_toggler_class" t-valuef="ml-0"/>
+                            <t t-set="_toggler_class" t-valuef="ms-0"/>
                         </t>
                     </div>
                 </t>
@@ -270,7 +270,7 @@
                                             <span class="fa fa-copyright" contenteditable="false">​</span>
                                             2022 Capture Limited
                                         <span style="font-size: 14px;">
-                                            <font class="text-400 ml-3">All rights reserved.</font>
+                                            <font class="text-400 ms-3">All rights reserved.</font>
                                         </span>
                                     </li>
                                 </ul>
@@ -297,7 +297,7 @@
 
                                 <p style="font-size: 14px;">
                                     <span >
-                                        <font class="text-200 mr-3"><a href="/privacy-policy">Privacy</a></font>
+                                        <font class="text-200 me-3"><a href="/privacy-policy">Privacy</a></font>
                                     </span>
 
                                     <span style="font-size: 14px;">

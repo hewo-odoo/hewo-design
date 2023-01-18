@@ -278,7 +278,7 @@
             <section class="s_text_block pt24 pb72 o_colored_level" data-snippet="s_text_block" data-name="Text">
                 <div class="s_allow_columns container">
                 <p style="text-align: center;">
-                    <a class="btn btn-primary mr-sm-3 mb-3 mb-sm-0" href="/buy-now">Order Now</a>
+                    <a class="btn btn-primary me-sm-3 mb-3 mb-sm-0" href="/buy-now">Order Now</a>
                     <a class="btn btn-secondary text-dark" href="/calendar">Schedule Now</a></p>
                 </div>
             </section>

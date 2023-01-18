@@ -60,7 +60,7 @@
                     
                         <div class="col-xl-3 col-md-6 pt32 pb32 text-left o_colored_level">
                             <a href="/products/photo-album" class="w-100">
-                                <i class="fa fa-2x fa-book float-left bg-primary rounded-circle mr-3"/>                                           
+                                <i class="fa fa-2x fa-book float-left bg-primary rounded-circle me-3"/>                                           
                                 <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Photo Album</strong></h5>
                                 <span style="font-size: 14px;" class="text-600">From HK$1.38/photo</span>
                             </a>
@@ -68,7 +68,7 @@
 
                         <div class="col-xl-3 col-md-6 pt32 pb32 o_colored_level">
                             <a href="/products/photographs" class="w-100">
-                                <i class="fa fa-2x fa-photo float-left bg-primary rounded-circle mr-3"/>                                           
+                                <i class="fa fa-2x fa-photo float-left bg-primary rounded-circle me-3"/>                                           
                                 <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Photographs</strong></h5>
                                 <span style="font-size: 14px;" class="text-600">From HK$1.38/photo</span>
                             </a>                             
@@ -76,7 +76,7 @@
 
                         <div class="col-xl-3 col-md-6 pt32 pb32 o_colored_level">
                             <a href="/products/videotape" class="w-100">
-                                <i class="fa fa-2x fa-file-movie-o float-left bg-primary rounded-circle mr-3"/>                                           
+                                <i class="fa fa-2x fa-file-movie-o float-left bg-primary rounded-circle me-3"/>                                           
                                 <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Videotape</strong></h5>
                                 <span style="font-size: 14px;" class="text-600">From HK$1.38/tape</span>
                             </a>
@@ -84,7 +84,7 @@
 
                         <div class="col-xl-3 col-md-6 pt32 pb32 o_colored_level">
                             <a href="/products/digital-media" class="w-100">
-                                <i class="fa fa-2x fa-usb float-left bg-primary rounded-circle mr-3"/>                                           
+                                <i class="fa fa-2x fa-usb float-left bg-primary rounded-circle me-3"/>                                           
                                 <h5 class="text-dark mt-3 mb-0 x_font_family_rubrik"><strong>Digital Media</strong></h5>
                                 <span style="font-size: 14px;" class="text-600">From HK$138/media</span>
                             </a>

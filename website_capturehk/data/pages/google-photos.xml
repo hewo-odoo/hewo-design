@@ -496,7 +496,7 @@
         <section class="s_text_block pb80 o_colored_level" data-snippet="s_text_block" data-name="Text">
             <div class="s_allow_columns container">
             <p style="text-align: center;">
-                <a class="btn btn-primary mr-3 mb-3 mb-sm-0" href="https://photos.google.com/">Explore Your Google Photos<span class="fa fa-play-circle-o ml-2"/> </a>
+                <a class="btn btn-primary me-3 mb-3 mb-sm-0" href="https://photos.google.com/">Explore Your Google Photos<span class="fa fa-play-circle-o ms-2"/> </a>
                 <a class="btn btn-secondary text-dark" href="/blog">Tutorial</a></p>
             </div>
         </section>

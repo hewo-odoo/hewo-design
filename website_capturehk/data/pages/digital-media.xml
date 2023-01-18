@@ -67,7 +67,7 @@
                 <div class="col-lg-8 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
                     <i class="fa fa-2x fa-file-archive-o float-left text-o-color-1 bg-white rounded-circle float-lg-left mx-auto"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Accepted Format</strong></h5>
-                    <ul class="ml-lg-5">
+                    <ul class="ms-lg-5">
                         <li class="font-weight-light">Secure Digital (SD) | Smart Media (SM) | MultiMediaCard (MMC)</li>
                         <li class="font-weight-light">Compact Flash (CF) | xD-Picture Card | Memory Stick | USB Drive | CDROM/DVD</li>
                     </ul>
@@ -402,12 +402,12 @@
                 <div class="card-body d-flex justify-content-between align-items-center px-lg-5 px-3">
                     <span class="card-text d-flex flex-column flex-md-row d-md-column align-items-md-center align-items-baseline">
                         <font class="text-o-color-1 font-weight-bold h1 x_font_family_rubrik">1-9</font>
-                        <font class="text-600 ml-2">digital media</font>
+                        <font class="text-600 ms-2">digital media</font>
                     </span>
 
                     <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
                         <font class="text-dark font-weight-bold h1 x_font_family_rubrik">$188</font>
-                        <font class="text-600 ml-2"> /digital media (HKD)</font>
+                        <font class="text-600 ms-2"> /digital media (HKD)</font>
                     </span>
                 </div>
 
@@ -418,12 +418,12 @@
                 <div class="card-body d-flex justify-content-between align-items-center px-lg-5 px-3">
                     <span class="card-text d-flex flex-column flex-md-row align-items-md-center align-items-baseline">
                         <font class="text-o-color-1 font-weight-bold h1 x_font_family_rubrik">10-19</font>
-                        <font class="text-600 ml-2">digital media</font>
+                        <font class="text-600 ms-2">digital media</font>
                     </span>
 
                     <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
                         <font class="text-dark font-weight-bold h1 x_font_family_rubrik">$158</font>
-                        <font class="text-600 ml-2"> /digital media (HKD)</font>
+                        <font class="text-600 ms-2"> /digital media (HKD)</font>
                     </span>
                 </div>
 
@@ -435,12 +435,12 @@
                     <span class="card-text d-flex flex-column flex-md-row align-items-md-center align-items-baseline">
                         <font class="text-white font-weight-bold h1 x_font_family_rubrik d-none d-sm-block">20 or more</font>
                         <font class="text-white font-weight-bold h1 x_font_family_rubrik d-block d-sm-none">20+</font>
-                        <font class="text-white ml-2">digital media</font>
+                        <font class="text-white ms-2">digital media</font>
                     </span>
 
                     <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
                         <font class="text-white font-weight-bold h1 x_font_family_rubrik">$138</font>
-                        <font class="text-white ml-2"> /digital media (HKD)</font>
+                        <font class="text-white ms-2"> /digital media (HKD)</font>
                     </span>
                 </div>
             </div>
