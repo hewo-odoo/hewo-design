@@ -124,14 +124,14 @@
             <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
                 <div class="s_carousel carousel s_carousel_rounded slide" data-interval="10000" id="myCarousel1667275252920">
                 <ol class="carousel-indicators o_we_no_overlay">
-                    <li data-slide-to="0" class="active" data-target="#myCarousel1667275252920"/>
-                    <li data-slide-to="1" data-target="#myCarousel1667275252920"/>
-                    <li data-target="#myCarousel1667275252920" data-slide-to="2"/>
-                    <li data-target="#myCarousel1667275252920" data-slide-to="3"/>
-                    <li data-target="#myCarousel1667275252920" data-slide-to="4"/>
-                    <li data-target="#myCarousel1667275252920" data-slide-to="5"/>
-                    <li data-target="#myCarousel1667275252920" data-slide-to="6"/>
-                    <li data-target="#myCarousel1667275252920" data-slide-to="7"/>
+                    <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1667275252920"/>
+                    <li data-bs-slide-to="1" data-bs-target="#myCarousel1667275252920"/>
+                    <li data-bs-target="#myCarousel1667275252920" data-bs-slide-to="2"/>
+                    <li data-bs-target="#myCarousel1667275252920" data-bs-slide-to="3"/>
+                    <li data-bs-target="#myCarousel1667275252920" data-bs-slide-to="4"/>
+                    <li data-bs-target="#myCarousel1667275252920" data-bs-slide-to="5"/>
+                    <li data-bs-target="#myCarousel1667275252920" data-bs-slide-to="6"/>
+                    <li data-bs-target="#myCarousel1667275252920" data-bs-slide-to="7"/>
                 </ol>
                 <div class="carousel-inner">
                     
@@ -313,11 +313,11 @@
 
                 </div>
 
-                <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1667275252920">
+                <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1667275252920">
                     <span class="carousel-control-prev-icon"/>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1667275252920">
+                <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1667275252920">
                     <span class="carousel-control-next-icon"/>
                     <span class="sr-only">Next</span>
                 </a>

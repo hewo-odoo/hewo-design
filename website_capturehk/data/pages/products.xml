@@ -114,8 +114,8 @@
                 <section class="s_carousel_wrapper d-none d-md-block" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
                     <div class="s_carousel s_carousel_rounded carousel slide" data-interval="10000" id="myCarousel1666852867926">
                     <ol class="carousel-indicators o_we_no_overlay">
-                        <li data-slide-to="0" class="active" data-target="#myCarousel1666852867926"/>
-                        <li data-slide-to="1" data-target="#myCarousel1666852867926"/>
+                        <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1666852867926"/>
+                        <li data-bs-slide-to="1" data-bs-target="#myCarousel1666852867926"/>
                     </ol>
                     <div class="carousel-inner">
                         <!--carousel 1-->
@@ -205,11 +205,11 @@
 
                     </div>
 
-                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666852867926">
+                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666852867926">
                         <span class="carousel-control-prev-icon"/>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666852867926">
+                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666852867926">
                         <span class="carousel-control-next-icon"/>
                         <span class="sr-only">Next</span>
                     </a>
@@ -221,12 +221,12 @@
                 <section class="s_carousel_wrapper d-block d-md-none" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
                     <div class="s_carousel s_carousel_rounded carousel slide" data-interval="10000" id="myCarousel1666852867927">
                     <ol class="carousel-indicators o_we_no_overlay">
-                        <li data-slide-to="0" class="active" data-target="#myCarousel1666852867927"/>
-                        <li data-slide-to="1" data-target="#myCarousel1666852867927"/>
-                        <li data-slide-to="2" data-target="#myCarousel1666852867927"/>
-                        <li data-slide-to="3" data-target="#myCarousel1666852867927"/>
-                        <li data-slide-to="4" data-target="#myCarousel1666852867927"/>
-                        <li data-slide-to="5" data-target="#myCarousel1666852867927"/>
+                        <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1666852867927"/>
+                        <li data-bs-slide-to="1" data-bs-target="#myCarousel1666852867927"/>
+                        <li data-bs-slide-to="2" data-bs-target="#myCarousel1666852867927"/>
+                        <li data-bs-slide-to="3" data-bs-target="#myCarousel1666852867927"/>
+                        <li data-bs-slide-to="4" data-bs-target="#myCarousel1666852867927"/>
+                        <li data-bs-slide-to="5" data-bs-target="#myCarousel1666852867927"/>
                     </ol>
                     <div class="carousel-inner">
 
@@ -340,11 +340,11 @@
 
                     </div>
 
-                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666852867927">
+                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666852867927">
                         <span class="carousel-control-prev-icon"/>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666852867927">
+                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666852867927">
                         <span class="carousel-control-next-icon"/>
                         <span class="sr-only">Next</span>
                     </a>
@@ -366,43 +366,43 @@
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-cloud mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
-                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Cloud</strong></h5>
+                            <h5 class="x_font_family_rubrik"><strong>Cloud</strong></h5>
                             <span class="font-weight-light">Works with Google Photos</span>
                         </div>
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-bolt mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
-                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Speed</strong></h5>
+                            <h5 class="x_font_family_rubrik"><strong>Speed</strong></h5>
                             <span class="font-weight-light">1 to 2 week processing</span>
                         </div>
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-heart mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
-                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Our Promise</strong></h5>
+                            <h5 class="x_font_family_rubrik"><strong>Our Promise</strong></h5>
                             <span class="font-weight-light">We handle your media like it was our own</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-check-circle mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
-                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Quality</strong></h5>
+                            <h5 class="x_font_family_rubrik"><strong>Quality</strong></h5>
                             <span class="font-weight-light">Capture every pixel</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-usd mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
-                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Price</strong></h5>
+                            <h5 class="x_font_family_rubrik"><strong>Price</strong></h5>
                             <span class="font-weight-light">Transparent pricing</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-headphones mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
-                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Services</strong></h5>
+                            <h5 class="x_font_family_rubrik"><strong>Services</strong></h5>
                             <span class="font-weight-light">One-to-one consultation service</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-file-text mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
-                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Customisation</strong></h5>
+                            <h5 class="x_font_family_rubrik"><strong>Customisation</strong></h5>
                             <span class="font-weight-light">Customise the title and date for every folder</span>
                         </div>                                                
                         
@@ -423,9 +423,9 @@
                 <section class="s_carousel_wrapper d-none d-md-block" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
                     <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1666920806944">
                     <ol class="carousel-indicators o_we_no_overlay mt-3">
-                        <li data-slide-to="0" class="active" data-target="#myCarousel1666920806944"/>
-                        <li data-slide-to="1" data-target="#myCarousel1666920806944"/>
-                        <li data-slide-to="2" data-target="#myCarousel1666920806944"/>
+                        <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1666920806944"/>
+                        <li data-bs-slide-to="1" data-bs-target="#myCarousel1666920806944"/>
+                        <li data-bs-slide-to="2" data-bs-target="#myCarousel1666920806944"/>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2 active" data-name="Slide">
@@ -521,11 +521,11 @@
                         </div>
                     </div>
                     
-                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806944">
+                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806944">
                         <span class="carousel-control-prev-icon"/>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806944">
+                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806944">
                         <span class="carousel-control-next-icon"/>
                         <span class="sr-only">Next</span>
                     </a>
@@ -536,12 +536,12 @@
                 <section class="s_carousel_wrapper d-block d-md-none" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
                     <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1666920806945">
                     <ol class="carousel-indicators o_we_no_overlay mt-3">
-                        <li data-slide-to="0" class="active" data-target="#myCarousel1666920806945"/>
-                        <li data-slide-to="1" data-target="#myCarousel1666920806945"/>
-                        <li data-slide-to="2" data-target="#myCarousel1666920806945"/>
-                        <li data-slide-to="3" data-target="#myCarousel1666920806945"/>
-                        <li data-slide-to="4" data-target="#myCarousel1666920806945"/>
-                        <li data-slide-to="5" data-target="#myCarousel1666920806945"/>
+                        <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1666920806945"/>
+                        <li data-bs-slide-to="1" data-bs-target="#myCarousel1666920806945"/>
+                        <li data-bs-slide-to="2" data-bs-target="#myCarousel1666920806945"/>
+                        <li data-bs-slide-to="3" data-bs-target="#myCarousel1666920806945"/>
+                        <li data-bs-slide-to="4" data-bs-target="#myCarousel1666920806945"/>
+                        <li data-bs-slide-to="5" data-bs-target="#myCarousel1666920806945"/>
                     </ol>
                     <div class="carousel-inner">
 
@@ -668,11 +668,11 @@
                         </div>
                     </div>
                     
-                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806945">
+                    <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806945">
                         <span class="carousel-control-prev-icon"/>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806945">
+                    <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806945">
                         <span class="carousel-control-next-icon"/>
                         <span class="sr-only">Next</span>
                     </a>

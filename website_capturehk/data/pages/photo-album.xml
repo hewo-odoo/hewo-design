@@ -232,8 +232,8 @@
         <section class="s_carousel_wrapper d-none d-md-block" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
             <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1666920806944">
             <ol class="carousel-indicators o_we_no_overlay mt-3">
-                <li data-slide-to="0" class="active" data-target="#myCarousel1666920806944"/>
-                <li data-slide-to="1" data-target="#myCarousel1666920806944"/>
+                <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1666920806944"/>
+                <li data-bs-slide-to="1" data-bs-target="#myCarousel1666920806944"/>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item pt40 pb112 oe_img_bg o_bg_img_center o_colored_level o_cc o_cc2 active" data-name="Slide">
@@ -299,11 +299,11 @@
                 </div>
             </div>
             
-            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806944">
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806944">
                 <span class="carousel-control-prev-icon"/>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806944">
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806944">
                 <span class="carousel-control-next-icon"/>
                 <span class="sr-only">Next</span>
             </a>
@@ -315,10 +315,10 @@
         <section class="s_carousel_wrapper d-block d-md-none" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
             <div class="s_carousel s_carousel_default carousel slide" data-interval="10000" id="myCarousel1666920806945">
             <ol class="carousel-indicators o_we_no_overlay mt-3">
-                <li data-slide-to="0" class="active" data-target="#myCarousel1666920806945"/>
-                <li data-slide-to="1" data-target="#myCarousel1666920806945"/>
-                <li data-slide-to="2" data-target="#myCarousel1666920806945"/>
-                <li data-slide-to="3" data-target="#myCarousel1666920806945"/>
+                <li data-bs-slide-to="0" class="active" data-bs-target="#myCarousel1666920806945"/>
+                <li data-bs-slide-to="1" data-bs-target="#myCarousel1666920806945"/>
+                <li data-bs-slide-to="2" data-bs-target="#myCarousel1666920806945"/>
+                <li data-bs-slide-to="3" data-bs-target="#myCarousel1666920806945"/>
             </ol>
             <div class="carousel-inner">
                 <!--carousel 1-->
@@ -404,11 +404,11 @@
                 </div>
             </div>
             
-            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806945">
+            <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1666920806945">
                 <span class="carousel-control-prev-icon"/>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806945">
+            <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1666920806945">
                 <span class="carousel-control-next-icon"/>
                 <span class="sr-only">Next</span>
             </a>
