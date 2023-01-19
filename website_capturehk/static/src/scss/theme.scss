@@ -146,6 +146,9 @@ li.o_wsale_my_cart>a{transform: scale(1.2);}
 //shop add-to-cart button no text wrap
 #add_to_cart.btn.a-submit{white-space: nowrap;}
 
+//15 to 16 shopping cart badge text color
+sup.text-bg-primary{color: white !important;}
+
 //Hide search box from shop & catalogue pages
 section#product_detail form.o_wsale_products_searchbar_form{display: none;}
 .o_wsale_products_main_row>#products_grid>.products_header form.o_wsale_products_searchbar_form{display: none;}
@@ -178,3 +181,6 @@ section#product_detail form.o_wsale_products_searchbar_form{display: none;}
 //Pricing
 .x_pricing font.ms-2{ @media(max-width: 768px){font-size: 12px;}}
 .x_pricing .card{ border-radius: 20px !important;}
+
+//15 to 16 migration style fix
+i.bg-primary,i.bg-o-color-1{color: white;}
