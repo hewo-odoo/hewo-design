@@ -131,7 +131,7 @@
                         <div class="container">
                             <div id="myCollapse1667370508773" class="accordion" role="tablist">
                                 <div class="card" data-name="Item">
-                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header" data-target="#myCollapseTab1667370508774">
+                                <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header" data-bs-target="#myCollapseTab1667370508774">
                                     <span style="font-size:18px;"><strong>How do I place an order for the digitisation service?</strong></span>
                                 </a>
                                 <div data-parent="#myCollapse1667370508773" role="tabpanel" id="myCollapseTab1667370508774" class="collapse">
@@ -148,7 +148,7 @@
                                 </div>
 
                                 <div class="card bg-white" data-name="Item">
-                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667370508775">
+                                <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667370508775">
                                     <span style="font-size:18px;"><strong style="font-size:18px;">How do you charge different media? </strong></span>
                                 </a>
                                 <div class="collapse" data-parent="#myCollapse1667370508773" role="tabpanel" id="myCollapseTab1667370508775">
@@ -158,7 +158,7 @@
                                 </div>
                                 </div>
                                 <div class="card bg-white" data-name="Item">
-                                <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667370508776">
+                                <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667370508776">
                                     <span style="font-size:18px;"><strong>Do you offer discounts?</strong></span>
                                 </a>
                                 <div class="collapse" data-parent="#myCollapse1667370508773" role="tabpanel" id="myCollapseTab1667370508776">
@@ -185,7 +185,7 @@
                     <div class="container">
                     <div id="myCollapse1667370641945" class="accordion" role="tablist">
                         <div class="card" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667370641946">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667370641946">
                             <span style="font-size:18px;"><strong>Can you process my media if it is damaged?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667370641945" role="tabpanel" id="myCollapseTab1667370641946">
@@ -195,7 +195,7 @@
                         </div>
                         </div>
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667370641947">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667370641947">
                             <span style="font-size:18px;"><strong>Do you digitise copyright material?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667370641945" role="tabpanel" id="myCollapseTab1667370641947">
@@ -205,7 +205,7 @@
                         </div>
                         </div>
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667370641948">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667370641948">
                             <span style="font-size:18px;"><strong>How long will it take to get my digitised memories?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667370641945" role="tabpanel" id="myCollapseTab1667370641948">
@@ -232,7 +232,7 @@
                     <div class="container">
                     <div id="myCollapse1667406222206" class="accordion" role="tablist">
                         <div class="card bg-white" data-name="Item">
-                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="true" class="card-header" data-target="#myCollapseTab1667406222207">
+                            <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="true" class="card-header" data-bs-target="#myCollapseTab1667406222207">
                                 <span style="font-size:18px;"><strong>When can I drop off and pick up my media？</strong></span>
                             </a>
                             <div class="collapse" data-parent="#myCollapse1667406222206" role="tabpanel" id="myCollapseTab1667406222207">
@@ -242,7 +242,7 @@
                             </div>
                         </div>
                         <div class="card bg-white" data-name="Item">
-                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header" data-target="#myCollapseTab1667406222206">
+                            <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="collapsed card-header" data-bs-target="#myCollapseTab1667406222206">
                                 <span style="font-size:18px;"><strong>Do you provide a delivery service?</strong></span>
                             </a>
                             <div class="collapse" data-parent="#myCollapse1667406222206" role="tabpanel" id="myCollapseTab1667406222206">
@@ -269,7 +269,7 @@
                     <div class="container">
                     <div id="myCollapse1667406266848" class="accordion" role="tablist">
                         <div class="card bg-white" data-name="Item">
-                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406266849">
+                            <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406266849">
                                 <span style="font-size:18px;"><strong>What if I'm not satisfied with the uploaded memories?</strong></span>
                             </a>
                             <div class="collapse" data-parent="#myCollapse1667406266848" role="tabpanel" id="myCollapseTab1667406266849">
@@ -279,7 +279,7 @@
                             </div>
                         </div>
                         <div class="card bg-white" data-name="Item">
-                            <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header" data-target="#myCollapseTab1667406266850">
+                            <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="collapsed card-header" data-bs-target="#myCollapseTab1667406266850">
                                 <span style="font-size:18px;"><strong>How can I view my memories in my Google Photos account?</strong></span>
                             </a>
                             <div class="collapse" data-parent="#myCollapse1667406266848" role="tabpanel" id="myCollapseTab1667406266850">
@@ -306,7 +306,7 @@
                     <div class="container">
                     <div id="myCollapse1667406266067" class="accordion" role="tablist">
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406266068">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406266068">
                             <span style="font-size:18px;"><strong>What is Google Photos？ </strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406266068">
@@ -317,7 +317,7 @@
                         </div>
                         
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406266067">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406266067">
                             <span style="font-size:18px;"><strong>What is it great to use Google Photos?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406266067">
@@ -328,7 +328,7 @@
                         </div>
                         
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406272879">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406272879">
                             <span style="font-size:18px;"><strong>What if I don't have a Google Photos account?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406272879">
@@ -339,7 +339,7 @@
                         </div>
                         
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406273737">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406273737">
                             <span style="font-size:18px;"><strong>What if my Google storage space is not enough?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406273737">
@@ -350,7 +350,7 @@
                         </div>
                         
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406288384">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406288384">
                             <span style="font-size:18px;"><strong>Can I use Google Photos from my computer？</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406288384">
@@ -361,7 +361,7 @@
                         </div>
                         
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406288758">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406288758">
                             <span style="font-size:18px;"><strong>Where can I download the Google Photos App?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406288758">
@@ -372,7 +372,7 @@
                         </div>
                         
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406289132">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406289132">
                             <span style="font-size:18px;"><strong>How can I view my videos and photos in my Google Photos account?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406289132">
@@ -383,7 +383,7 @@
                         </div>
                         
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406289485">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406289485">
                             <span style="font-size:18px;"><strong>When can my digitized memories be added to Google Photos？</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406266067" role="tabpanel" id="myCollapseTab1667406289485">
@@ -410,7 +410,7 @@
                     <div class="container">
                     <div id="myCollapse1667406298145" class="accordion" role="tablist">
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-target="#myCollapseTab1667406298146">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="card-header collapsed" data-bs-target="#myCollapseTab1667406298146">
                             <span style="font-size:18px;"><strong>How long does Capture store a backup of my digitised memories?</strong></span>
                         </a>
                         <div class="collapse" data-parent="#myCollapse1667406298145" role="tabpanel" id="myCollapseTab1667406298146">
@@ -420,7 +420,7 @@
                         </div>
                         </div>
                         <div class="card bg-white" data-name="Item">
-                        <a href="#" role="tab" data-toggle="collapse" aria-expanded="false" class="collapsed card-header" data-target="#myCollapseTab1667406298147">
+                        <a href="#" role="tab" data-bs-toggle="collapse" aria-expanded="false" class="collapsed card-header" data-bs-target="#myCollapseTab1667406298147">
                             <span style="font-size:18px;"><strong>Can you see my media on Google Photos?</strong></span>
                             </a>
                         <div class="collapse" data-parent="#myCollapse1667406298145" role="tabpanel" id="myCollapseTab1667406298147">
