@@ -366,43 +366,43 @@
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-cloud mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
-                            <h5 class="x_font_family_rubrik"><strong>Cloud</strong></h5>
+                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Cloud</strong></h5>
                             <span class="font-weight-light">Works with Google Photos</span>
                         </div>
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-bolt mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
-                            <h5 class="x_font_family_rubrik"><strong>Speed</strong></h5>
+                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Speed</strong></h5>
                             <span class="font-weight-light">1 to 2 week processing</span>
                         </div>
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-heart mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
-                            <h5 class="x_font_family_rubrik"><strong>Our Promise</strong></h5>
+                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Our Promise</strong></h5>
                             <span class="font-weight-light">We handle your media like it was our own</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-check-circle mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
-                            <h5 class="x_font_family_rubrik"><strong>Quality</strong></h5>
+                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Quality</strong></h5>
                             <span class="font-weight-light">Capture every pixel</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-usd mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
-                            <h5 class="x_font_family_rubrik"><strong>Price</strong></h5>
+                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Price</strong></h5>
                             <span class="font-weight-light">Transparent pricing</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-headphones mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
-                            <h5 class="x_font_family_rubrik"><strong>Services</strong></h5>
+                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Services</strong></h5>
                             <span class="font-weight-light">One-to-one consultation service</span>
                         </div>                        
 
                         <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
                             <i class="fa fa-3x fa-file-text mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
-                            <h5 class="x_font_family_rubrik"><strong>Customisation</strong></h5>
+                            <h5 class="x_font_family_rubrik mt-md-4"><strong>Customisation</strong></h5>
                             <span class="font-weight-light">Customise the title and date for every folder</span>
                         </div>                                                
                         
