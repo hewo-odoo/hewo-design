@@ -143,7 +143,7 @@
 
                             <!--Mobile Digistisation Services collapse-->
                             <div class="pt24 pb24 o_colored_level d-block d-md-none col-12 px-3 px-md-0" style="cursor:pointer;">
-                                <p class="mb-3 border-bottom" data-toggle="collapse" data-target="#capturehk_mobileDS" aria-expanded="false">
+                                <p class="mb-3 border-bottom" data-bs-toggle="collapse" data-bs-target="#capturehk_mobileDS" aria-expanded="false">
                                     <strong>Digitisation Services</strong>
                                     <i class="fa fa-plus text-100 fa-1x float-end"></i>
                                 </p>
@@ -208,7 +208,7 @@
 
                             <!--Mobile Customer Service collapse-->
                             <div class="o_colored_level pt24 pb72 col-12 d-block d-md-none px-3 px-md-0" style="cursor:pointer;">
-                                <p class="mb-3 border-bottom" data-toggle="collapse" data-target="#capturehk_mobileCS" aria-expanded="false">
+                                <p class="mb-3 border-bottom" data-bs-toggle="collapse" data-bs-target="#capturehk_mobileCS" aria-expanded="false">
                                     <strong>Customer Service</strong>
                                     <i class="fa fa-plus text-100 fa-1x float-end"></i>
                                 </p>
