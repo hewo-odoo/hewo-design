@@ -46,43 +46,43 @@
             <div class="container">
             <div class="row">
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-file-image-o mx-auto text-o-color-1 rounded bg-white float-lg-left mb-lg-5"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-file-image-o mx-auto text-o-color-1 rounded bg-white float-lg-start mb-lg-5"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Image Format</strong></h5>
                     <span class="font-weight-light">Digitise each photograph to a JPEG file with 800 DPI.</span>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-heart mx-auto text-o-color-1 rounded bg-white float-lg-left mb-lg-5"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-heart mx-auto text-o-color-1 rounded bg-white float-lg-start mb-lg-5"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Convenience</strong></h5>
                     <span class="font-weight-light">Digitise the entire album, cropping each separate photo. No need to remove the photos from the page.</span>
                 </div>                
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-adjust mx-auto text-o-color-1 rounded bg-white float-lg-left mb-lg-5"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-adjust mx-auto text-o-color-1 rounded bg-white float-lg-start mb-lg-5"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Image Enhancement Technology</strong></h5>
                     <span class="font-weight-light">Glare removal &amp; Color correction</span>
                 </div>                
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-archive mx-auto text-o-color-1 rounded bg-white float-lg-left mb-lg-5"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-archive mx-auto text-o-color-1 rounded bg-white float-lg-start mb-lg-5"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Storage</strong></h5>
                     <span class="font-weight-light">Uploaded to Google Photos Library or a USB flash drive.</span>
                 </div>                
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-clock-o mx-auto text-o-color-1 rounded bg-white float-lg-left mb-lg-5"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-clock-o mx-auto text-o-color-1 rounded bg-white float-lg-start mb-lg-5"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Timing</strong></h5>
                     <span class="font-weight-light">Complete within 1 to 2 weeks</span>
                 </div>                
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-file-archive-o mx-auto text-o-color-1 rounded bg-white float-lg-left mb-lg-5"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-file-archive-o mx-auto text-o-color-1 rounded bg-white float-lg-start mb-lg-5"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Accepted Format</strong></h5>
                     <span class="font-weight-light">
                         <ul class="ms-lg-5">
-                            <li class="font-weight-light text-left">Albums of any size</li>
-                            <li class="font-weight-light text-left">Scrapbook</li>
+                            <li class="font-weight-light text-start">Albums of any size</li>
+                            <li class="font-weight-light text-start">Scrapbook</li>
                         </ul>
                     </span>
                 </div>
@@ -430,7 +430,7 @@
                         <font class="text-600 ms-2">photographs</font>
                     </span>
 
-                    <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
+                    <span class="card-text float-end d-flex flex-column flex-md-row align-items-center">
                         <font class="text-dark font-weight-bold h1 x_font_family_rubrik">$1.88</font>
                         <font class="text-600 ms-2"> /photograph (HKD)</font>
                     </span>
@@ -446,7 +446,7 @@
                         <font class="text-600 ms-2">photographs</font>
                     </span>
 
-                    <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
+                    <span class="card-text float-end d-flex flex-column flex-md-row align-items-center">
                         <font class="text-dark font-weight-bold h1 x_font_family_rubrik">$1.58</font>
                         <font class="text-600 ms-2"> /photograph (HKD)</font>
                     </span>
@@ -461,7 +461,7 @@
                         <font class="text-white ms-2">photographs</font>
                     </span>
 
-                    <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
+                    <span class="card-text float-end d-flex flex-column flex-md-row align-items-center">
                         <font class="text-white font-weight-bold h1 x_font_family_rubrik">$1.38</font>
                         <font class="text-white ms-2"> /photograph (HKD)</font>
                     </span>
@@ -496,8 +496,8 @@
                         <div class="input-group">
                         <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
                         <span class="input-group-append">
-                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn o_submit rounded-right">Subscribe Now</a>
-                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit rounded-right" disabled="disabled">Thanks</a>
+                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn o_submit rounded-end">Subscribe Now</a>
+                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit rounded-end" disabled="disabled">Thanks</a>
                         </span>
                         </div>
                     </div>

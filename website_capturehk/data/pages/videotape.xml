@@ -46,43 +46,43 @@
             <div class="container">
             <div class="row">
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-file-video-o mb-lg-5 float-left text-o-color-1 bg-white rounded-circle float-lg-left mx-auto"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-file-video-o mb-lg-5 float-start text-o-color-1 bg-white rounded-circle float-lg-start mx-auto"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Video Format</strong></h5>
                     <span class="font-weight-light">Digitise to MP4 format.</span>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-television mb-lg-5 float-left text-o-color-1 bg-white rounded-circle float-lg-left mx-auto"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-television mb-lg-5 float-start text-o-color-1 bg-white rounded-circle float-lg-start mx-auto"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Video Quality</strong></h5>
                     <span class="font-weight-light">Capture all of the pixels. (*resolution depends on the videotape type)</span>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-archive mb-lg-5 float-left text-o-color-1 bg-white rounded-circle float-lg-left mx-auto"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-archive mb-lg-5 float-start text-o-color-1 bg-white rounded-circle float-lg-start mx-auto"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Storage</strong></h5>
                     <span class="font-weight-light">Uploaded to Google Photos Library or a USB flash drive.</span>
                 </div>
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-clock-o mb-lg-5 float-left text-o-color-1 bg-white rounded-circle float-lg-left mx-auto"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-clock-o mb-lg-5 float-start text-o-color-1 bg-white rounded-circle float-lg-start mx-auto"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Timing</strong></h5>
                     <span class="font-weight-light">Complete within 1 to 2 weeks</span>
                 </div>                
                 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-sliders mb-lg-5 float-left text-o-color-1 bg-white rounded-circle float-lg-left mx-auto"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-sliders mb-lg-5 float-start text-o-color-1 bg-white rounded-circle float-lg-start mx-auto"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Flexiblity</strong></h5>
                     <span class="font-weight-light">Unlimited time length per video.</span>
                 </div>                
 
-                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-left text-center mb-4 mb-lg-0">
-                    <i class="fa fa-2x fa-file-archive-o float-left text-o-color-1 bg-white rounded-circle float-lg-left mx-auto"/>
+                <div class="col-lg-4 col-sm-6 pb32 o_colored_level d-flex flex-column d-lg-block text-lg-start text-center mb-4 mb-lg-0">
+                    <i class="fa fa-2x fa-file-archive-o float-start text-o-color-1 bg-white rounded-circle float-lg-start mx-auto"/>
                     <h5 class="x_font_family_rubrik mt-lg-4"><strong>Accepted Format</strong></h5>
                     <span class="font-weight-light">
                         <ul class="ms-lg-5">
-                            <li class="font-weight-light text-left">VHS, S-VHS | VHS-C, S-VHS-C</li>
-                            <li class="font-weight-light text-left">Hi-8, Video8, Digital8 | DV, DVCAM | MiniDV, DVC</li>
+                            <li class="font-weight-light text-start">VHS, S-VHS | VHS-C, S-VHS-C</li>
+                            <li class="font-weight-light text-start">Hi-8, Video8, Digital8 | DV, DVCAM | MiniDV, DVC</li>
                         </ul>
                     </span>
                 </div>                
@@ -477,7 +477,7 @@
                         <font class="text-600 ms-2">videotapes</font>
                     </span>
 
-                    <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
+                    <span class="card-text float-end d-flex flex-column flex-md-row align-items-center">
                         <font class="text-dark font-weight-bold h1 x_font_family_rubrik">$188</font>
                         <font class="text-600 ms-2"> /videotape (HKD)</font>
                     </span>
@@ -493,7 +493,7 @@
                         <font class="text-600 ms-2">videotapes</font>
                     </span>
 
-                    <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
+                    <span class="card-text float-end d-flex flex-column flex-md-row align-items-center">
                         <font class="text-dark font-weight-bold h1 x_font_family_rubrik">$158</font>
                         <font class="text-600 ms-2"> /videotape (HKD)</font>
                     </span>
@@ -510,7 +510,7 @@
                         <font class="text-white ms-2">videotapes</font>
                     </span>
 
-                    <span class="card-text float-right d-flex flex-column flex-md-row align-items-center">
+                    <span class="card-text float-end d-flex flex-column flex-md-row align-items-center">
                         <font class="text-white font-weight-bold h1 x_font_family_rubrik">$138</font>
                         <font class="text-white ms-2"> /videotape (HKD)</font>
                     </span>
@@ -542,8 +542,8 @@
                         <div class="input-group">
                         <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
                         <span class="input-group-append">
-                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn o_submit rounded-right">Subscribe Now</a>
-                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit rounded-right" disabled="disabled">Thanks</a>
+                            <a role="button" href="#" class="btn btn-primary js_subscribe_btn o_submit rounded-end">Subscribe Now</a>
+                            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit rounded-end" disabled="disabled">Thanks</a>
                         </span>
                         </div>
                     </div>

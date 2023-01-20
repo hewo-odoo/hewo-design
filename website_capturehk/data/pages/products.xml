@@ -16,10 +16,10 @@
                 <!--Title-->
                 <section class="s_text_block o_colored_level pb32 pt80" data-snippet="s_text_block" data-name="Text">
                     <div class="container s_allow_columns">
-                    <h1 class="text-left text-lg-center">
+                    <h1 class="text-start text-lg-center">
                         <strong>Analogue Media Digitisation Service</strong>   
                     </h1>
-                    <p class="text-left text-lg-center">
+                    <p class="text-start text-lg-center">
                         <span>From photo album, photographs, videotape to digital media, <br/>we digitise it all and save your memories directly to Google Photos Library!</span>
                     </p>
                     </div>
@@ -364,44 +364,44 @@
                     <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
-                            <i class="fa fa-3x fa-cloud mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
+                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
+                            <i class="fa fa-3x fa-cloud mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
                             <h5 class="x_font_family_rubrik"><strong>Cloud</strong></h5>
                             <span class="font-weight-light">Works with Google Photos</span>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
-                            <i class="fa fa-3x fa-bolt mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
+                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
+                            <i class="fa fa-3x fa-bolt mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
                             <h5 class="x_font_family_rubrik"><strong>Speed</strong></h5>
                             <span class="font-weight-light">1 to 2 week processing</span>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
-                            <i class="fa fa-3x fa-heart mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
+                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
+                            <i class="fa fa-3x fa-heart mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
                             <h5 class="x_font_family_rubrik"><strong>Our Promise</strong></h5>
                             <span class="font-weight-light">We handle your media like it was our own</span>
                         </div>                        
 
-                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
-                            <i class="fa fa-3x fa-check-circle mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
+                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
+                            <i class="fa fa-3x fa-check-circle mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
                             <h5 class="x_font_family_rubrik"><strong>Quality</strong></h5>
                             <span class="font-weight-light">Capture every pixel</span>
                         </div>                        
 
-                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
-                            <i class="fa fa-3x fa-usd mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
+                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
+                            <i class="fa fa-3x fa-usd mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
                             <h5 class="x_font_family_rubrik"><strong>Price</strong></h5>
                             <span class="font-weight-light">Transparent pricing</span>
                         </div>                        
 
-                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
-                            <i class="fa fa-3x fa-headphones mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
+                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
+                            <i class="fa fa-3x fa-headphones mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
                             <h5 class="x_font_family_rubrik"><strong>Services</strong></h5>
                             <span class="font-weight-light">One-to-one consultation service</span>
                         </div>                        
 
-                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-left text-center mb-4 mb-md-0">
-                            <i class="fa fa-3x fa-file-text mx-auto text-o-color-1 rounded bg-white float-md-left m-md-3"/>
+                        <div class="col-lg-4 col-sm-6 pb8 o_colored_level d-flex flex-column d-md-block text-md-start text-center mb-4 mb-md-0">
+                            <i class="fa fa-3x fa-file-text mx-auto text-o-color-1 rounded bg-white float-md-start m-md-3"/>
                             <h5 class="x_font_family_rubrik"><strong>Customisation</strong></h5>
                             <span class="font-weight-light">Customise the title and date for every folder</span>
                         </div>                                                
@@ -692,8 +692,8 @@
                                 <div class="input-group">
                                 <input type="email" name="email" class="js_subscribe_email form-control" placeholder="your email..."/>
                                 <span class="input-group-append">
-                                    <a role="button" href="#" class="btn btn-primary js_subscribe_btn o_submit rounded-right">Subscribe Now</a>
-                                    <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit rounded-right" disabled="disabled">Thanks</a>
+                                    <a role="button" href="#" class="btn btn-primary js_subscribe_btn o_submit rounded-end">Subscribe Now</a>
+                                    <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit rounded-end" disabled="disabled">Thanks</a>
                                 </span>
                                 </div>
                             </div>
