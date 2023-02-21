@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Disable Default Header -->
+<record id="website.template_header_default" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Disable Navbar CTA button-->
+<record id="website.header_call_to_action" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Disable Default Footer -->
+<record id="website.footer_custom" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Copyright - Replace copyright text -->
+<template id="footer_copyright_company_name" inherit_id="website.footer_copyright_company_name">
+    <xpath expr="//footer//span[hasclass('o_footer_copyright_name')]" position="replace">
+        <span class="o_footer_copyright_name me-2">
+            <p>Copyright © 2023 SCG Home Việt Nam Co, Ltd. All Rights Reserved.</p>
+            <br/>
+            <p>SCG HOME Việt Nam Co, Ltd. Business Registration No. 0104397416 signed on 30/05/2022 by Vĩnh Phúc Investment Planning Department. Address: Phổ Hamlet, Quất Lưu Ward, Bình Xuyên District, Vĩnh Phúc Province.</p>
+        </span>
+    </xpath>
+</template>
+
+<!-- Theme Header - Option -->
+<template id="template_header_opt" inherit_id="website.snippet_options" name="scghome Header Template - Option">
+    <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+        <we-button title="scghome"
+            data-customize-website-views="website_scghome.template_header_layout"
+            data-customize-website-variable="'scghome'"
+            data-img="/website_scghome/static/src/img/wbuilder/template_header_opt.svg"/>
+    </xpath>
+</template>
+
+<!-- Theme Footer - Option -->
+<template id="template_footer_opt" inherit_id="website.snippet_options" name="scghome Footer Template - Option">
+    <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+        <we-button title="scghome"
+            data-customize-website-views="website_scghome.template_footer_layout"
+            data-customize-website-variable="'scghome'"
+            data-img="/website_scghome/static/src/img/wbuilder/template_footer_opt.svg"/>
+    </xpath>
+</template>
+
+</odoo>

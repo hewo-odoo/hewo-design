@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+<!--Remove default nmenu items-->
+<!-- Home -->
+<delete model="website.menu" search="[('url','in', ['/', '/']), ('website_id', '=', 1)]"/>
+
+<!-- Contact us -->
+<!-- <delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]"/> -->
+
+<!-- Shop -->
+<delete model="website.menu" search="[('url','in', ['/', '/shop']), ('website_id', '=', 1)]"/>
+
+<!-- Blog -->
+<delete model="website.menu" search="[('url','in', ['/', '/blog']), ('website_id', '=', 1)]"/>
+
+<!--Products-->
+<record id="menu_products" model="website.menu">
+    <field name="name">Products</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="website_id">1</field>
+    <field name="sequence" type="int">20</field>
+</record>
+
+    <record id="menu_products_overview" model="website.menu">
+        <field name="name">All products</field>
+        <field name="url">/shop</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">21</field>
+    </record>
+
+    <record id="menu_products_tiles_bath" model="website.menu">
+        <field name="name">Tiles &amp; Bath</field>
+        <field name="url">/shop/category/tiles-bath-1</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">22</field>
+    </record>
+
+    <record id="menu_products_building_materials" model="website.menu">
+        <field name="name">Building Materials</field>
+        <field name="url">/shop/category/building-materials-2</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">23</field>
+    </record>
+
+    <record id="menu_products_diy" model="website.menu">
+        <field name="name">DIY</field>
+        <field name="url">/shop/category/diy-3</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">24</field>
+    </record>
+
+    <record id="menu_products_kitchen" model="website.menu">
+        <field name="name">Kitchen</field>
+        <field name="url">/shop/category/kitchen-4</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">25</field>
+    </record>
+
+    <record id="menu_products_lightings" model="website.menu">
+        <field name="name">Lightings</field>
+        <field name="url">/shop/category/lightings-5</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">26</field>
+    </record>
+
+    <record id="menu_products_furniture" model="website.menu">
+        <field name="name">Furniture</field>
+        <field name="url">/shop/category/furniture-6</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">27</field>
+    </record>
+
+    <record id="menu_products_decorations" model="website.menu">
+        <field name="name">Decorations</field>
+        <field name="url">/shop/category/decorations-7</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">28</field>
+    </record>
+
+    <record id="menu_products_services" model="website.menu">
+        <field name="name">Services</field>
+        <field name="url">/shop/category/services-8</field>
+        <field name="website_id">1</field>
+        <field name="parent_id" ref="website_scghome.menu_products"/>
+        <field name="sequence" type="int">29</field>
+    </record>
+
+<!--Service & Solutions-->
+<record id="menu_service_solutions" model="website.menu">
+    <field name="name">Service &amp; Solutions</field>
+    <field name="url">/service-solutions</field>
+    <field name="website_id">1</field>
+    <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="sequence" type="int">30</field>
+</record>
+
+<!--Promotions-->
+<record id="menu_promotions" model="website.menu">
+    <field name="name">Promotions</field>
+    <field name="url">/blog/promotions-2</field>
+    <field name="website_id">1</field>
+        <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="sequence" type="int">31</field>
+</record>
+
+<!--Blog-->
+<record id="menu_blogs" model="website.menu">
+    <field name="name">Blogs</field>
+    <field name="url">/blog/blogs-3</field>
+    <field name="website_id">1</field>
+        <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="sequence" type="int">32</field>
+</record>
+
+
+</odoo>

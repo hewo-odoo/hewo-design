@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Disable Default Home -->
+<record id="website.homepage" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<record id="page_home" model="website.page">
+    <field name="name">Home</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_home</field>
+    <field name="url">/</field>
+    <field name="type">qweb</field>
+    <field name="website_id" eval="1"/>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_home">
+            <t t-set="additional_title" t-value="'Home'"/>
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'"/>
+                <div id="wrap" class="oe_structure oe_empty">
+
+                    <!--Carousel-->
+                    <section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+                        <div class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000" id="myCarousel1676276114571">
+                        <ol class="carousel-indicators o_we_no_overlay">
+                            <li data-bs-slide-to="0" data-bs-target="#myCarousel1676276114571"/>
+                            <li data-bs-slide-to="1" data-bs-target="#myCarousel1676276114571"/>
+                            <li data-bs-slide-to="2" data-bs-target="#myCarousel1676276114571" class="active" aria-current="true"/>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item o_colored_level pb256 pt256 oe_img_bg o_bg_img_center" style="background-image: url(&quot;https://cms-asset-prod.s3.ap-southeast-1.amazonaws.com/KV_1_web_a55bddea22.jpg&quot;);" data-name="Slide">
+                                <div class="container oe_unremovable"></div>
+                            </div>
+
+                            <div class="carousel-item pb256 pt256 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;https://cms-asset-prod.s3.ap-southeast-1.amazonaws.com/KV_1_web_a55bddea22.jpg&quot;);" data-name="Slide">
+                                <div class="oe_unremovable container"></div>
+                            </div>
+                            <div class="carousel-item o_colored_level pb256 pt256 oe_img_bg o_bg_img_center active" style="background-image: url(&quot;https://cms-asset-prod.s3.ap-southeast-1.amazonaws.com/KV_1_web_a55bddea22.jpg&quot;);" data-name="Slide">
+                                <div class="container oe_unremovable"></div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1676276114571">
+                            <span class="carousel-control-prev-icon"/>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1676276114571">
+                            <span class="carousel-control-next-icon"/>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                        </div>
+                    </section>
+
+                    <!--Title-->
+                    <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                        <div class="s_allow_columns container">
+                            <h4><strong>Product Category</strong></h4>
+                        </div>
+                    </section>
+
+                    <!--Product categories-->
+                    <section class="s_three_columns pt32 pb40 o_colored_level o_cc o_cc1" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+                        <div class="container">
+                        <div class="row d-flex align-items-stretch">
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_bathroom" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>Tiles &amp;amp; Bath</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_tiles" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>Building Materials</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_diy" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>DIY</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_kitchen" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>Kitchen</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_lights" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>Lightings</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_furniture" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>Furniture</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_decor" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>Decorations</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-3">
+                            <div class="card text-bg-white h-100 rounded-3 shadow-sm">
+                                <div class="card-body">
+                                    <p><br/></p>
+                                    <p style="text-align: center;">
+                                        <img src="/web/image/website_scghome.img_categories_service" class="img img-fluid o_we_custom_image" style="width: 50% !important;" data-mimetype="image/jpeg" data-resize-width="500" loading="lazy"/>
+                                    </p>
+                                    <h5 class="card-title" style="text-align: center;"><strong>Services</strong></h5>
+                                    <p><br/></p>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Title-->
+                    <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                        <div class="s_allow_columns container">
+                            <h4><strong>Recommended Products</strong></h4>
+                        </div>
+                    </section>
+
+                    <!--Dynamic snippet-->
+                    <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic pt32 pb40 o_colored_level s_product_product_add_to_cart o_dynamic_empty" data-name="Products" data-product-category-id="all" data-number-of-records="16" data-filter-id="1" data-template-key="website_sale.dynamic_filter_template_product_product_add_to_cart" data-carousel-interval="5000">
+                        <div class="o_not_editable container">
+                        <div class="css_non_editable_mode_hidden">
+                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                        Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                                    </div>
+                        </div>
+                        <div class="dynamic_snippet_template"/>
+                        </div>
+                    </section>
+
+                    <!--Title with view all link-->
+                    <section class="s_text_image pt40 o_colored_level o_cc o_cc4" data-snippet="s_text_image" data-name="Text - Image">
+                        <div class="container">
+                        <div class="row align-items-center">
+                            <div class="pt16 pb16 o_colored_level col-lg-10">
+                                <h4><strong>Highlight Products</strong></h4>
+                            </div>
+                            <div class="pt16 pb16 o_colored_level col-lg-2" style="text-align: right;">
+                                <a href="#"><strong>See all</strong></a>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Dynamic snippet-->
+                    <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic pb40 o_colored_level s_product_product_add_to_cart o_cc o_cc1 o_dynamic_empty" data-name="Products" data-product-category-id="all" data-number-of-records="16" data-filter-id="1" data-template-key="website_sale.dynamic_filter_template_product_product_add_to_cart" data-carousel-interval="5000">
+                        <div class="o_not_editable container">
+                        <div class="css_non_editable_mode_hidden">
+                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                        Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                                    </div>
+                        </div>
+                        <div class="dynamic_snippet_template"/>
+                        </div>
+                    </section>
+
+                    
+                    <!--Title with view all link-->
+                    <section class="s_text_image pt40 o_colored_level o_cc o_cc2" data-snippet="s_text_image" data-name="Text - Image">
+                        <div class="container">
+                        <div class="row align-items-center">
+                            <div class="pt16 pb16 o_colored_level col-lg-10">
+                                <h4><strong>Promotions</strong></h4>
+                            </div>
+                            <div class="pt16 pb16 o_colored_level col-lg-2" style="text-align: right;">
+                                <a class="btn link-danger p-0" href="/blog/promotions-2">
+                                    <strong>See all</strong>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Dynamic Blog snippet-->
+                    <section data-snippet="s_dynamic_snippet_products" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb40 o_colored_level o_cc o_cc2 s_blog_post_card o_dynamic_empty" data-name="Blog Posts" data-filter-by-blog-id="2" data-number-of-records="16" data-filter-id="7" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3">
+                        <div class="o_not_editable container">
+                        <div class="css_non_editable_mode_hidden">
+                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                        Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                                    </div>
+                        </div>
+                        <div class="dynamic_snippet_template"/>
+                        </div>
+                    </section>
+
+
+                    <!--Title with view all link-->
+                    <section class="s_text_image pt40 o_colored_level o_cc o_cc4" data-snippet="s_text_image" data-name="Text - Image">
+                        <div class="container">
+                        <div class="row align-items-center">
+                            <div class="pt16 pb16 o_colored_level col-lg-10">
+                                <h4><strong>Blog</strong></h4>
+                            </div>
+                            <div class="pt16 pb16 o_colored_level col-lg-2" style="text-align: right;">
+                                <a href="/blog/blogs-3"><strong>See all</strong></a>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Dynamic Blog snippet-->
+                    <section data-snippet="s_dynamic_snippet" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb40 o_colored_level s_blog_post_card o_dynamic_empty" data-name="Blog Posts" data-filter-by-blog-id="3" data-number-of-records="16" data-filter-id="7" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3">
+                        <div class="o_not_editable container">
+                        <div class="css_non_editable_mode_hidden">
+                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                        Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                                    </div>
+                        </div>
+                        <div class="dynamic_snippet_template"/>
+                        </div>
+                    </section>
+
+                    <!--Title with view all link-->
+                    <section class="s_text_image pt40 o_colored_level o_cc o_cc4" data-snippet="s_text_image" data-name="Text - Image">
+                        <div class="container">
+                        <div class="row align-items-center">
+                            <div class="pt16 pb16 o_colored_level col-lg-10">
+                                <h4><strong>Video</strong></h4>
+                            </div>
+                            <div class="pt16 pb16 o_colored_level col-lg-2" style="text-align: right;">
+                                <a href="https://www.youtube.com/@scghomevietnam"><strong>See all</strong></a>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!--Video block-->
+                    <section class="s_three_columns pb40 o_colored_level o_cc o_cc1" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+                        <div class="container">
+                        <div class="row d-flex align-items-stretch">
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-4">
+                            <div class="card text-bg-white h-100 border-0">
+                                <div class="card-body">
+                                    <div data-oe-expression="//www.youtube.com/embed/8VZNH9aw5SY?rel=0&amp;autoplay=0" class="media_iframe_video">
+                                        <div class="css_editable_mode_display"/>
+                                        <div class="media_iframe_video_size"/>
+                                        <iframe src="//www.youtube.com/embed/8VZNH9aw5SY?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen="allowfullscreen"/>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-4">
+                            <div class="card text-bg-white h-100 border-0">
+                                <div class="card-body">
+                                    <div data-oe-expression="//www.youtube.com/embed/i9hOqqtrepk?rel=0&amp;autoplay=0" class="media_iframe_video">
+                                        <div class="css_editable_mode_display"/>
+                                        <div class="media_iframe_video_size"/>
+                                        <iframe src="//www.youtube.com/embed/i9hOqqtrepk?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen="allowfullscreen"/>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="s_col_no_bgcolor pt16 pb16 col-lg-4">
+                            <div class="card text-bg-white h-100 border-0">
+                                <div class="card-body">
+                                    <div data-oe-expression="//www.youtube.com/embed/F3VieYJF4Us?rel=0&amp;autoplay=0" class="media_iframe_video">
+                                        <div class="css_editable_mode_display"/>
+                                        <div class="media_iframe_video_size"/>
+                                        <iframe src="//www.youtube.com/embed/F3VieYJF4Us?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen="allowfullscreen"/>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+
+                </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

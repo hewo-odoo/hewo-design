@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- scghome blog setting -->
+<record id="blog_blog_1" model="blog.blog">
+    <field name="name">Promotions</field>
+</record>
+
+<record id="blog_blog_2" model="blog.blog">
+    <field name="name">Blogs</field>
+</record>
+
+
+</odoo>

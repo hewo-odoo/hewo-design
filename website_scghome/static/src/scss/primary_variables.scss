@@ -1,0 +1,100 @@
+// ------------------------------------------------------------------------------ //
+// PRESETS
+// ------------------------------------------------------------------------------ //
+
+$o-website-values-palettes: (
+    (
+        // Colors
+        'color-palettes-name':              'scghome',
+
+        // Fonts
+        'font':                             'Montserrat',
+        'headings-font':                    'Montserrat',
+        'navbar-font':                      'Montserrat',
+        'buttons-font':                     'Montserrat',
+
+        // Buttons outline
+        'btn-primary-outline':              false,
+        'btn-secondary-outline':            false,
+
+        // Buttons
+        'btn-padding-y':                    0.375rem,
+        'btn-padding-x':                    0.75rem,
+        'btn-border-radius':                0.25rem,
+
+        // Header
+        'header-template':                  'scghome',
+        'hamburger-position':               'left',
+        'logo-height':                      4rem,
+        'fixed-logo-height':                4rem,
+        'header-font-size':                 1rem,
+
+        // Footer
+        'footer-template':                  'scghome',
+    ),
+);
+
+
+// ------------------------------------------------------------------------------ //
+// FONTS
+// ------------------------------------------------------------------------------ //
+
+$o-theme-font-configs: (
+    'Montserrat': (
+        'family':                           ('Montserrat', serif),
+        'url':                              'Montserrat:300,400,400i,500,700',
+        'properties' : (
+            'base': (
+                'font-size-base':           1rem,
+            ),
+        ),
+    ),
+);
+
+// ------------------------------------------------------------------------------ //
+// COLORS
+// ------------------------------------------------------------------------------ //
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'scghome': (
+            'o-color-1':                    #FF0000,
+            'o-color-2':                    #F6F6F6,
+            'o-color-3':                    #8A171A,
+            'o-color-4':                    #FFFFFF,
+            'o-color-5':                    #000000,
+
+            //extra colors
+            'o-color-6':                    #383E45,
+
+            //specific palettes
+            'o-cc1-bg':                     'o-color-4',
+            'o-cc1-text':                   'o-color-5',
+            'o-cc1-headings':               'o-color-5',
+            'o-cc1-link':                   'o-color-6',
+            'o-cc5-btn-primary':            'o-color-1',
+            'o-cc5-btn-secondary':          'o-color-3',
+
+            'o-cc2-bg':                     'o-color-2',
+            'o-cc2-text':                   var(--900),
+            'o-cc2-headings':               'o-color-5',
+            'o-cc2-link':                   'o-color-6',
+
+            'o-cc3-bg':                     'o-color-3',
+            'o-cc3-text':                   'o-color-4',
+            'o-cc3-headings':               'o-color-4',
+            'o-cc3-link':                   'o-color-4',
+
+            'o-cc4-bg':                     'o-color-4',
+            'o-cc4-text':                   'o-color-5',
+            'o-cc4-headings':               'o-color-5',
+            'o-cc4-link':                   'o-color-1',
+
+            'menu':                         1,
+            'footer':                       3,
+            'copyright':                    3,
+        ),
+    )
+);
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'scghome');

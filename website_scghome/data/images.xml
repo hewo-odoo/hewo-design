@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Branding -->
+<record id="logo" model="ir.attachment">
+    <field name="name">scghome Logo</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/scghome_logo.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="website.default_website" model="website">
+    <field name="logo" type="base64" file="website_scghome/static/src/img/content/scghome_logo.png"/>
+</record>
+
+<!--Product categories-->
+<record id="img_categories_bathroom" model="ir.attachment">
+    <field name="name">Product Categories bathroom</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/bathroom.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_tiles" model="ir.attachment">
+    <field name="name">Product Categories tiles</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/tiles.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_diy" model="ir.attachment">
+    <field name="name">Product Categories diy</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/diy.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_kitchen" model="ir.attachment">
+    <field name="name">Product Categories bathroom</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/kitchen.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_lights" model="ir.attachment">
+    <field name="name">Product Categories bathroom</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/lights.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_furniture" model="ir.attachment">
+    <field name="name">Product Categories bathroom</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/bathroom.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_decor" model="ir.attachment">
+    <field name="name">Product Categories decor</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/decor.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_service" model="ir.attachment">
+    <field name="name">Product Categories service</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/categories/service.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<!--Footer-->
+<record id="img_payment_cash" model="ir.attachment">
+    <field name="name">Footer Payment cash</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/footer/cash.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_payment_mastercard" model="ir.attachment">
+    <field name="name">Footer Payment mastercard</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/footer/mastercard.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_payment_visa" model="ir.attachment">
+    <field name="name">Footer Payment visa</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/footer/visa.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_payment_napas" model="ir.attachment">
+    <field name="name">Footer Payment napas</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/footer/napas.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_footer_certification" model="ir.attachment">
+    <field name="name">Footer cerfification</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/footer/certification.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+</odoo>
