@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_service_solutions" model="website.page">
+    <field name="name">Services &amp; Solutions</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_service_solutions</field>
+    <field name="url">/service-solutions</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_service_solutions">
+            <t t-set="additional_title" t-value="'Service &amp; Solutions'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+                <section class="s_title pt40 pb40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                    <div class="container s_allow_columns">
+                    <h3>
+                        <strong>Service &amp;amp; Solutions</strong>
+                    </h3>
+                    </div>
+                </section>
+
+                <section class="s_three_columns pb32 o_colored_level o_cc o_cc1" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+                    <div class="container">
+                    <div class="row d-flex align-items-stretch">
+                        <div class="s_col_no_bgcolor pt16 pb16 col-lg-4">
+                        <div class="card text-bg-white h-100">
+                            <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?ixlib=rb-4.0.3" class="card-img-top img img-fluid o_we_custom_image o_we_image_cropped" data-mimetype="image/jpeg" data-y="240" data-width="1440" data-height="1440" data-scale-x="1" data-scale-y="1" data-aspect-ratio="1/1" loading="lazy"/>
+                            <div class="card-body">
+                            <h4 class="card-title">
+                                <strong>Fixing &amp; Refurbishment</strong>
+                            </h4>
+                            <p class="card-text">
+                                <font class="text-600">Please share to us your problem</font>
+                            </p>
+                            <p class="card-text">
+                                <a href="#" class="btn btn-primary">
+                                    <strong>Interest this service</strong>
+                                </a>
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="s_col_no_bgcolor pt16 pb16 col-lg-4">
+                        <div class="card text-bg-white h-100">
+                            <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?ixlib=rb-4.0.3" class="card-img-top img img-fluid o_we_custom_image o_we_image_cropped" data-mimetype="image/jpeg" data-y="240" data-width="1440" data-height="1440" data-scale-x="1" data-scale-y="1" data-aspect-ratio="1/1" loading="lazy"/>
+                            <div class="card-body">
+                            <h4 class="card-title">
+                                <strong>Fixing &amp; Refurbishment</strong>
+                            </h4>
+                            <p class="card-text">
+                                <font class="text-600">Please share to us your problem</font>
+                            </p>
+                            <p class="card-text">
+                                <a href="#" class="btn btn-primary">
+                                <strong>Interest this service</strong>
+                                </a>
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="s_col_no_bgcolor pt16 pb16 col-lg-4">
+                        <div class="card text-bg-white h-100">
+                            <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?ixlib=rb-4.0.3" class="card-img-top img img-fluid o_we_custom_image o_we_image_cropped" data-mimetype="image/jpeg" data-y="240" data-width="1440" data-height="1440" data-scale-x="1" data-scale-y="1" data-aspect-ratio="1/1" loading="lazy"/>
+                            <div class="card-body">
+                            <h4 class="card-title">
+                                <strong>Fixing &amp; Refurbishment</strong>
+                            </h4>
+                            <p class="card-text">
+                                <font class="text-600">Please share to us your problem</font>
+                            </p>
+                            <p class="card-text">
+                                <a href="#" class="btn btn-primary">
+                                <strong>Interest this service</strong>
+                                </a>
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+        
+
+</odoo>

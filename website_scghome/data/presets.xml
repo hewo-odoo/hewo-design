@@ -47,4 +47,16 @@
     </xpath>
 </template>
 
+<!--Blog Preset-->
+
+<!--Deactviate default "our blog"-->
+<record id="website_blog.blog_blog_1" model="blog.blog">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Blog Home page layout-->
+<record id="website_blog.opt_blog_cover_post" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
 </odoo>

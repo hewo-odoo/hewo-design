@@ -233,7 +233,7 @@
                     </section>
 
                     <!--Dynamic Blog snippet-->
-                    <section data-snippet="s_dynamic_snippet_products" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb40 o_colored_level o_cc o_cc2 s_blog_post_card o_dynamic_empty" data-name="Blog Posts" data-filter-by-blog-id="2" data-number-of-records="16" data-filter-id="7" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3">
+                    <section data-snippet="s_dynamic_snippet_products" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb40 o_colored_level o_cc o_cc2 s_blog_post_card o_dynamic_empty" data-name="Blog Posts" data-filter-by-blog-id="2" data-number-of-records="3" data-filter-id="7" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3">
                         <div class="o_not_editable container">
                         <div class="css_non_editable_mode_hidden">
                             <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
@@ -260,7 +260,7 @@
                     </section>
 
                     <!--Dynamic Blog snippet-->
-                    <section data-snippet="s_dynamic_snippet" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb40 o_colored_level s_blog_post_card o_dynamic_empty" data-name="Blog Posts" data-filter-by-blog-id="3" data-number-of-records="16" data-filter-id="7" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3">
+                    <section data-snippet="s_dynamic_snippet" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb40 o_colored_level s_blog_post_card o_dynamic_empty" data-name="Blog Posts" data-filter-by-blog-id="3" data-number-of-records="3" data-filter-id="7" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3">
                         <div class="o_not_editable container">
                         <div class="css_non_editable_mode_hidden">
                             <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">

@@ -13,6 +13,7 @@
         'data/images.xml',
         # Pages
         'data/pages/home.xml',
+        'data/pages/service_solutions.xml',
         #Frontend
         'views/website_template.xml',
     ],
