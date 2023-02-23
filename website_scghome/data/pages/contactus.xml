@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- Disable Default Contact us -->
+<record id="website.contactus" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<record id="page_contactus" model="website.page">
+    <field name="name">Contact us</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_contactus</field>
+    <field name="url">/contactus</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_contactus">
+            <t t-set="additional_title" t-value="'Contact us'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+                <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                    <div class="container s_allow_columns">
+                    <h3>
+                        <strong>Contact us</strong>
+                    </h3>
+                    <p>
+                        <font class="text-600">Leave us a message and we will contact you back.</font>
+                    </p>
+                    </div>
+                </section>
+
+                <section class="s_text_block pb40 o_colored_level pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                    <div class="s_allow_columns container">
+                    <div class="row">
+                        <div class="mt-4 mt-lg-0 o_colored_level col-lg-5">
+                            <section class="s_website_form" data-vcss="001" data-snippet="s_website_form" data-name="Form">
+                                <div class="container">
+                                <form id="contactus_form" action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-model_name="mail.mail" data-success-mode="redirect" data-success-page="/contactus-thank-you" data-pre-fill="true">
+                                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                                    <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+                                        <label class="s_website_form_label" style="width: 200px" for="orxd9nm0y1xn">
+                                        <span class="s_website_form_label_content">Name</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                        </label>
+                                        <input type="text" class="form-control s_website_form_input" name="Name" required="1" value="" placeholder="" id="orxd9nm0y1xn" data-fill-with="name"/>
+                                    </div>
+                                    <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="tel" data-name="Field">
+                                        <label class="s_website_form_label " style="width: 200px" for="o1z7j8s7bn36">
+                                        <span class="s_website_form_label_content">Contact number</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                        </label>
+                                        <input type="tel" class="form-control s_website_form_input" name="Contact number" value="" placeholder="" id="o1z7j8s7bn36" data-fill-with="undefined" required=""/>
+                                    </div>
+                                    <div class="form-group s_website_form_field col-12 s_website_form_required" data-type="char" data-name="Field">
+                                        <label class="s_website_form_label " style="width: 200px" for="omm2vqp36v9">
+                                        <span class="s_website_form_label_content">Email</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                        </label>
+                                        <input type="text" class="form-control s_website_form_input" name="email_from" required="1" value="" placeholder="" id="omm2vqp36v9" data-fill-with="email"/>
+                                    </div>
+                                    <div class="form-group s_website_form_field col-12 s_website_form_required" data-type="char" data-name="Field">
+                                        <label class="s_website_form_label " style="width: 200px" for="odcjjxl8zysv">
+                                        <span class="s_website_form_label_content">Subject</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                        </label>
+                                        <input type="text" class="form-control s_website_form_input" name="subject" required="1" value="" placeholder="" id="odcjjxl8zysv" data-fill-with="undefined"/>
+                                    </div>
+                                    <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
+                                        <label class="s_website_form_label " style="width: 200px" for="ot4sldyrxk9c">
+                                        <span class="s_website_form_label_content">Message</span>
+                                        <span class="s_website_form_mark"> *</span>
+                                        </label>
+                                        <textarea class="form-control s_website_form_input" name="Message" required="1" placeholder="" id="ot4sldyrxk9c" rows="5"/>
+                                    </div>
+                                    <div class="form-group s_website_form_field col-12    s_website_form_dnone" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px">
+                                            <span class="s_website_form_label_content"/>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input type="hidden" class="form-control s_website_form_input" name="email_to" value="info@yourcompany.example.com"/>
+                                            <div class="s_website_form_field_description small form-text text-muted">
+                                                Separate email addresses with a comma.
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-12 s_website_form_submit text-left" data-name="Submit Button">
+                                        <div style="width: 200px;" class="s_website_form_label"/>
+                                        <a href="#" role="button" class="btn btn-primary btn-lg s_website_form_send">Submit</a>
+                                        <span id="s_website_form_result"/>
+                                    </div>
+                                    </div>
+                                </form>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="mt-4 mt-lg-0 o_colored_level offset-lg-2 col-lg-5" style="">
+                            <p>
+                                <font class="text-600">Customer service:</font>
+                                <br/>
+                                ​<strong>1900 9999 01</strong>
+                            </p>
+
+                            <p>
+                                <font class="text-600">Website:</font>
+                                <br/>
+                                ​<strong>https://www.scghome.vn</strong>
+                            </p>
+
+                            <p>
+                                <font class="text-600">Email:</font>
+                                <br/>
+                                ​<a href="https://cskh@scghome.vn">
+                                    <strong>cskh@scghome.vn</strong>
+                                </a>
+                            </p>
+
+                            <p>
+                                <font class="text-600">Social Media:</font>
+                                <br/>
+                                ​<span class="fa fa-facebook-square" style="color: rgb(59, 89, 153);"/>
+                                &amp;nbsp;
+                                <strong>svghome.vn</strong>
+                                <br/>
+                                ​<span class="fa fa-youtube-play text-o-color-1"/>
+                                &amp;nbsp;
+                                <strong>scghome.vn</strong>
+                                <br/>
+                                ​<span class="fa fa-instagram" style="color: rgb(207, 40, 114);"/>
+                                &amp;nbsp;
+                                <strong>scghome.vn</strong>
+                            </p>
+
+                            <p>
+                                <font class="text-600">Address:</font>
+                                <br/>
+                                <strong>Pho hamlet, Quat Luu commune, Binh Xuyen district, Vinh Phuc province, Vietnam</strong>
+                            </p>
+
+                            <p><br/></p>
+
+                            <section class="s_map pt128 pb144" data-map-type="m" data-map-zoom="12" data-snippet="s_map" data-map-address="Pho hamlet, Quat Luu commune, Binh Xuyen district, Vinh Phuc province, Vietnam" data-name="Map">
+                                <div class="map_container o_not_editable">
+                                <div class="css_non_editable_mode_hidden">
+                                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                    An address must be specified for a map to be embedded
+                                </div>
+                                </div>
+                                <iframe class="s_map_embedded o_not_editable" width="100%" height="100%" src="https://maps.google.com/maps?q=Pho%20hamlet%2C%20Quat%20Luu%20commune%2C%20Binh%20Xuyen%20district%2C%20Vinh%20Phuc%20province%2C%20Vietnam&amp;t=m&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"/>
+                                <div class="s_map_color_filter"/>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

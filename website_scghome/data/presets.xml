@@ -16,12 +16,16 @@
     <field name="active" eval="False"/>
 </record>
 
+<!--Disable copyright bar language selector-->
+<record id="portal.footer_language_selector" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
 <!-- Copyright - Replace copyright text -->
 <template id="footer_copyright_company_name" inherit_id="website.footer_copyright_company_name">
     <xpath expr="//footer//span[hasclass('o_footer_copyright_name')]" position="replace">
         <span class="o_footer_copyright_name me-2">
             <p>Copyright © 2023 SCG Home Việt Nam Co, Ltd. All Rights Reserved.</p>
-            <br/>
             <p>SCG HOME Việt Nam Co, Ltd. Business Registration No. 0104397416 signed on 30/05/2022 by Vĩnh Phúc Investment Planning Department. Address: Phổ Hamlet, Quất Lưu Ward, Bình Xuyên District, Vĩnh Phúc Province.</p>
         </span>
     </xpath>
@@ -56,6 +60,68 @@
 
 <!--Blog Home page layout-->
 <record id="website_blog.opt_blog_cover_post" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Disable author in blog preview-->
+<record id="website_blog.opt_posts_loop_show_author" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Activate card design in blog preview-->
+<record id="website_blog.opt_blog_cards_design" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Blog post preset-->
+
+<!--Activate regular cover-->
+<record id="website_blog.opt_blog_post_regular_cover" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Disable breadcrumb-->
+<record id="website_blog.opt_blog_post_breadcrumb" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Disable readability improvement-->
+<record id="website_blog.opt_blog_post_readable" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+
+<!--Ecommerce catalog Preset-->
+
+<!--Activate ecommerce attribute & variants filters-->
+<record id="website_sale.products_attributes" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Activate ecommerce filter by price-->
+<record id="website_sale.filter_products_price" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Activate ecommerce catagories-->
+<record id="website_sale.products_categories" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Ecommerce Product page Preset-->
+
+<!--Activate buy now button-->
+<record id="website_sale.product_buy_now" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Activate dicussion & rating-->
+<record id="website_sale.product_comment" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Diable terms & conditions-->
+<record id="website_sale.product_custom_text" model="ir.ui.view">
     <field name="active" eval="False"/>
 </record>
 

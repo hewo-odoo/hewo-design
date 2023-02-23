@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<record id="page_maintenance" model="website.page">
+    <field name="name">Maintenance</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_maintenance</field>
+    <field name="url">/maintenance</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_maintenance">
+            <t t-set="additional_title" t-value="'Maintenance'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+                <section class="s_text_block pt40 pb40 o_colored_level bg-o-color-1" data-snippet="s_text_block" data-name="Text">
+                    <div class="s_allow_columns container">
+                        <p>
+                            <img src="/web/image/website_scghome.img_maintenance_banner" class="img img-fluid o_we_custom_image mx-auto d-block img-thumbnail" data-mimetype="image/jpeg"/>
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+
+</odoo>

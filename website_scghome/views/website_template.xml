@@ -19,42 +19,44 @@
                 <div id="top_menu_container" class="container flex-row flex-wrap">
                     <!-- Brand -->
                     <t t-call="website.placeholder_header_brand">
-                        <t t-set="_link_class" t-valuef="me-4"/>
+                        <t t-set="_link_class" t-valuef="mr-4"/>
                     </t>
                     <!-- Slogan -->
-                    <div class="ms-lg-3 me-lg-auto me-0 mt-3 mt-sm-0">
+                    <div class="ml-lg-3 mr-lg-auto mr-0 mt-3 mt-sm-0">
                         <div class="oe_structure oe_structure_solo" id="oe_structure_header_slogan_1">
                             <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
-                                <form method="get" data-snippet="s_searchbar_input" class="o_searchbar_form s_searchbar_input" action="/en/website/search">
+                                <form method="get" data-snippet="s_searchbar_input" class="o_searchbar_form o_wait_lazy_js s_searchbar_input" action="/website/search">
                                     <div role="search" class="input-group ">
-                                    <input type="search" name="search" class="search-query form-control oe_search_box None" placeholder="Search..." data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc" autocomplete="off"/>
-                                    <button type="submit" aria-label="Search" title="Search" class="btn oe_search_button btn-primary">
-                                        <i class="oi oi-search"/>
-                                    </button>
+                                    <input type="search" name="search" class="search-query form-control oe_search_box None" placeholder="Search..." data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+                                    <div class="input-group-append">
+                                        <button type="submit" aria-label="Search" title="Search" class="btn oe_search_button btn-primary">
+                                        <i class="fa fa-search"/>
+                                        </button>
+                                    </div>
                                     </div>
                                     <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
                                 </form>
                             </section>
                         </div>
                     </div>
-                    <ul class="nav navbar-nav navbar-expand ms-auto order-last order-lg-0">
+                    <ul class="nav navbar-nav navbar-expand ml-auto order-last order-lg-0">
                         <!-- Sign In -->
                         <t t-call="portal.placeholder_user_sign_in">
-                            <t t-set="_item_class" t-valuef="nav-item ms-3"/>
+                            <t t-set="_item_class" t-valuef="nav-item ml-3"/>
                             <t t-set="_link_class" t-valuef="btn btn-outline-primary"/>
                         </t>
                         <!-- User Dropdown -->
                         <t t-call="portal.user_dropdown">
                             <t t-set="_user_name" t-value="True"/>
-                            <t t-set="_user_name_class" t-valuef="fw-bold"/>
-                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-3"/>
+                            <t t-set="_user_name_class" t-valuef="font-weight-bold"/>
+                            <t t-set="_item_class" t-valuef="nav-item dropdown ml-3"/>
                             <t t-set="_link_class" t-valuef="nav-link"/>
-                            <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-end position-absolute"/>
+                            <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-right position-absolute"/>
                         </t>
                         <li class="nav-item">
                             <!-- Call To Action -->
                             <t t-call="website.placeholder_header_call_to_action">
-                                <t t-set="_div_classes" t-valuef="ms-2"/>
+                                <t t-set="_div_classes" t-valuef="ml-2"/>
                             </t>
                         </li>
                     </ul>
@@ -83,11 +85,18 @@
                                     <t t-set="link_class" t-valuef="nav-link"/>
                                 </t>
                             </t>
+                            <!-- Shopping cart-->
+                            <t t-call="website_sale.header_cart_link">
+                                <t t-set="_icon" t-value="True"/>
+                                <t t-set="_item_class" t-value="'align-self-md-center nav-item position-relative list-unstyled'"/>
+                                <t t-set="_link_class" t-value="'nav-link'"/>
+                            </t>
                         </t>
+
                         <!-- Language Selector -->
                         <t t-call="website.placeholder_header_language_selector">
-                            <t t-set="_div_classes" t-valuef="mb-4 mb-lg-0 align-self-lg-center ms-lg-auto"/>
-                            <t t-set="_dropdown_menu_class" t-valuef="float-lg-end"/>
+                            <t t-set="_div_classes" t-valuef="mb-4 mb-lg-0 align-self-lg-center ml-lg-auto"/>
+                            <t t-set="_dropdown_menu_class" t-valuef="float-lg-right"/>
                         </t>
                     </div>
                 </div>
@@ -114,28 +123,29 @@
                         <div class="container">
                             <div class="row">
 
-                                <div class="pt24 pb24 o_colored_level col-lg-4 o_we_force_no_transition">
+                                <div class="pt24 pb24 o_colored_level col-lg-4">
                                     <h6>Connect With Us</h6>
                                     <p>
                                         <span style="font-size: 18px;">
                                             <strong><span class="fa fa-volume-control-phone"/> Hotline : 1900 9999 01</strong>
                                         </span>
                                         <br/>
-                                        <span class="fa fa-envelope-o"/> cskh@scghome.vn</p>
+                                        <span class="fa fa-envelope-o"/> cskh@scghome.vn
+                                    </p>
                                 </div>
 
                                 <div class="pt24 pb24 o_colored_level col-lg-3">
                                     <h6>Follow Us</h6>
-                                    <div class="s_social_media o_not_editable text-start" data-snippet="s_social_media" data-name="Social Media" contenteditable="false">
-                                        <h4 class="s_social_media_title d-none o_default_snippet_text">Social Media</h4>
-                                        <a target="_blank" href="/website/social/facebook" class="s_social_media_facebook">
-                                        <i class="fa fa-facebook rounded-empty-circle shadow-sm"/>
+                                    <div data-snippet="s_share" class="s_share text-left" data-name="Share">
+                                        <h4 class="s_share_title d-none">Social Media</h4>
+                                        <a href="https://www.facebook.com/scghomevn" target="_blank" class="s_share_facebook ">
+                                            <i class="fa fa-facebook rounded-empty-circle shadow-sm"/>
                                         </a>
-                                        <a target="_blank" href="/website/social/youtube" class="s_social_media_youtube">
-                                        <i class="fa fa-youtube rounded-empty-circle shadow-sm"/>
+                                        <a href="https://www.youtube.com/@scghomevietnam" target="_blank" class="s_social_media_youtube" style="color:#FF0000;">
+                                            <i class="fa fa-youtube rounded-empty-circle shadow-sm"/>
                                         </a>
-                                        <a target="_blank" href="/website/social/instagram" class="s_social_media_instagram">
-                                        <i class="fa fa-instagram rounded-empty-circle shadow-sm"/>
+                                        <a href="https://www.instagram.com/scghomevn/" target="_blank" class="s_social_media_instagram" style="color:#cf2872;">
+                                            <i class="fa fa-instagram rounded-empty-circle shadow-sm"/>
                                         </a>
                                     </div>
                                 </div>
@@ -161,15 +171,15 @@
 
                             <div class="col-lg-3 pb16">
                                 <h4><strong>Product Categories</strong></h4>
-                                <p><a href="#">Tiles</a></p>
-                                <p><a href="#">Sanitary Ware</a></p>
+                                <p><a href="/shop/category/building-materials-2">Tiles</a></p>
+                                <p><a href="/shop/category/tiles-bath-1">Sanitary Ware</a></p>
                                 <p><a href="#">SCG Solutions</a></p>
-                                <p><a href="#">DIY</a></p>
-                                <p><a href="#">Kitchen</a></p>
-                                <p><a href="#">Lighting</a></p>
-                                <p><a href="#">Furniture</a></p>
-                                <p><a href="#">Decoration</a></p>
-                                <p><a href="#">Service</a></p>
+                                <p><a href="/shop/category/diy-3">DIY</a></p>
+                                <p><a href="/shop/category/kitchen-4">Kitchen</a></p>
+                                <p><a href="/shop/category/lightings-5">Lighting</a></p>
+                                <p><a href="/shop/category/furniture-6">Furniture</a></p>
+                                <p><a href="/shop/category/decorations-7">Decoration</a></p>
+                                <p><a href="/shop/category/services-8">Service</a></p>
                             </div>
 
                             <div class="col-lg-3 pb16">

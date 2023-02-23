@@ -106,4 +106,39 @@
     <field name="public" eval="True"/>
 </record>
 
+<!--Promotion-->
+<record id="img_promotion_banner_1" model="ir.attachment">
+    <field name="name">Promotion banner 1</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/promotion/promotion_banner_1.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_promotion_banner_2" model="ir.attachment">
+    <field name="name">Promotion banner 2</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/promotion/promotion_banner_2.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_promotion_banner_3" model="ir.attachment">
+    <field name="name">Promotion banner 3</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/promotion/promotion_banner_3.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_maintenance_banner" model="ir.attachment">
+    <field name="name">Maintanence</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/scg_maintenance_banner.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_preview_banner" model="ir.attachment">
+    <field name="name">Preview web banner</field>
+    <field name="datas" type="base64" file="website_scghome/static/src/img/content/promotion/KV_1_web.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
 </odoo>
