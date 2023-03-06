@@ -24,7 +24,7 @@
 <!-- Copyright - Replace copyright text -->
 <template id="footer_copyright_company_name" inherit_id="website.footer_copyright_company_name">
     <xpath expr="//footer//span[hasclass('o_footer_copyright_name')]" position="replace">
-        <span class="o_footer_copyright_name me-2">
+        <span class="o_footer_copyright_name mr-2">
             <p>Copyright © 2023 SCG Home Việt Nam Co, Ltd. All Rights Reserved.</p>
             <p>SCG HOME Việt Nam Co, Ltd. Business Registration No. 0104397416 signed on 30/05/2022 by Vĩnh Phúc Investment Planning Department. Address: Phổ Hamlet, Quất Lưu Ward, Bình Xuyên District, Vĩnh Phúc Province.</p>
         </span>
@@ -52,11 +52,6 @@
 </template>
 
 <!--Blog Preset-->
-
-<!--Deactviate default "our blog"-->
-<record id="website_blog.blog_blog_1" model="blog.blog">
-    <field name="active" eval="False"/>
-</record>
 
 <!--Blog Home page layout-->
 <record id="website_blog.opt_blog_cover_post" model="ir.ui.view">

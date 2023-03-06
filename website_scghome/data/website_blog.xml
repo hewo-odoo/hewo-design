@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+<!-- scghome blog setting -->
+<record id="blog_blog_1" model="blog.blog">
+    <field name="name">Promotions</field>
+</record>
+
+<record id="blog_blog_2" model="blog.blog">
+    <field name="name">Blogs</field>
+</record>
+
+<!-- Blog post -->
+<record id="blog_post_promotions_01" model="blog.post">
+    <field name="name">Promotion template</field>
+    <field name="blog_id" ref="blog_blog_1"/>
+    <field name="author_id" ref="base.partner_admin"/>
+    <field name="is_published" eval="False"/>
+    <field name="published_date" eval="time.strftime('%Y-%m-%d %H:%M:%S')"/>
+    <field name="cover_properties">{"background-image": "url('/web/image/website_scghome.img_preview_banner')", "resize_class": "o_record_has_cover o_half_screen_height", "opacity": "0"}</field>
+    <field name="content" type="html">
+            <section class="s_numbers o_cc o_cc2 pt24 pb24 o_colored_level" data-snippet="s_numbers" data-name="Numbers">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="text-center pt24 pb24 o_colored_level col-lg-3 offset-lg-1">
+                            <img src="/web/image/website_scghome.img_promotion_banner_1" class="img img-fluid o_we_custom_image" loading="lazy"/>
+                        </div>
+
+                        <div class="text-center pt24 pb24 o_colored_level col-lg-3 offset-lg-1">
+                            <img src="/web/image/website_scghome.img_promotion_banner_2" class="img img-fluid o_we_custom_image" loading="lazy"/>
+                        </div>
+                        
+                        <div class="text-center pt24 pb24 o_colored_level col-lg-3 offset-lg-1">      
+                            <img src="/web/image/website_scghome.img_promotion_banner_3" class="img img-fluid o_we_custom_image" loading="lazy"/>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--Title-->
+            <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="s_allow_columns container">
+                    <h4>Coupon Promotion</h4>
+                </div>
+            </section>
+
+            <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns container">
+                    <div class="s_card card w-50 bg-o-color-1 mx-auto" data-snippet="s_card" data-name="Card">
+                        <h3 class="card-header">Coupon code</h3>
+                        <div class="card-body bg-o-color-4">
+                            <p style="text-align: center;">Giảm 500K cho đơn 3 triệu<br/></p>
+                            <h3 style="text-align: center;">Code : SCGH500K0223</h3>
+                            <p><br/></p>
+                        </div>
+                        <div class="card-footer" style="text-align: right;">
+                            <i class="fa fa-1x fa-clock-o mr8"/>
+                            <small>Expires 01/03/2023</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="container s_allow_columns">
+                    <h2 style="text-align: center;">Khai Xuân Đắc Lộc - Tặng Voucher 500K</h2>
+                    <div class="s_hr text-start pb40 pt16" data-snippet="s_hr" data-name="Separator">
+                        <hr class="w-25 mx-auto" style="border-top: 3px solid rgb(255, 0, 0);"/>
+                    </div>
+                </div>
+            </section>
+
+             <!--Dynamic snippet-->
+            <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic pb40 o_colored_level s_product_product_add_to_cart o_dynamic_empty" data-name="Products" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_add_to_cart" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000">
+                <div class="o_not_editable container">
+                    <div class="css_non_editable_mode_hidden">
+                        <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                            Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                        </div>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                </div>
+            </section>
+
+            <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="container s_allow_columns">
+                    <h2 style="text-align: center;">Khai Xuân Đắc Lộc - Tặng Voucher 500K</h2>
+                    <div class="s_hr text-start pb40 pt16" data-snippet="s_hr" data-name="Separator">
+                        <hr class="w-25 mx-auto" style="border-top: 3px solid rgb(255, 0, 0);"/>
+                    </div>
+                </div>
+            </section>
+
+             <!--Dynamic snippet-->
+            <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic pb40 o_colored_level s_product_product_add_to_cart o_dynamic_empty" data-name="Products" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_add_to_cart" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000">
+                <div class="o_not_editable container">
+                    <div class="css_non_editable_mode_hidden">
+                        <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                Your Dynamic Snippet will be displayed here... This message is displayed because you did not provided both a filter and a template to use.<br/>
+                        </div>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                </div>
+            </section>
+    </field>
+</record>
+
+</odoo>

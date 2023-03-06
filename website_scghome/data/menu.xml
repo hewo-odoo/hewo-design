@@ -4,9 +4,6 @@
 <!-- Home -->
 <delete model="website.menu" search="[('url','in', ['/', '/']), ('website_id', '=', 1)]"/>
 
-<!-- Contact us -->
-<!-- <delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]"/> -->
-
 <!-- Shop -->
 <delete model="website.menu" search="[('url','in', ['/', '/shop']), ('website_id', '=', 1)]"/>
 
@@ -127,6 +124,5 @@
         ('website_id', '=', 1)]"/>
     <field name="sequence" type="int">32</field>
 </record>
-
 
 </odoo>

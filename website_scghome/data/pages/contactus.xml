@@ -29,7 +29,7 @@
                     </div>
                 </section>
 
-                <section class="s_text_block pb40 o_colored_level pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                <section class="s_text_block pb40 o_colored_level" data-snippet="s_text_block" data-name="Text">
                     <div class="s_allow_columns container">
                     <div class="row">
                         <div class="mt-4 mt-lg-0 o_colored_level col-lg-5">
@@ -42,35 +42,35 @@
                                         <span class="s_website_form_label_content">Name</span>
                                         <span class="s_website_form_mark"> *</span>
                                         </label>
-                                        <input type="text" class="form-control s_website_form_input" name="Name" required="1" value="" placeholder="" id="orxd9nm0y1xn" data-fill-with="name"/>
+                                        <input type="text" class="form-control s_website_form_input" name="Name" required="1" id="orxd9nm0y1xn" data-fill-with="name"/>
                                     </div>
                                     <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="tel" data-name="Field">
                                         <label class="s_website_form_label " style="width: 200px" for="o1z7j8s7bn36">
                                         <span class="s_website_form_label_content">Contact number</span>
                                         <span class="s_website_form_mark"> *</span>
                                         </label>
-                                        <input type="tel" class="form-control s_website_form_input" name="Contact number" value="" placeholder="" id="o1z7j8s7bn36" data-fill-with="undefined" required=""/>
+                                        <input type="tel" class="form-control s_website_form_input" name="Contact number" id="o1z7j8s7bn36" data-fill-with="undefined"/>
                                     </div>
                                     <div class="form-group s_website_form_field col-12 s_website_form_required" data-type="char" data-name="Field">
                                         <label class="s_website_form_label " style="width: 200px" for="omm2vqp36v9">
                                         <span class="s_website_form_label_content">Email</span>
                                         <span class="s_website_form_mark"> *</span>
                                         </label>
-                                        <input type="text" class="form-control s_website_form_input" name="email_from" required="1" value="" placeholder="" id="omm2vqp36v9" data-fill-with="email"/>
+                                        <input type="text" class="form-control s_website_form_input" name="email_from" required="1" id="omm2vqp36v9" data-fill-with="email"/>
                                     </div>
                                     <div class="form-group s_website_form_field col-12 s_website_form_required" data-type="char" data-name="Field">
                                         <label class="s_website_form_label " style="width: 200px" for="odcjjxl8zysv">
                                         <span class="s_website_form_label_content">Subject</span>
                                         <span class="s_website_form_mark"> *</span>
                                         </label>
-                                        <input type="text" class="form-control s_website_form_input" name="subject" required="1" value="" placeholder="" id="odcjjxl8zysv" data-fill-with="undefined"/>
+                                        <input type="text" class="form-control s_website_form_input" name="subject" required="1" id="odcjjxl8zysv" data-fill-with="undefined"/>
                                     </div>
                                     <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
                                         <label class="s_website_form_label " style="width: 200px" for="ot4sldyrxk9c">
                                         <span class="s_website_form_label_content">Message</span>
                                         <span class="s_website_form_mark"> *</span>
                                         </label>
-                                        <textarea class="form-control s_website_form_input" name="Message" required="1" placeholder="" id="ot4sldyrxk9c" rows="5"/>
+                                        <textarea class="form-control s_website_form_input" name="Message" required="1" id="ot4sldyrxk9c" rows="5"/>
                                     </div>
                                     <div class="form-group s_website_form_field col-12    s_website_form_dnone" data-name="Field">
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
@@ -96,7 +96,7 @@
                             </section>
                         </div>
 
-                        <div class="mt-4 mt-lg-0 o_colored_level offset-lg-2 col-lg-5" style="">
+                        <div class="mt-4 mt-lg-0 o_colored_level offset-lg-2 col-lg-5">
                             <p>
                                 <font class="text-600">Customer service:</font>
                                 <br/>
@@ -144,7 +144,7 @@
                             <section class="s_map pt128 pb144" data-map-type="m" data-map-zoom="12" data-snippet="s_map" data-map-address="Pho hamlet, Quat Luu commune, Binh Xuyen district, Vinh Phuc province, Vietnam" data-name="Map">
                                 <div class="map_container o_not_editable">
                                 <div class="css_non_editable_mode_hidden">
-                                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                                    <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
                                     An address must be specified for a map to be embedded
                                 </div>
                                 </div>

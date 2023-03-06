@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
 
-<!-- HEADER - METHOD #01 - Add Custom Header -->
+<!-- HEADER - Add Custom Header -->
 <!-- ======================================= -->
 
 <!-- Theme Header - Layout -->
@@ -23,21 +23,17 @@
                     </t>
                     <!-- Slogan -->
                     <div class="ml-lg-3 mr-lg-auto mr-0 mt-3 mt-sm-0">
-                        <div class="oe_structure oe_structure_solo" id="oe_structure_header_slogan_1">
-                            <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
-                                <form method="get" data-snippet="s_searchbar_input" class="o_searchbar_form o_wait_lazy_js s_searchbar_input" action="/website/search">
-                                    <div role="search" class="input-group ">
-                                    <input type="search" name="search" class="search-query form-control oe_search_box None" placeholder="Search..." data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
-                                    <div class="input-group-append">
-                                        <button type="submit" aria-label="Search" title="Search" class="btn oe_search_button btn-primary">
-                                        <i class="fa fa-search"/>
-                                        </button>
-                                    </div>
-                                    </div>
-                                    <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
-                                </form>
-                            </section>
-                        </div>
+                        <form method="get" data-snippet="s_searchbar_input" class="o_searchbar_form o_wait_lazy_js s_searchbar_input" action="/website/search">
+                            <div role="search" class="input-group ">
+                            <input type="search" name="search" class="search-query form-control oe_search_box None" placeholder="Search..." data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+                            <div class="input-group-append">
+                                <button type="submit" aria-label="Search" title="Search" class="btn oe_search_button btn-primary">
+                                <i class="fa fa-search"/>
+                                </button>
+                            </div>
+                            </div>
+                            <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+                        </form>
                     </div>
                     <ul class="nav navbar-nav navbar-expand ml-auto order-last order-lg-0">
                         <!-- Sign In -->
@@ -62,14 +58,10 @@
                     </ul>
                     <!-- Separator -->
                     <div class="w-100">
-                        <div class="oe_structure oe_structure_solo" id="oe_structure_header_slogan_3">
-                            <section class="s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
-                                <div class="container">
-                                <div class="s_hr w-100 pt8 pb8" data-name="Separator">
-                                    <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-color: var(--200);"/>
-                                </div>
-                                </div>
-                            </section>
+                        <div class="container">
+                            <div class="s_hr w-100 pt8 pb8" data-name="Separator">
+                                <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-color: var(--200);"/>
+                            </div>
                         </div>
                     </div>
                     <!-- Navbar Toggler -->
@@ -88,7 +80,7 @@
                             <!-- Shopping cart-->
                             <t t-call="website_sale.header_cart_link">
                                 <t t-set="_icon" t-value="True"/>
-                                <t t-set="_item_class" t-value="'align-self-md-center nav-item position-relative list-unstyled'"/>
+                                <t t-set="_item_class" t-value="'nav-item'"/>
                                 <t t-set="_link_class" t-value="'nav-link'"/>
                             </t>
                         </t>
@@ -96,7 +88,7 @@
                         <!-- Language Selector -->
                         <t t-call="website.placeholder_header_language_selector">
                             <t t-set="_div_classes" t-valuef="mb-4 mb-lg-0 align-self-lg-center ml-lg-auto"/>
-                            <t t-set="_dropdown_menu_class" t-valuef="float-lg-right"/>
+                            <t t-set="_dropdown_menu_class" t-valuef=" dropdown-menu-right"/>
                         </t>
                     </div>
                 </div>
@@ -170,27 +162,27 @@
                         <div class="row">
 
                             <div class="col-lg-3 pb16">
-                                <h4><strong>Product Categories</strong></h4>
-                                <p><a href="/shop/category/building-materials-2">Tiles</a></p>
-                                <p><a href="/shop/category/tiles-bath-1">Sanitary Ware</a></p>
+                                <h4>Product Categories</h4>
+                                <p><a href="#">Tiles</a></p>
+                                <p><a href="#">Sanitary Ware</a></p>
                                 <p><a href="#">SCG Solutions</a></p>
-                                <p><a href="/shop/category/diy-3">DIY</a></p>
-                                <p><a href="/shop/category/kitchen-4">Kitchen</a></p>
-                                <p><a href="/shop/category/lightings-5">Lighting</a></p>
-                                <p><a href="/shop/category/furniture-6">Furniture</a></p>
-                                <p><a href="/shop/category/decorations-7">Decoration</a></p>
-                                <p><a href="/shop/category/services-8">Service</a></p>
+                                <p><a href="#">DIY</a></p>
+                                <p><a href="#">Kitchen</a></p>
+                                <p><a href="#">Lighting</a></p>
+                                <p><a href="#">Furniture</a></p>
+                                <p><a href="#">Decoration</a></p>
+                                <p><a href="#">Service</a></p>
                             </div>
 
                             <div class="col-lg-3 pb16">
-                                <h4><strong>About SCG home</strong></h4>
+                                <h4>About SCG home</h4>
                                 <p><a href="#">Introduction</a></p>
                                 <p><a href="#">Terms and Conditions</a></p>
                                 <p><a href="#">Privacy Policy</a></p>
                             </div>
 
                             <div class="col-lg-3 pb16">
-                                <h4><strong>Policies</strong></h4>
+                                <h4>Policies</h4>
                                 <p><a href="#">Return and Refund Policies</a></p>
                                 <p><a href="#">Payment Policies</a></p>
                                 <p><a href="#">Dispute Resolution</a></p>
@@ -199,15 +191,15 @@
                             </div>
 
                             <div class="col-lg-3 pb16">
-                                <h4><strong>Customer Service</strong></h4>
+                                <h4>Customer Service</h4>
                                 <p><a href="#">Order Guide</a></p>
                                 <p><a href="#">Frequently Asked Questions</a></p>
 
                                 <p><br/></p>
 
-                                <h4><strong>Certification</strong></h4>
+                                <h4>Certification</h4>
                                 <p><a href="http://online.gov.vn/Home/WebDetails/93905" target="_blank">
-                                    <img class="img-fluid o_we_custom_image" src="/web/image/website_scghome.img_footer_certification"  style="width: 50% !important;" loading="lazy"/>
+                                    <img class="img-fluid o_we_custom_image" src="/web/image/website_scghome.img_footer_certification" style="width: 50% !important;" loading="lazy"/>
                                 </a></p>
                             </div>
                         </div>
