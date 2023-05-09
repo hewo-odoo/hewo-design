@@ -4,7 +4,7 @@
     'description': '',
     'category': 'Website/Theme',
     'version': '15.0.0',
-    'depends': ['website'],
+    'depends': ['website','website_sale','stock'],
     'license': 'OEEL-1',
     'data': [
         # Options
@@ -29,6 +29,8 @@
 
         # Footer
         'views/footer.xml',
+
+        'views/website_sale_template.xml',
     ],
     'assets': {
         'web._assets_primary_variables': [
