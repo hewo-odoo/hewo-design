@@ -177,3 +177,6 @@ $o-bg-shapes: map-merge($o-bg-shapes,
 $o-bg-shapes: change-shape-colors-mapping('web_editor', 'Zigs/06', (4: 3, 5: 1));
 $o-bg-shapes: add-extra-shape-colors-mapping('web_editor', 'Zigs/06', 'second', (1: 2, 2: 5));
 // $o-bg-shapes: add-footer-shape-colors-mapping('web_editor', 'Airy/12_001', (3: 'footer'));
+
+//ecommerce layout variable
+$o-wsale-products-layout-grid-ratio: 0.8;

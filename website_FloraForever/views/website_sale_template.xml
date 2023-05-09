@@ -72,4 +72,84 @@
             </t>
         </template>
 
+    <!--Products item card-->
+
+    <!--Alter -ignore-->
+    <!-- <template id="products_remove" inherit_id="website_sale.products" name="floraforever products remove ignore">
+        <xpath expr='//div[hasclass("o_wsale_products_grid_table_wrapper")]/table/colgroup' position='attributes'>
+            <attribute name="t-ignore">false</attribute>
+            <attribute name="class">text-danger</attribute>
+        </xpath>    
+    </template> -->
+
+    <!--Edit ppr of products-->
+    <!-- <template id="products_ppr" inherit_id="website_sale.products" name="floraforever products">
+        <xpath expr='//div[hasclass("o_wsale_products_grid_table_wrapper")]/table' position='attributes'>
+            <attribute name="t-att-data-ppr">2</attribute>
+        </xpath>    
+    </template> -->
+
+    <!--Sakaya Products Item card layout-->
+    <template id="products_items_sakaya" inherit_id="website_sale.products_item" name="Sakaya Products item">
+        <xpath expr='//form[hasclass("oe_product_cart")]' position='replace'>
+            <form action="/shop/cart/update" method="post" class="card oe_product_cart border-0" t-att-data-publish="product.website_published and 'on' or 'off'" itemscope="itemscope" itemtype="http://schema.org/Product">
+                <a class="o_product_link css_editable_mode_hidden" t-att-href="product_href"/>
+
+                <div class="x_sakaya_bg bg-white border position-absolute w-100"></div>
+
+                <div class="d-flex flex-row h-100 align-items-center">
+                    <div class="card-body col-6 p-1 oe_product_image h-100">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <a t-att-href="product_href" class="d-block h-100" itemprop="url">
+                            <t t-set="image_holder" t-value="product._get_image_holder()"/>
+                            <span t-field="image_holder.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_1920' , 'itemprop': 'image'}" class="d-flex h-100 justify-content-center align-items-center"/>
+                            <!-- <span t-field="image_holder.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_1920' if product_image_big else 'image_1920', 'itemprop': 'image'}" class="d-flex h-100 justify-content-center align-items-center"/> -->
+                        </a>
+                    </div>
+
+                    <div class="card-body col-6 p-0 d-flex flex-column justify-content-around o_wsale_product_information">
+                        <div class="p-2 o_wsale_product_information_text d-flex flex-column justify-content-around">
+
+                            <div class="o_wsale_products_item_titles mb-3">
+                                <h6 class="o_wsale_products_item_title">
+                                    <a class="text-primary text-decoration-none text-uppercase font-weight-light" itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name"/>
+                                </h6>
+                                <h5 class="o_wsale_products_item_title mb-1">
+                                    <a class="text-primary text-decoration-none font-weight-bold" itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name"/>
+                                    <a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
+                                </h5>
+                                <h6 class="o_wsale_products_item_title">
+                                    <a class="text-primary text-decoration-none font-weight-light" itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name"/>                           
+                                </h6>
+                                <h6 class="small d-none d-sm-block text-o-color-2"><i class="fa fa-check-circle mr-1" aria-hidden="true"></i>10 units left</h6>
+                            </div>
+
+                            <div class="x_sakaya_products_price_buttons d-flex flex-column flex-lg-row align-items-lg-center align-items-start justify-content-between mr-5 mr-md-0">
+                                <div class="product_price mb-3 mb-md-0" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
+                                    <span class="h5" t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    <del t-attf-class="text-danger ml-1 h6 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    <span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
+                                    <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+                                </div>
+                                <!-- <div class="o_wsale_product_btn"/> -->
+                            </div>
+                        </div>
+                        
+                        <div class="o_wsale_product_btn"/>    
+                    </div>
+                    
+                </div>
+
+                <div class="x_sakaya_ribbon_mask position-absolute w-100">
+                    <t t-set="bg_color" t-value="td_product['ribbon']['bg_color'] or ''"/>
+                    <t t-set="text_color" t-value="td_product['ribbon']['text_color']"/>
+                    <t t-set="bg_class" t-value="td_product['ribbon']['html_class']"/>
+                    <span t-attf-class="o_ribbon #{bg_class}" t-attf-style="#{text_color and ('color: %s; ' % text_color)}#{bg_color and 'background-color:' + bg_color}" t-out="td_product['ribbon']['html'] or ''"/>
+                </div>
+
+
+            </form>
+        </xpath>    
+    </template>
+
 </odoo>

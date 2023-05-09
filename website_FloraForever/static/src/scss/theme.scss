@@ -50,6 +50,61 @@ header #top_menu{
     src: url('https://use.typekit.net/vxd0cac.css');
     font-weight: 300;
 }
+
+//Custom ecommerce products layout
+
+//Reset style
+//BS Card background color
+:is(.o_wsale_products_grid_table_wrapper,section[data-template-key="website_FloraForever.dynamic_filter_template_floraforever_product_product_horizontal"]) :is(.card,.card-body){
+    background-color: unset !important;
+}
+//WB hover background color
+.oe_product_cart:hover .o_wsale_product_information {
+    background-color: unset !important;
+}
+
+//specify how large the product item
+@mixin sakaya_bg-spec{
+    top:10%;
+    height: 80%;
+}
+//Product item background border
+.x_sakaya_bg{
+    @include sakaya_bg-spec;
+    z-index:-1;
+    left:0;
+    border-radius:16px;
+}
+
+//Product item ribbon & masking
+.x_sakaya_ribbon_mask{
+    overflow:hidden;
+    @include sakaya_bg-spec;
+}
+
+//Product item image content
+.oe_product_cart .oe_product_image img {
+    object-fit: cover;
+    z-index: 1;
+}
+
+//Product item text content
+.o_wsale_product_information{
+    height: 80%;
+
+    //Product item btns
+    .o_wsale_product_btn {
+    position: absolute !important;
+    left: unset !important;
+    bottom: 5%;
+    right: 8%;
+    z-index: 1;
+    //Extreme small mobile
+    @media (max-width: 368px){bottom: -10%;right:15%;}
+    }
+}
+
+
 //Sakaya Dynamic caoursel
 .o_dynamic_snippet_btn_wrapper button{
     padding: 8px 12px;
