@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+<!-- Branding -->
+<record id="logo" model="ir.attachment">
+    <field name="name">Sakaya Logo</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/sakaya_logo.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="website.default_website" model="website">
+    <field name="logo" type="base64" file="website_sakaya/static/src/img/content/sakaya_logo.svg"/>
+</record>
+
+<!--Homepage-->
+<record id="img_home_hero" model="ir.attachment">
+    <field name="name">Sakaya home hero image</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/home/sakaya_hero.jpeg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_home_liquor_logo" model="ir.attachment">
+    <field name="name">Sakaya home liqror logo</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/home/liquor_logo.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_home_hero2" model="ir.attachment">
+    <field name="name">Sakaya home hero image</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/home/sakaya_hero2.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<!--About us-->
+<record id="img_aboutus_hero" model="ir.attachment">
+    <field name="name">Sakaya aboutus hero image</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/aboutus/sakaya_aboutus_hero.jpg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_aboutus_column1" model="ir.attachment">
+    <field name="name">Sakaya aboutus column1</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/aboutus/sakaya_aboutus_column1.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_aboutus_column2" model="ir.attachment">
+    <field name="name">Sakaya aboutus column2</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/aboutus/sakaya_aboutus_column2.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_aboutus_column3" model="ir.attachment">
+    <field name="name">Sakaya aboutus column3</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/aboutus/sakaya_aboutus_column3.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_aboutus_column4" model="ir.attachment">
+    <field name="name">Sakaya aboutus column4</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/aboutus/sakaya_aboutus_column4.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_aboutus_column5" model="ir.attachment">
+    <field name="name">Sakaya aboutus column5</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/aboutus/sakaya_aboutus_column5.png"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<!--Footer-->
+<record id="img_footer_amex" model="ir.attachment">
+    <field name="name">Sakaya footer payment amex</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/footer/amex.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_footer_dinersclub" model="ir.attachment">
+    <field name="name">Sakaya footer payment dinersclub</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/footer/dinersclub.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_footer_discover" model="ir.attachment">
+    <field name="name">Sakaya footer payment discover</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/footer/discover.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_footer_jcb" model="ir.attachment">
+    <field name="name">Sakaya footer payment jcb</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/footer/jcb.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_footer_mastercard" model="ir.attachment">
+    <field name="name">Sakaya footer payment mastercard</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/footer/mastercard.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_footer_unionpay" model="ir.attachment">
+    <field name="name">Sakaya footer payment unionpay</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/footer/unionpay.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_footer_visa" model="ir.attachment">
+    <field name="name">Sakaya footer payment visa</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/footer/visa.svg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+
+<!--Products categories banner-->
+<record id="img_categories_all" model="ir.attachment">
+    <field name="name">Sakaya categories all banner</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/categories/sakaya_categories_all.jpeg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+
+<record id="img_categories_umeshu" model="ir.attachment">
+    <field name="name">Sakaya categories umeshu banner</field>
+    <field name="datas" type="base64" file="website_sakaya/static/src/img/content/categories/sakaya_categories_umeshu.jpeg"/>
+    <field name="res_model">ir.ui.view</field>
+    <field name="public" eval="True"/>
+</record>
+</odoo>

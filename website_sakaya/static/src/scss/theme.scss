@@ -1,0 +1,79 @@
+//Common mixin
+@mixin sakaya-card-ratio{
+    height: 75%;
+    top:12.5%;
+    border-radius: 1rem;
+}
+
+@mixin sakaya-reset-bg-color{
+    background-color: rgba(255, 255, 255, 0.0) !important;
+}
+
+//Universal elements styling
+h6,.h6{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.08px;
+}
+
+//Menu item styling
+#top_menu .nav-item span{text-transform: uppercase;}
+
+//Pricing tag font size adjustment
+.oe_currency_value{font-size: 1.25rem;}
+
+//Custom class styling
+// /Shop page product card 
+.x_sakaya_product_card{
+    @include sakaya-reset-bg-color;
+    .card-body,.card{@include sakaya-reset-bg-color;}   
+    &:hover .o_wsale_product_information {@include sakaya-reset-bg-color;}
+
+    .x_sakaya_bg{
+        @include sakaya-card-ratio;
+        left: 0;
+    }
+    .x_sakaya_ribbon_mask{
+        @include sakaya-card-ratio;
+        overflow: hidden;
+    }
+
+    .oe_product_image img{
+        object-fit: cover;
+    }
+    .o_wsale_product_btn{
+        top: unset !important;
+        bottom: 15% !important;
+        right: 1rem !important;
+        left: unset !important;
+    }
+}
+
+//Custom product snippet styling
+section[data-template-key="website_sakaya.dynamic_filter_template_sakaya_product_product_horizontal"]{
+    @include sakaya-reset-bg-color;
+}
+
+.s_sakaya_horizontal_card{
+    @include sakaya-reset-bg-color;
+    .card-body,.card{ @include sakaya-reset-bg-color;}
+    .o_carousel_card_body_titles>.card-title{
+        overflow:hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow-wrap: break-word;
+    }
+    .s_sakaya_product_bg{
+        z-index:-1;
+        left:0;
+        @include sakaya-card-ratio;
+    }
+}
+
+//Product page display image resize
+#o-carousel-product{
+    height:100% !important;
+    .o_carousel_product_outer{height: 100% !important;}
+    .product_detail_img{object-fit: cover !important;}
+}

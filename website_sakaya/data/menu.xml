@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+<!--Remove default nmenu items-->
+<!-- Home -->
+<delete model="website.menu" search="[('url','in', ['/', '/']), ('website_id', '=', 1)]"/>
+<!-- Shop -->
+<delete model="website.menu" search="[('url','in', ['/', '/shop']), ('website_id', '=', 1)]"/>
+<!-- Contact us -->
+<delete model="website.menu" search="[('url','in', ['/', '/contactus']), ('website_id', '=', 1)]"/>
+
+<!--Shop-->
+<record id="menu_shop" model="website.menu">
+    <field name="name">Shop</field>
+    <field name="url">/shop</field>
+    <field name="website_id">1</field>
+        <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="sequence" type="int">10</field>
+</record>
+
+<!--About us-->
+<record id="menu_about_us" model="website.menu">
+    <field name="name">About us</field>
+    <field name="url">/aboutus</field>
+    <field name="website_id">1</field>
+        <field name="parent_id" search="[
+        ('url', '=', '/default-main-menu'),
+        ('website_id', '=', 1)]"/>
+    <field name="sequence" type="int">11</field>
+</record>
+</odoo>

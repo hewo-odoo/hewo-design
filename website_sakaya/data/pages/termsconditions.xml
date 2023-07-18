@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+
+<record id="page_termsconditions" model="website.page">
+    <field name="name">Terms &amp; Conditions</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_termsconditions</field>
+    <field name="url">/termsconditions</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_termsconditions">
+            <t t-set="additional_title" t-value="'Terms &amp; Conditions'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <section class="s_title pb36 o_colored_level pt144 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: url('/web/image/website_sakaya.img_aboutus_hero'); background-position: 50% 0;">
+                <div class="o_we_bg_filter bg-black-75"/>
+                <div class="s_allow_columns o_container_small">
+                <h1><font style="font-size: 62px;" class="text-o-color-4">Terms &amp; Conditions</font></h1>
+                </div>
+            </section>
+
+            <section class="s_text_block pt72 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <p>Sakaya.co is a global dropshipping platform specialized in Japanese sake. By using our platform, you agree to the following terms and conditions:</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>1. General terms</h6>
+                    <p>By accessing or using the Sakaya.co platform, you agree to be legally bound by these terms and conditions. If you do not agree with these terms and conditions, you must not use our platform.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>2. Platform Use</h6>
+                    <p>The Sakaya.co platform is intended for use by individuals who are of legal drinking age at their country of residence. We reserve the right to refuse service, terminate accounts or cancel orders at our discretion.</p>
+                </div>
+            </section>     
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>3. Product Information</h6>
+                    <p>Sakaya.co is solely a platform connecting merchants with end-users. We do not produce, store or handle any of the products sold on our platform. The merchants are responsible for providing accurate product information, such as product descriptions, pricing, and shipping information. Producers and Brands may update their bottle design, packaging and artwork at any time.  For this reason you may receive a product labeling or packaging that is different than pictured. We won't refund/return bottles that have an updated design.  Sometimes product pictures may not accurately represent the bottle being sold. The product title will always supersede any product images. </p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>4. Liability</h6>
+                    <p>Sakaya.co will not be liable for any claims on delayed or damaged bottles. As we do not produce, store or handle any of the products sold on our platform, we cannot guarantee the quality or condition of the products. While we will help facilitate and mediate, any claims or disputes must be directed to the shipping courier or merchant.</p>
+                </div>
+            </section>  
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>5. All Sales Are Final / No Refund Policy</h6>
+                    <p>Due to the nature of the products that we sell, once an order has been received / confirmed / paid, there is no refund. Orders are automatically sent to our partner sakagura and merchants for fulfillment. Given the complexity of working with various vendors and supply chain partners, once the process begins, we cannot stop, amend or hold orders.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>6. Intellectual Property</h6>
+                    <p>All content on the Sakaya.co platform, including but not limited to text, graphics, logos, images, and software, is the property of Sakaya.co or its licensors and is protected by copyright and other laws. You may not use any content on our platform without our express written permission.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>7. Privacy Policy</h6>
+                    <p>Your privacy is important to us. Please refer to our Privacy Policy for more information on how we collect, use, and protect your personal information.</p>
+                </div>
+            </section>
+            
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>8. Governing Law</h6>
+                    <p>These terms and conditions shall be interpreted in accordance with the laws of the HKSAR. Any disputes arising from the use of our platform shall be resolved in the courts of the HKSAR.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>9. Amendments</h6>
+                    <p>Sakaya.co reserves the right to alter, modify or update any information on this website at any point, without serving any prior notice to our customers. Such modifications are usually warranted to accommodate changes in laws and regulations, imposition of shipping restrictions or internal changes in our business. Your continued use of the Sakaya.co platform after any such changes constitutes your acceptance of the new terms and conditions.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb72 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <p>For any questions or inquiries, customers must email hello@sakaya.co. Sakaya.co will not respond to any other forms of contact at this time.</p>
+                </div>
+            </section>     
+
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

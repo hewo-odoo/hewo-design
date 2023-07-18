@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+
+<record id="page_aboutus" model="website.page">
+    <field name="name">About us</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_aboutus</field>
+    <field name="url">/aboutus</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_aboutus">
+            <t t-set="additional_title" t-value="'About us'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+            
+            <section class="s_title pb36 o_colored_level pt144 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: url('/web/image/website_sakaya.img_aboutus_hero'); background-position: 50% 0;">
+                <div class="o_we_bg_filter bg-black-75"/>
+                <div class="s_allow_columns o_container_small">
+                <h1><font style="font-size: 62px;" class="text-o-color-4">About us</font></h1>
+                </div>
+            </section>
+
+            <section class="s_text_block pt72 pb72 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Our Story</h6>
+                    <p>At Sakaya.co, we're dedicated to preserving Japanese sake culture and traditions, and honoring the timeless values associated with them. We believe that it's essential to pass these values onto future generations, which is why we strive to find efficiencies in every part of the supply chain, such as shortening the gap between sakaguras and consumers alike, as well as ensuring that all stakeholders receive fair value for their efforts. Our commitment to this mission inspired us to create Sakaya.co, a platform that brings the freshest and most authentic expression of Japanese sake to the world. We're committed to delivering the sake as it was meant to be enjoyed by the masters who created it.</p>
+                </div>
+            </section>
+
+            <section class="s_title pt72 o_colored_level pb16" data-vcss="001" data-snippet="s_title" data-name="Title">
+                <div class="s_allow_columns o_container_small">
+                <h6>How its works?</h6>
+                </div>
+            </section>
+
+            <section class="s_three_columns o_cc o_cc1 pb72 o_colored_level" data-vcss="001" data-snippet="s_three_columns" data-name="Columns">
+                <div class="o_container_small">
+                <div class="row d-flex align-items-stretch">
+
+                    <div class="s_col_no_bgcolor pb16 col-6 col-md-4">
+                    <div class="card bg-white h-100">
+                        <div class="card-body">
+                        <h3 class="card-title"><font style="font-size: 62px; color:#CBDCD8;">01</font></h3>
+                        <p class="card-text">
+                            <img class="img-fluid o_we_custom_image" src="/web/image/website_sakaya.img_aboutus_column1"/>
+                        </p>
+                        <p class="card-text text-500">Browse or search for Japanese sake you wish to purchase.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="s_col_no_bgcolor pb16 col-6 col-md-4">
+                    <div class="card bg-white h-100">
+                        <div class="card-body">
+                        <h3 class="card-title"><font style="font-size: 62px; color:#CBDCD8;">02</font></h3>
+                        <p class="card-text">
+                            <img class="img-fluid o_we_custom_image" src="/web/image/website_sakaya.img_aboutus_column2"/>
+                        </p>
+                        <p class="card-text text-500">Place your order and make payment.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="s_col_no_bgcolor pb16 col-6 col-md-4">
+                    <div class="card bg-white h-100">
+                        <div class="card-body">
+                        <h3 class="card-title"><font style="font-size: 62px; color:#CBDCD8;">03</font></h3>
+                        <p class="card-text">
+                            <img class="img-fluid o_we_custom_image" src="/web/image/website_sakaya.img_aboutus_column3"/>
+                        </p>
+                        <p class="card-text text-500">Our system automatically sends your order to the relevant merchants.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="s_col_no_bgcolor pb16 col-6 col-md-4">
+                    <div class="card bg-white h-100">
+                        <div class="card-body">
+                        <h3 class="card-title"><font style="font-size: 62px; color:#CBDCD8;">04</font></h3>
+                        <p class="card-text">
+                            <img class="img-fluid o_we_custom_image" src="/web/image/website_sakaya.img_aboutus_column4"/>
+                        </p>
+                        <p class="card-text text-500">Merchant(s) ships out your order(s)..</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="s_col_no_bgcolor pb16 col-6 col-md-4">
+                    <div class="card bg-white h-100">
+                        <div class="card-body">
+                        <h3 class="card-title"><font style="font-size: 62px; color:#CBDCD8;">05</font></h3>
+                        <p class="card-text">
+                            <img class="img-fluid o_we_custom_image" src="/web/image/website_sakaya.img_aboutus_column5"/>
+                        </p>
+                        <p class="card-text text-500">You will receive your order anywhere in as little as 2 days.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

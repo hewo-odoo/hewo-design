@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+
+    <!--Dynamic snippets products carousel - Sakaya horizontal card-->
+    <template name="Sakaya Horizontal Card" id="dynamic_filter_template_sakaya_product_product_horizontal">
+        <t t-foreach="records" t-as="data" data-number-of-elements="3" data-number-of-elements-sm="1">
+            <t t-set="record" t-value="data['_record']"/>
+            <div class="o_carousel_product_card s_sakaya_horizontal_card card w-100 border-0 p-3" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
+                <input type="hidden" name="product-id" t-att-data-product-id="record.id"/>
+                <div class="row h-100">
+                    <div class=" col-6 px-0 position-static d-flex align-items-center">
+                        <a class="stretched-link" t-att-href="record.website_url">
+                            <img class="img img-fluid mx-auto" style="height:312px;object-fit:cover;" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
+                        </a>
+                    </div>
+                    <div class="o_carousel_product_card_body col-6 pl-0 d-flex flex-column justify-content-center align-items-center h-100">
+                        <div class="o_carousel_card_body_wrapper d-flex justify-content-around flex-column h-50">
+                            <div class="o_carousel_card_body_titles">
+                                <div class="card-title h6 small text-uppercase font-weight-light" t-field="record.display_name"/>
+                                <div class="card-title h5 font-weight-bold" t-field="record.display_name"/>
+                                <div class="card-title small font-weight-light" t-field="record.display_name"/>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-row">
+                                <t t-call="website_sale.price_dynamic_filter_template_product_product"/>
+                                <div class="o_dynamic_snippet_btn_wrapper ml-5">
+                                    <button type="button" role="button" class="btn btn-sm btn-primary js_add_cart" title="Add to Cart">
+                                        <i class="fa fa-fw fa-shopping-cart"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s_sakaya_product_bg bg-white shadow-sm border-0 position-absolute w-100"></div>
+            </div>
+        </t>
+    </template>
+
+    <!--Sakaya Products item card layout-->
+    <template id="products_items_sakaya" inherit_id="website_sale.products_item" name="Sakaya Products item">
+        <xpath expr='//form[hasclass("oe_product_cart")]' position='replace'>
+            <form action="/shop/cart/update" method="post" class="x_sakaya_product_card card oe_product_cart border-0" t-att-data-publish="product.website_published and 'on' or 'off'" itemscope="itemscope" itemtype="http://schema.org/Product">
+                <a class="o_product_link css_editable_mode_hidden" t-att-href="product_href"/>
+                <div class="x_sakaya_bg bg-white border position-absolute w-100"></div>
+                <div class="d-flex flex-row h-100 align-items-center">
+                    <div class="card-body col-6 p-1 oe_product_image h-100">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <a t-att-href="product_href" class="d-block h-100" itemprop="url">
+                            <t t-set="image_holder" t-value="product._get_image_holder()"/>
+                            <span t-field="image_holder.image_1920" t-options="{'widget': 'image', 'preview_image': 'image_1920' , 'itemprop': 'image'}" class="d-flex h-100 justify-content-center align-items-center"/>
+                        </a>
+                    </div>
+                    <div class="card-body col-6 p-0 d-flex flex-column justify-content-around o_wsale_product_information">
+                        <div class="p-2 o_wsale_product_information_text d-flex flex-column justify-content-around">
+                            <div class="o_wsale_products_item_titles mb-3">
+                                <h6 class="o_wsale_products_item_title">
+                                    <a class="text-primary text-decoration-none small text-uppercase font-weight-light" itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name"/>
+                                </h6>
+                                <h5 class="o_wsale_products_item_title mb-2">
+                                    <a class="text-primary text-decoration-none font-weight-bold" itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name"/>
+                                    <a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
+                                </h5>
+                                <h6 class="o_wsale_products_item_title">
+                                    <a class="text-primary text-decoration-none small font-weight-light" itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name"/>                           
+                                </h6>
+                                <!-- <h6 class="small d-none d-sm-block text-o-color-2"><i class="fa fa-check-circle mr-1" aria-hidden="true"></i>10 units left</h6> -->
+                            </div>
+
+                            <div class="x_sakaya_products_price_buttons d-flex flex-column flex-lg-row align-items-lg-center align-items-start justify-content-between mr-5 mr-md-0">
+                                <div class="product_price mb-3 mb-md-0" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
+                                    <span class="h5" t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    <del t-attf-class="text-danger ml-1 h6 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    <span itemprop="price" style="display:none;" t-esc="combination_info['price']"/>
+                                    <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_sakaya_ribbon_mask position-absolute w-100">
+                    <t t-set="bg_color" t-value="td_product['ribbon']['bg_color'] or ''"/>
+                    <t t-set="text_color" t-value="td_product['ribbon']['text_color']"/>
+                    <t t-set="bg_class" t-value="td_product['ribbon']['html_class']"/>
+                    <span t-attf-class="o_ribbon #{bg_class}" t-attf-style="#{text_color and ('color: %s; ' % text_color)}#{bg_color and 'background-color:' + bg_color}" t-out="td_product['ribbon']['html'] or ''"/>
+                </div>
+                <div class="o_wsale_product_btn"/>     
+            </form>
+        </xpath>    
+    </template>
+
+    <!--Product page editing-->   
+    <template id="product_detail_layout_ratio" inherit_id="website_sale.product" name="Product layout ratio">
+        <xpath expr="//*[@id='product_detail']" position="replace">
+            <section t-attf-class="container py-4 oe_website_sale #{'discount' if combination_info['has_discounted_price'] else ''}" id="product_detail" t-att-data-view-track="view_track and '1' or '0'" t-att-data-product-tracking-info="json.dumps(request.env['product.template'].get_google_analytics_data(combination_info))">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <ol class="breadcrumb mb-2">
+                            <li class="breadcrumb-item o_not_editable">
+                                <a t-att-href="keep(category=0)">All Products</a>
+                            </li>
+                            <li t-if="category" class="breadcrumb-item">
+                                <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" t-field="category.name"/>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <span t-field="product.name"/>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="d-sm-flex justify-content-between mb-2">
+                            <t t-call="website_sale.search">
+                                <t t-set="search" t-value="False"/>
+                                <t t-set="_classes" t-value="'mb-2 mr-sm-2'"/>
+                            </t>
+                            <t t-call="website_sale.pricelist_list">
+                                <t t-set="_classes" t-valuef="ml-1 mb-2 float-right"/>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 mt-md-4">
+                        <t t-call="website_sale.shop_product_carousel"/>
+                    </div>
+                    <div class="col-md-7 mt-md-4" id="product_details">
+                        <t t-set="base_url" t-value="product.get_base_url()"/>
+                        <h6 itemprop="name" t-field="product.name" class="text-uppercase font-weight-light mb-3">Supplier</h6>
+                        <h1 itemprop="name" t-field="product.name">Product Name</h1>
+                        <u><h6 itemprop="name" t-field="product.name" class="font-weight-light my-3">Merchant</h6></u>
+                        <span itemprop="url" style="display:none;" t-esc="base_url + product.website_url"/>
+                        <span itemprop="image" style="display:none;" t-esc="base_url + website.image_url(product, 'image_1920')"/>
+                        <t t-if="is_view_active('website_sale.product_comment')">
+                            <a href="#o_product_page_reviews" class="o_product_page_reviews_link text-decoration-none">
+                                <t t-call="portal_rating.rating_widget_stars_static">
+                                    <t t-set="rating_avg" t-value="product.rating_avg"/>
+                                    <t t-set="trans_text_plural">%s reviews</t>
+                                    <t t-set="trans_text_singular">%s review</t>
+                                    <t t-set="rating_count" t-value="(trans_text_plural if product.rating_count &gt; 1 else trans_text_singular) % product.rating_count"/>
+                                </t>
+                            </a>
+                        </t>
+                        <p t-field="product.description_sale" class="text-muted my-2" placeholder="A short description that will also appear on documents."/>
+                        <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <div class="js_product js_main_product mb-3">
+                                <div>
+                                    <t t-call="website_sale.product_price"/>
+                                    <small class="ml-1 text-muted o_base_unit_price_wrapper d-none" groups="website_sale.group_show_uom_price">
+                                        <t t-call="website_sale.base_unit_price"/>
+                                    </small>
+                                </div>
+                                <t t-placeholder="select">
+                                    <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id"/>
+                                    <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id"/>
+                                    <input t-if="product.public_categ_ids.ids" type="hidden" class="product_category_id" name="product_category_id" t-att-value="product.public_categ_ids.ids[0]"/>
+                                    <t t-if="combination" t-call="sale.variants">
+                                        <t t-set="ul_class" t-valuef="flex-column"/>
+                                        <t t-set="parent_combination" t-value="None"/>
+                                    </t>
+                                    <t t-else="">
+                                        <ul class="d-none js_add_cart_variants" t-att-data-attribute_exclusions="{'exclusions: []'}"/>
+                                    </t>
+                                </t>
+                                <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p>
+                                <div id="add_to_cart_wrap" class="d-inline">
+                                    <a data-animation-selector=".o_wsale_product_images" role="button" id="add_to_cart" class="btn btn-primary btn-lg js_check_product a-submit my-1 mr-1 px-5 font-weight-bold flex-grow-1" href="#"><i class="fa fa-shopping-cart mr-2"/>ADD TO CART</a>
+                                    <div id="product_option_block" class="d-inline-block align-middle"/>
+                                </div>
+                            </div>
+                        </form>
+                        <p t-elif="not product.active" class="alert alert-warning">This product is no longer available.</p>
+                        <p t-else="" class="alert alert-warning">This product has no valid combination.</p>
+                        <div id="product_attributes_simple">
+                            <t t-set="single_value_attributes" t-value="product.valid_product_template_attribute_line_ids._prepare_single_value_for_display()"/>
+                            <table t-attf-class="table table-sm text-muted {{'' if single_value_attributes else 'd-none'}}">
+                                <t t-foreach="single_value_attributes" t-as="attribute">
+                                    <tr>
+                                        <td>
+                                            <span t-field="attribute.name"/>:
+                                            <t t-foreach="single_value_attributes[attribute]" t-as="ptal">
+                                                <span t-field="ptal.product_template_value_ids._only_active().name"/><t t-if="not ptal_last">, </t>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </table>
+                        </div>
+                        <div id="o_product_terms_and_share"></div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+    <!--Products page all-products only banner-->
+    <template id="products_all_banner" inherit_id="website_sale.products" name="Products all-cate only banner">
+        <xpath expr="//*[@id='wrap']" position='inside'>
+            <t t-if="not category">
+                <section class="s_text_block pt72 pb120 o_colored_level o_cc o_cc5 oe_img_bg o_bg_img_center" data-snippet="s_text_block" data-name="Text" style="background-image: url(&quot;/web/image/website_sakaya.img_categories_all&quot;);" data-resize-width="1278">
+                        <div class="o_we_bg_filter bg-black-50"></div>
+                        <div class="s_allow_columns container">
+                            <h6>OUR PRODUCTS</h6>
+                            <h1><strong style="font-weight: bolder">Sakaya - Global sake dropshipping platform</strong></h1>
+                            <p>At Sakaya.co, we're dedicated to preserving Japanese sake culture and traditions,<br/> and honoring the timeless values associated with them.</p>
+                        </div>
+                </section>
+            </t>
+        </xpath>
+    </template>
+
+    <!--Product page insert extra products carousel to bottom-->
+    <template id="product_more_products" inherit_id="website_sale.product" name="more products carousel">
+        <xpath expr="//*[@id='oe_structure_website_sale_product_2']" position='replace'>
+            <div class="oe_structure oe_empty oe_structure_not_nearest mt16" id="oe_structure_website_sale_product_2" data-editor-message="DROP BUILDING BLOCKS HERE TO MAKE THEM AVAILABLE ACROSS ALL PRODUCTS">
+                <section class="s_title pt32 pb32 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                    <div class="s_allow_columns container">
+                        <h3>You might also like these products</h3>
+                    </div>
+                </section>
+                <!--Dynamic snippet - custom sakaya template-->
+                <section class="s_dynamic s_dynamic_snippet_products d-none pb120 o_colored_level o_cc"
+                    data-snippet="s_dynamic_snippet_products"
+                    data-number-of-records="6"
+                    data-number-of-elements="3"
+                    data-number-of-elements-small-devices="1"
+                    data-filter-id="5"
+                    data-template-key="website_sakaya.dynamic_filter_template_sakaya_product_product_horizontal"
+                    data-product-category-id="all"
+                    data-carousel-interval="5000">
+                    <div class="container o_not_editable">
+                        <div class="css_non_editable_mode_hidden">
+                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
+                                Your Dynamic Snippet will be displayed here... <br/>
+                                This message is displayed because you did not provided both a filter and a template to use.
+                            </div>
+                        </div>
+                        <div class="dynamic_snippet_template"/>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+    <!--Right ribbon stlying-->
+    <record id="website_sale.sale_ribbon" model="product.ribbon">
+        <field name="html_class">bg-success o_ribbon_right</field>
+    </record>
+
+    <record id="website_sale.sold_out_ribbon" model="product.ribbon">
+        <field name="html_class">bg-danger o_ribbon_right</field>
+    </record>
+
+    <record id="website_sale.out_of_stock_ribbon" model="product.ribbon">
+        <field name="html_class">bg-warning o_ribbon_right</field>
+    </record>
+
+    <record id="website_sale.new_ribbon" model="product.ribbon">
+        <field name="html_class">bg-primary o_ribbon_right</field>
+    </record>
+
+</odoo>

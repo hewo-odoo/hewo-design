@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<!-- Disable Default Header -->
+<record id="website.template_header_default" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Disable Default Footer -->
+<record id="website.footer_custom" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Disable Navbar CTA button-->
+<record id="website.header_call_to_action" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Open dropdown language selector-->
+<record id="website.header_language_selector" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Remove flag dropdown language selector-->
+<record id="website.header_language_selector_flag" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--ecommerce preset-->
+<!--Open add to cart-->
+<record id="website_sale.products_add_to_cart" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Open filer by price-->
+<record id="website_sale.filter_products_price" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Close Grid or list option-->
+<record id="website_sale.add_grid_or_list_option" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!--Open eceommerce categories sidebar-->
+<record id="website_sale.products_categories" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Open products page sidebar-->
+<record id="website_sale.products_attributes" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Open discussion & comments-->
+<record id="website_sale.product_comment" model="ir.ui.view">
+    <field name="active" eval="True"/>
+</record>
+
+<!--Close terms & conditions-->
+<record id="website_sale.product_custom_text" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<!-- Theme Header - Option -->
+<template id="template_header_opt" inherit_id="website.snippet_options" name="Sakaya Header Template - Option">
+    <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+        <we-button title="sakaya"
+            data-customize-website-views="website_sakaya.template_header_layout"
+            data-customize-website-variable="'sakaya'"
+            data-img="/website_sakaya/static/src/img/wbuilder/template_header_opt.svg"/>
+    </xpath>
+</template>
+
+<!-- Theme Footer - Option -->
+<template id="template_footer_opt" inherit_id="website.snippet_options" name="Sakaya Footer Template - Option">
+    <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+        <we-button title="sakaya"
+            data-customize-website-views="website_sakaya.template_footer_layout"
+            data-customize-website-variable="'sakaya'"
+            data-img="/website_sakaya/static/src/img/wbuilder/template_footer_opt.svg"/>
+    </xpath>
+</template>
+
+</odoo>

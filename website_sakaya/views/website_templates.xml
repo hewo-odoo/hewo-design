@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+
+<!-- Theme Header - Layout -->
+<record id="template_header_layout" model="ir.ui.view">
+    <field name="name">sakaya Header</field>
+    <field name="type">qweb</field>
+    <field name="key">website_sakaya.template_header_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//header//nav" position="replace">
+            <t t-call="website.navbar">
+                <t t-set="_navbar_classes" t-valuef="shadow-sm o_cc1"/>
+                <div id="top_menu_container" class="container flex-row flex-wrap">
+                    <!-- Brand -->
+                    <t t-call="website.placeholder_header_brand">
+                        <t t-set="_link_class" t-valuef="mr-4"/>
+                    </t>
+                    <!-- Slogan -->
+                    <div class="ml-lg-auto mr-lg-3 mr-0 mt-3 mt-sm-0">
+                        <form method="get" data-snippet="s_searchbar_input" class="o_searchbar_form o_wait_lazy_js s_searchbar_input" action="/website/search">
+                            <div role="search" class="input-group ">
+                            <input type="search" name="search" class="search-query form-control oe_search_box None" placeholder="Search..." data-search-type="all" data-limit="5" data-display-image="true" data-display-description="true" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc"/>
+                            <div class="input-group-append">
+                                <button type="submit" aria-label="Search" title="Search" class="btn oe_search_button btn-primary">
+                                <i class="fa fa-search"/>
+                                </button>
+                            </div>
+                            </div>
+                            <input name="order" type="hidden" class="o_search_order_by" value="name asc"/>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-nav navbar-expand order-last order-lg-0">
+                        <!-- Sign In -->
+                        <t t-call="portal.placeholder_user_sign_in">
+                            <t t-set="_item_class" t-valuef="nav-item ml-3"/>
+                            <t t-set="_link_class" t-valuef="btn btn-outline-primary"/>
+                        </t>
+                        <!-- User Dropdown -->
+                        <t t-call="portal.user_dropdown">
+                            <t t-set="_user_name" t-value="True"/>
+                            <t t-set="_user_name_class" t-valuef="font-weight-bold"/>
+                            <t t-set="_item_class" t-valuef="nav-item dropdown ml-3"/>
+                            <t t-set="_link_class" t-valuef="nav-link"/>
+                            <t t-set="_dropdown_menu_class" t-valuef="dropdown-menu-right position-absolute"/>
+                        </t>
+                        <li class="nav-item">
+                            <!-- Call To Action -->
+                            <t t-call="website.placeholder_header_call_to_action">
+                                <t t-set="_div_classes" t-valuef="ml-2"/>
+                            </t>
+                        </li>
+                    </ul>
+                    <!-- Separator -->
+                    <div class="w-100">
+                        <div class="oe_structure oe_structure_solo" id="oe_structure_header_slogan_3"/>
+                    </div>
+                    <!-- Navbar Toggler -->
+                    <t t-call="website.navbar_toggler"/>
+                    <!-- Navbar Collapse -->
+                    <div id="top_menu_collapse" class="collapse navbar-collapse mt-3">
+                        <t t-call="website.navbar_nav">
+                            <t t-set="_nav_class" t-valuef="flex-grow-1"/>
+                            <!-- Menu -->
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu">
+                                    <t t-set="item_class" t-valuef="nav-item"/>
+                                    <t t-set="link_class" t-valuef="nav-link"/>
+                                </t>
+                            </t>
+                        </t>
+                        <!-- Shopping cart-->
+                            <t t-call="website_sale.header_cart_link">
+                                <t t-set="_icon" t-value="True"/>
+                                <t t-set="_item_class" t-value="'nav-item list-unstyled'"/>
+                                <t t-set="_link_class" t-value="'nav-link'"/>
+                            </t>
+                        <!-- Language Selector -->
+                        <t t-call="website.placeholder_header_language_selector">
+                            <t t-set="_div_classes" t-valuef="mb-4 mb-lg-0 align-self-lg-center ml-3"/>
+                            <t t-set="_dropdown_menu_class" t-valuef="float-lg-right"/>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </field>
+</record>
+
+<!-- FOOTER - Add Custom Footer -->
+<!-- ========================== -->
+
+<!-- Theme Footer - Layout -->
+<record id="template_footer_layout" model="ir.ui.view">
+    <field name="name">sakaya Footer</field>
+    <field name="type">qweb</field>
+    <field name="key">website_sakaya.template_footer_layout</field>
+    <field name="priority">16</field>
+    <field name="inherit_id" ref="website.layout"/>
+    <field name="mode">extension</field>
+    <field name="arch" type="xml">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+
+                <section class="s_text_block pt24" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-4 pt40 pb40">
+                                <p><a href="/" class="o_footer_logo logo">
+                                    <img src="website_sakaya/static/src/img/content/sakaya_logo_white.svg" class="img-fluid" aria-label="Sakaya" title="Sakaya" role="img"/>
+                                </a></p>
+                                <p class="lead small">We are a global dropshipping platform focused on Japanese sake and shochu.</p>
+                            </div>
+
+                            <div class="col-lg-3 offset-lg-1 pt40 pb40">
+                                <h5 class="mb-4">Useful Links</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="/aboutus">About us</a></li>
+                                    <li><a href="/termsconditions">Terms &amp; Conditions</a></li>
+                                    <li><a href="/shipping">Shipping</a></li>
+                                    <li><a href="/privacy">Privacy Policy</a></li>
+                                    <li><a href="/faq">FAQ</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-4 pt40 pb40">
+                                <h5 class="mb-4">Contact us</h5>
+                                <i class="fa fa-fw fa-envelope mr-2"/><a href="mailto:hello@sakaya.co">hello@sakaya.co</a><br/>
+                                <i class="fa fa-fw fa-instagram mr-2"/><a href="#">Sakaya</a>
+                                <p><br/></p>
+
+                                <h5 class="mb-4">Payment method</h5>
+                                <div class="row">
+                                    <img src="/web/image/website_sakaya.img_footer_amex" class="img img-fluid oe_we_custom_image ml-3" data-mimetype="image/svg+xml"/>
+                                    <img src="/web/image/website_sakaya.img_footer_dinersclub" class="img img-fluid oe_we_custom_image ml-1" data-mimetype="image/svg+xml"/>
+                                    <img src="/web/image/website_sakaya.img_footer_discover" class="img img-fluid oe_we_custom_image ml-1" data-mimetype="image/svg+xml"/>
+                                    <img src="/web/image/website_sakaya.img_footer_jcb" class="img img-fluid oe_we_custom_image ml-1" data-mimetype="image/svg+xml"/>
+                                    <img src="/web/image/website_sakaya.img_footer_mastercard" class="img img-fluid oe_we_custom_image ml-1" data-mimetype="image/svg+xml"/>
+                                    <img src="/web/image/website_sakaya.img_footer_unionpay" class="img img-fluid oe_we_custom_image ml-1" data-mimetype="image/svg+xml"/>
+                                    <img src="/web/image/website_sakaya.img_footer_visa" class="img img-fluid oe_we_custom_image ml-1" data-mimetype="image/svg+xml"/>
+                                </div>
+                            </div>
+
+                        </div>
+                            <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
+                                <div class="container allow_columns">
+                                    <div class="s_hr pt16 pb8">
+                                        <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid; border-color: var(--600);"/>
+                                    </div>
+                                </div>
+                            </section>
+                    </div>
+                </section>
+
+            </div>
+        </xpath>
+    </field>
+</record>
+
+<!-- Disable Default Contact us -->
+<record id="website.contactus" model="ir.ui.view">
+    <field name="active" eval="False"/>
+</record>
+
+<record id="portal.footer_language_selector" model="ir.ui.view">
+    <field name="active">false</field>
+</record>
+
+<template id="footer_copyright_sakaya" inherit_id="website.footer_copyright_company_name">
+    <xpath expr="//*[hasclass('o_footer_copyright_name')]" position="replace">
+        <span class="o_footer_copyright_name mr-2">&amp;copy; Sakaya.co. All rights reserved.</span>
+    </xpath>
+</template>
+
+</odoo>

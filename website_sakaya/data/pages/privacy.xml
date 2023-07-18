@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+
+<record id="page_privacy" model="website.page">
+    <field name="name">Privacy Policy</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_privacy</field>
+    <field name="url">/privacy</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_privacy">
+            <t t-set="additional_title" t-value="'Privacy Policy'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <section class="s_title pb36 o_colored_level pt144 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: url('/web/image/website_sakaya.img_aboutus_hero'); background-position: 50% 0;">
+                <div class="o_we_bg_filter bg-black-75"/>
+                <div class="s_allow_columns o_container_small">
+                <h1><font style="font-size: 62px;" class="text-o-color-4">Terms &amp; Conditions</font></h1>
+                </div>
+            </section>
+            
+            <section class="s_text_block pt72 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <p>Sakaya.co is committed to protecting your privacy when you use our global dropshipping platform specialized in Japanese sake. This privacy policy sets out how we collect, use and protect personal information in accordance with the General Data Protection Regulation (GDPR) principles.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>1. Personal Information We Collect</h6>
+                    <p>We collect personal information when you register an account on our platform, place an order, communicate with us via email, phone or chat, or participate in surveys, promotions or contests. The personal information we collect may include:</p>
+                    <ul>
+                        <li>Your name, email address, phone number, and shipping address</li>
+                        <li>Your payment information, such as credit card details</li>
+                        <li>Your browsing activity and device information</li>
+                        <li>Your product preferences and purchase history</li>
+                    </ul>
+                    <p>We only collect personal information that is necessary for the purposes outlined in this privacy policy.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>2. How We Use Your Personal Information</h6>
+                    <p>We use your personal information for the following purposes:</p>
+                    <ul>
+                        <li>To process your orders and payments</li>
+                        <li>To communicate with you about your orders, promotions or other relevant information</li>
+                        <li>To improve and personalize your browsing experience on our platform</li>
+                        <li>To conduct market research and analyze customer behavior</li>
+                        <li>To comply with legal obligations</li>
+                    </ul>
+                    <p>We will only use your personal information for the purposes for which it was collected, unless we have obtained your consent to use it for other purposes.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>3. How We Protect Your Personal Information</h6>
+                    <p>We take the security of your personal information seriously and have implemented appropriate technical and organizational measures to protect it. We also ensure that any third-party service providers we work with comply with GDPR principles.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>4. Your Rights</h6>
+                    <p>You have the right to access, correct, delete or restrict the processing of your personal information. You also have the right to withdraw your consent to the processing of your personal information at any time. To exercise these rights, please contact us at the email address provided below.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>5. Cookies</h6>
+                    <p>We use cookies to improve your browsing experience on our platform. Cookies are small text files that are stored on your device when you visit our platform. You can disable cookies in your browser settings, but this may affect your browsing experience on our platform.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>6. Third-Party Links</h6>
+                    <p>Our platform may contain links to third-party websites or services. We are not responsible for the privacy practices or content of these third-party websites or services.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>7. Changes to this Privacy Policy</h6>
+                    <p>We reserve the right to update or modify this privacy policy at any time without prior notice. Your continued use of our platform after any such changes constitutes your acceptance of the new privacy policy.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb72 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>8. Contact us</h6>
+                    <p>If you have any questions or concerns about this privacy policy or the processing of your personal information, please contact us at <a href="mailto:hello@sakaya.co" target="_blank">hello@sakaya.co.</a></p>
+                </div>
+            </section>                        
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>

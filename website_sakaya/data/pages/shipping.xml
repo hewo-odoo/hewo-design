@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo noupdate="1">
+
+<record id="page_shipping" model="website.page">
+    <field name="name">Shipping</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_scghome.page_shipping</field>
+    <field name="url">/shipping</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_scghome.page_shipping">
+            <t t-set="additional_title" t-value="'Shipping'"/>
+            <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+
+            <section class="s_title pb36 o_colored_level pt144 oe_img_bg o_bg_img_center" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: url('/web/image/website_sakaya.img_aboutus_hero'); background-position: 50% 0;">
+                <div class="o_we_bg_filter bg-black-75"/>
+                <div class="s_allow_columns o_container_small">
+                <h1><font style="font-size: 62px;" class="text-o-color-4">Shipping</font></h1>
+                </div>
+            </section>
+            
+            <section class="s_text_block pt72 pb32 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <p>Please read the following policy. Your use of this site represents acceptance and acknowledgement of the provisions set forth by Sakaya.co.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>General</h6>
+                    <ul>
+                        <li>We cannot cancel an order once it's been completed.</li>
+                        <li>Address changes must be made prior to order processing. We will not modify shipping addresses once the order has a tracking number. It is the customer's responsibility to provide the correct address at checkout.</li>
+                        <li>Once the package is in the hands of FedEx, it is the customer's responsibility to track and plan for product arrival.</li>
+                        <li>Once orders are shipped, it will be the responsibility of our courier partner (FedEx) or our merchants (for local shipments).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Shipping Method, Coverage and Cost</h6>
+                    <p>Shipping costs are displayed next to the shopping cart and again, right before the payment. Shipping charges could vary with the selection of product, shipping location and shipping method. We use FedEx to ship orders to our customers. Available Shipping Methods and the corresponding charges are displayed at the time of placing the order. Here are the options that you might see, depending on your location:</p>
+                    <ul>
+                        <li>
+                            <ul class="list-unstyled">
+                                <li>Japan to International Market via FedEx</li>
+                                <li>We offer worldwide shipping for all orders placed on our platform using FedEx for all of our shipments from Japan to ensure safe and timely delivery. Shipping fees are calculated based on the weight and destination of the package. Shipping fees will be displayed at checkout before you confirm your order.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled">
+                                <li>Japan to Hong Kong via bulk delivery</li>
+                                <li>This service is only available for shipments from Japan to Hong Kong. It is available once a month and will require the consolidation of all orders before shipment deadline. Please expect up to 1 month for delivery.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled">
+                                <li>Same-City Merchant-to-Customer Deliveries by the Merchant</li>
+                                <li>This delivery method only applies to orders you’ve placed with Merchants located in the same city as your delivery address.</li>
+                            </ul>                        
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Legal Drinking Age</h6>
+                    <ul>
+                        <li>By using this website, you declare that you are of legal drinking age in your country. Usage by persons under the legal drinking age is unlawful and may result in prosecution.</li>
+                        <li>The purchaser of alcoholic beverages declares compliance with their country's laws regarding purchase, transportation, and delivery. Title for products passes to the buyer upon delivery to FedEx or other common carrier. We make no representation of legal rights for shipping or importing alcoholic beverages into any country. By placing an order, you authorize us to engage a common carrier for delivery.</li>
+                        <li>A signature by someone of legal drinking age is required for delivery. Legal responsibility for delivery without government issued photo identification is upon the courier of the package.</li>
+                        <li>All items purchased are for personal consumption and not for resale.</li>
+                        <li>Customers are responsible for knowing and complying with local and country laws. Once items are shipped, the purchaser is the legal owner of the goods, and liability is lifted from Sakaya.co and its employees regarding the sale and shipment of the goods.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Customs Duties and Taxes</h6>
+                    <p>We offer International Shipping to most countries and you will be able to see the costs once you select the country during the checkout process. International shipments are sometimes subject to special duties and fees that vary by country. Please note that Sakaya.co is not responsible for any customs or import duties that may be charged by the destination country. These fees must be paid by the recipient of the package.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Insurance</h6>
+                    <p>All orders must purchase Sakaya.co shipping insurance. Orders without shipping insurance will not be issued any reshipments, refunds, or store credit in any way. (Shipping insurance is non-refundable once your item has been shipped.)</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>All Sales Are Final / No Refund</h6>
+                    <p>Due to the nature of the products that we sell, once an order has been received / confirmed / paid, there is no refund. Orders are automatically sent to our partner sakagura and merchants for fulfillment. Given the complexity of working with various vendors and supply chain partners, once the process begins, we cannot stop, amend or hold orders.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Order Tracking</h6>
+                    <p>We provided tracked shipping on all orders using FedEx. As soon as your order is shipped, you will receive an email notification with live tracking information on the email address provided at the time of placing the order.</p>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <ul>
+                        <li>Delivery times vary depending on the product, delivery location, and method. Estimated delivery times are displayed next to each product on the website, and customers should check these estimates before adding the product to their cart. Most orders are fulfilled within 7-25 days.</li>
+                        <li>Same-City Merchant-to-Customer Deliveries by the Merchant  (Around 2-3 days)</li>
+                        <li>Japan to International Market via FedEx (Around 3-7 days)</li>
+                        <li>Japan to Hong Kong via bulk delivery (Around 25 days)</li>
+                        <li>Orders are processed, packed, and shipped within 24-48 hours on Monday-Friday. Orders are not shipped or delivered on weekends or holidays. For example, an overnight order placed on Thursday will likely ship on Friday and be delivered on Monday.</li>
+                        <li>Sakaya.co does not take responsibility for shipment time frames once the package has been handed off to FedEx and other shipping partners. Shipping or delivery dates are not guaranteed.</li>
+                        <li>Please allow sufficient time for your order to be delivered, especially during holiday periods. We are not liable for goods required for a specific date or for orders that fail to arrive due to circumstances beyond our control.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Failed Deliveries</h6>
+                    <ul>
+                        <li>
+                            The customer is liable for all shipping charges (and the shipping charges in these cases are not refundable) if an order is returned to the shipper due to the following reasons:
+                            <ul>
+                                <li>order refusal</li>
+                                <li>order cancellation</li>
+                                <li>rerouting the package to shipper</li>
+                                <li>rerouting package to a different address</li>
+                                <li>no pick up from UPS location</li>
+                                <li>incorrect or incomplete address provided at checkout</li>
+                                <li>courier attempted delivery and no one or no persons above the age of 21 was home</li>
+                                <li>a chargeback was placed on an order that is in transit</li>
+                                <li>lack of accepting order in any way</li>
+                            </ul>
+                        </li>
+                        <li>We do not offer refunds on shipping costs as Sakaya.co is not responsible for any carrier shipping delays. In the event that the customer no longer wants the order while the package is in transit, the customer is liable for all shipping charges.</li>
+                        <li>To claim a lost package in transit, a full 7 days must have passed since the last scan or update on the provided FedEx tracking link.</li>
+                        <li>Sakaya.co will not provide any refunds for orders that have been submitted with the incorrect shipping address. Once in transit, we will not reroute the package. Please double check all information prior to checking out.</li>
+                        <li>Sakaya.co is not liable for any packages that have been stolen. All orders deemed delivered by FedEx will not be reshipped or refunded. This includes all orders, with or without shipping insurance. No refunds or reshipments will be issued even if a FedEx claim is approved for a lost package that has been delivered.</li>
+                        <li>In the event of a failed delivery attempt due to incomplete or incorrect shipping address, or even doorstep refusal, the product will automatically be returned back to our source warehouse. Any re-attempts or refunds will only be actioned after we receive the product and make contact with the customer to investigate the issue. In case your package is lost in transit, the shipping carrier will inform us and we will re-dispatch a fresh shipment.</li>
+                        <li>Refused or undeliverable shipments will be returned to inventory, and a credit will be issued on the customer's card, less shipping charges and a 50% restocking fee. Customers may pay another shipping fee for re-delivery. If a shipment is undeliverable due to an incorrect address or the recipient being unavailable, the shipping courier will attempt to contact the recipient several times and may leave a note on the door to reschedule. If unsuccessful, the package will be returned to us. Customers may have the package resent with a delivery fee, customs duties, and sales/VAT tax (if applicable) at the same fee as the original order.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Damaged Goods</h6>
+                    <ul>
+                        <li>Damages to any cosmetic defects are not covered by shipping insurance. </li>
+                        <li>Any quality issues with an item must be taken up with the manufacturer of the product. Sakaya.co does not guarantee quality control for the liquid inside the bottles.</li>
+                        <li>Damaged closure upon opening is a manufacturer error, and will not be covered under shipping insurance. Please contact the item manufacturer directly for this issue. </li>
+                        <li>In the unusual event a bottle is damaged upon delivery, please take a photo and FedEx tracking number and share your complaint with FedEx and us by sending your email to fedex@fedex.com; and hello@sakaya.co. Additionally we may require the return of unopened/damaged bottles. We may offer a replacement, discount,or an account credit to be used for a later store purchase.</li>
+                        <li>The customer is liable for all shipping charges, including an additional return shipping fee. Additional credit fees may be included. Initial and return shipping costs are subtracted from the total amount of the order.</li>
+                        <li>If the delivery box is damaged, please accept the delivery and email us at hello@sakaya.co with a photograph of the delivered package. Upon assessment, a reshipment of the damaged goods may be sent to you. All refused packages (even if FedEx personally notifies you the items are damaged upon delivery) will incur a loss in shipment fees.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="s_text_block pt16 pb16 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <h6>Incorrect Goods</h6>
+                    <p>Sakaya.co does not guarantee the following:</p>
+                    <ul>
+                        <li>Original packaging is dependent on supply and not guaranteed on every purchase.</li>
+                        <li>Photographs of the listed item are not guaranteed to match the delivered product. Please always rely on the product title and description when purchasing.</li>
+                        <li>That the Attributes to be entirely correct. We will try our best to list them as accurately as possible but discrepancies may occur. These Attributes include:
+                            <ul>
+                                <li>Brewing Year / Month</li>
+                                <li>Attribute</li>
+                                <li>Koji Rice</li>
+                                <li>Kake Price</li>
+                                <li>Koji Polishing Ratio</li>
+                                <li>Kake Polishing Ratio</li>
+                                <li>Sake Meter Value (SMV)</li>
+                                <li>Yeast</li>
+                                <li>Profile</li>
+                                <li>Food Pairing</li>
+                                <li>Giftbox</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            
+            <section class="s_text_block pt16 pb72 o_colored_level" data-snippet="s_text_block" data-name="Text">
+                <div class="s_allow_columns o_container_small">
+                    <p>For any questions or inquiries, customers must email hello@sakaya.co. Sakaya.co will not respond to any other forms of contact at this time. Sakaya.co reserves the right to alter, modify or update any information on this website at any point, without serving any prior notice to our customers. Such modifications are usually warranted to accommodate changes in laws and regulations, imposition of shipping restrictions or internal changes in our business.</p>
+                </div>
+            </section>   
+
+            </div>
+            </t>
+        </t>
+    </field>
+</record>
+</odoo>
