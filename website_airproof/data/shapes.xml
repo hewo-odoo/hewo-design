@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="shape_splatter_01" model="ir.attachment">
+        <field name="name">01.svg</field>
+        <field name="datas" type="base64" file="website_airproof/static/shapes/splatter/01.svg"/>
+        <field name="url">/web_editor/shape/illustration/splatter/01.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="shape_splatter_02" model="ir.attachment">
+        <field name="name">02.svg</field>
+        <field name="datas" type="base64" file="website_airproof/static/shapes/splatter/02.svg"/>
+        <field name="url">/web_editor/shape/illustration/splatter/02.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="shape_custom_13" model="ir.attachment">
+        <field name="name">13.svg</field>
+        <field name="datas" type="base64" file="website_airproof/static/shapes/custom/13.svg"/>
+        <field name="url">/web_editor/shape/illustration/custom/13.svg</field>
+        <field name="public" eval="True"/>
+    </record>
+</odoo>

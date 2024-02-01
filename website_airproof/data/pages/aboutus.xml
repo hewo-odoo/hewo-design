@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="page_aboutus" model="website.page">
+        <field name="name">About us</field>
+        <field name="is_published" eval="True" />
+        <field name="key">website_airproof.aboutus</field>
+        <field name="url">/about-us</field>
+        <field name="type">qweb</field>
+        <field name="arch" type="xml">
+            <t t-name="website_airproof.page_aboutus">
+                <t t-call="website.layout">
+                   <!-- Add content here -->
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

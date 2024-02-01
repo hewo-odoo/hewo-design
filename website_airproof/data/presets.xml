@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    
+    <record id="website.template_header_default" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="website.template_header_contact" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+    <record id="portal.footer_language_selector" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+<!--
+<record id="website_sale.products_categories" model="ir.ui.view">
+   <field name="active" eval="False"/>
+</record>
+-->
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="logo" model="ir.attachment">
+        <field name="name">Airproof Logo</field>
+        <field name="datas" type="base64" file="website_airproof/static/src/img/content/logo-color.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="website.default_website" model="website">
+        <field name="logo" type="base64" file="website_airproof/static/src/img/content/logo-color.svg"/>
+    </record>
+    <record id="img_drone1" model="ir.attachment">
+        <field name="name">Drone 1</field>
+        <field name="datas" type="base64" file="website_airproof/static/src/img/content/drone1.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="img_drone2" model="ir.attachment">
+        <field name="name">Drone 2</field>
+        <field name="datas" type="base64" file="website_airproof/static/src/img/content/drone2.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="img_dronebg1" model="ir.attachment">
+        <field name="name">Drone BG 1</field>
+        <field name="datas" type="base64" file="website_airproof/static/src/img/content/dronebg1.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="img_dronebg2" model="ir.attachment">
+        <field name="name">Drone BG 2</field>
+        <field name="datas" type="base64" file="website_airproof/static/src/img/content/dronebg2.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="img_dronebg3" model="ir.attachment">
+        <field name="name">Drone BG 3</field>
+        <field name="datas" type="base64" file="website_airproof/static/src/img/content/dronebg3.png"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+    <record id="img_sticker" model="ir.attachment">
+        <field name="name">Sticker</field>
+        <field name="datas" type="base64" file="website_airproof/static/src/img/content/sticker.svg"/>
+        <field name="res_model">ir.ui.view</field>
+        <field name="public" eval="True"/>
+    </record>
+</odoo>
