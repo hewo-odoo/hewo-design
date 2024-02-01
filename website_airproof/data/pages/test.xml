@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<record id="website.test" model="ir.ui.view">
+    <field name="active" eval="False"/>    
+</record>
+<record id="page_test" model="website.page">
+    <field name="name">Contact us</field>
+    <field name="is_published" eval="True"/>
+    <field name="key">website_airproof.test</field>
+    <field name="url">/test</field>
+    <field name="type">qweb</field>
+    <field name="arch" type="xml">
+        <t t-name="website_airproof.page_test">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure">
+                    <section class="s_title pt40 o_colored_level" data-vcss="001" data-snippet="s_title" data-name="Title">
+                        <div class="s_allow_columns container">
+                            <h1>
+                                Contact us now
+                            </h1>
+                            <img src="/web/image/website_airproof.logo" alt=""/>
+                        </div>
+                    </section>
+                </div>
+            </t>
+            
+        </t>
+    </field>
+</record>
+</odoo>
